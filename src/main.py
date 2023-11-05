@@ -1,19 +1,24 @@
+# ---------- Setup ----------
+
 # Import the imigra- libraries, yes, libraries
 import os
 import tkinter as tk
 from PIL import ImageTk, Image
-import tkvideo
 
 # Define values
-bg_color = '#0D0D0D'
-bg_color_active = '#0C0C0C'
-font_color = '#ffffff'
-font_color_active = '#dddddd'
+bg_color = "#0D0D0D"
+bg_color_active = "#0C0C0C"
+font_color = "#ffffff"
+font_color_active = "#dddddd"
 page = 1
 max_page = 2
+gif_fps = 5
 
 # Define root window
 root=tk.Tk()
+
+
+# ---------- General Functions ----------
 
 def game_start(game_index):
     # I know im not supposed to do this, but i dont care
@@ -42,31 +47,34 @@ def whatgameami(buttonnum):
     game = "game " + str(buttonnum) + " haha" + str(page)
     return game
 
+
+# ---------- General Setup ----------
+
 # Create root widndow (and lock size an shit ykyk)
 root.title("GameHub(tm) application: Game chooser(tm)")
-root.geometry('1280x720')
+root.geometry("1280x720")
 root.resizable(width=False, height=False)
-root.iconbitmap('res/icon/icon_s.ico')
-root['bg'] = bg_color
+root.iconbitmap("res/icon/icon_s.ico")
+root["bg"] = bg_color
 
 # Generate layout frames
 logoframe = tk.Frame(root, width=1280, height=128)
-logoframe.configure(relief='flat')
+logoframe.configure(relief="flat")
 logoframe.grid(row=0, column=0, padx=0, pady=0)
-logoframe['bg'] = bg_color
+logoframe["bg"] = bg_color
 gameframe = tk.Frame(root, width=1280, height=600)
-gameframe.configure(relief='flat')
+gameframe.configure(relief="flat")
 gameframe.grid(row=1, column=0, padx=0, pady=0)
-gameframe['bg'] = bg_color
+gameframe["bg"] = bg_color
 selectorfame = tk.Frame(root, width=1280, height=35)
-selectorfame.configure(relief='flat')
+selectorfame.configure(relief="flat")
 selectorfame.grid(row=2, column=0, padx=0, pady=0)
-selectorfame['bg'] = bg_color
+selectorfame["bg"] = bg_color
 
 # Drawing the logo
-logoimg = ImageTk.PhotoImage(Image.open('res/icon/logo_fullsize.png'))
+logoimg = ImageTk.PhotoImage(Image.open("res/icon/logo_fullsize.png"))
 logo = tk.Label(logoframe, image=logoimg)
-logo.configure(bg=bg_color, relief='flat')
+logo.configure(bg=bg_color, relief="flat")
 logo.pack()
 
 # Generate and place game buttons
@@ -80,20 +88,47 @@ btn1.grid(row=0, column=0, padx=60, pady=35)
 btn2.grid(row=1, column=0, padx=60, pady=35)
 btn3.grid(row=1, column=1, padx=60, pady=35)
 
-# Generate video widget
-# Placeholder
-#videolabel = tk.Label(gameframe)
-#videolabel.grid(row=0, column=1, padx=60, pady=35)
-#videoplayer = tkvideo("", videolabel, loop = 1, size = ())
-#videoplayer.play()
+
+# ---------- GIF system ----------
+
+# Generate GIF widget
+giflabel = tk.Label(gameframe)
+giflabel.configure(bg=bg_color, relief='flat')
+giflabel.grid(row=0, column=1, padx=60, pady=35)
+
+# Trash i wont apologize for!!! im tired.
+#
+#gifimage_objects = []
+#
+## GIF changing system
+#def gif_change(gifpath):
+#    gif_animate(False)
+#    gifimg = Image.open(gifpath)
+#    giframe_count = gifimg.n_frames
+#
+#    for i in range(giframe_count):
+#        obj = tk.PhotoImage(file=gifpath, format=f"gif -index {i}")
+#        gifimage_objects.append(obj)
+#    
+#    gif_animate(True)
+#
+## GIF animator
+#def gif_animate(playing_status):
+#    curr_frame = 0
+#    while(playing_status == True and curr_frame < gif):
+#        image = gifimage_objects[curr_frame]
+#        giflabel.configure(image=image)
+#
+# Initialization
+#gif_change("res/video/Placeholder.gif")
 
 # ---------- Page mechanism ----------
 
 # Generate and place page buttons
 L_pg_btn=tk.Button(selectorfame, text="<", width=3, height=1, command=page_prv)
-L_pg_btn.configure(bg=bg_color, fg=font_color, activebackground=bg_color_active, activeforeground=font_color_active, relief='flat')
+L_pg_btn.configure(bg=bg_color, fg=font_color, activebackground=bg_color_active, activeforeground=font_color_active, relief="flat")
 H_pg_btn=tk.Button(selectorfame, text=">", width=3, height=1, command=page_nxt)
-H_pg_btn.configure(bg=bg_color, fg=font_color, activebackground=bg_color_active, activeforeground=font_color_active, relief='flat')
+H_pg_btn.configure(bg=bg_color, fg=font_color, activebackground=bg_color_active, activeforeground=font_color_active, relief="flat")
 L_pg_btn.grid(row=0, column=0, padx=10, pady=0)
 H_pg_btn.grid(row=0, column=2, padx=10, pady=0)
 
@@ -102,43 +137,49 @@ H_pg_btn.grid(row=0, column=2, padx=10, pady=0)
 # Still gonna killmyself tho for sure.
 # kill yourself NOW!
 #pageindicatorstring = str(page) + "/" + str(max_page)
-#pg_indicator = tk.Text(selectorfame, width=3, height=1, bg= bg_color, fg=font_color, relief='flat') # << you see this? fuck this fucking shit in particular.
+#pg_indicator = tk.Text(selectorfame, width=3, height=1, bg= bg_color, fg=font_color, relief="flat") # << you see this? fuck this fucking shit in particular.
 #pg_indicator.insert(tk.END, pageindicatorstring)
 #pg_indicator.grid(row=0, column=1, padx=0, pady=0)
 
 # Page logic
 def page_state_update():
 
+    # Recunfigures button labels on page switch
     btn1.configure(text=whatgameami(1))
     btn2.configure(text=whatgameami(2))
     btn3.configure(text=whatgameami(3))
 
+    # Page change logic
     # Again, global var, i dont care.
     global page
     if (page == 1):
-        L_pg_btn['state'] = "disabled"
-        H_pg_btn['state'] = "normal"
+        L_pg_btn["state"] = "disabled"
+        H_pg_btn["state"] = "normal"
     elif(page == max_page):
-        H_pg_btn['state'] = "disabled"
-        L_pg_btn['state'] = "normal"
+        H_pg_btn["state"] = "disabled"
+        L_pg_btn["state"] = "normal"
     elif(page < 1 or page > max_page):
         print("ya broke something page is out of bounds...\n resetting it back to 1 you dimwit...")
         page = 1
     else:
-        H_pg_btn['state'] = "normal"
-        L_pg_btn['state'] = "normal"
+        H_pg_btn["state"] = "normal"
+        L_pg_btn["state"] = "normal"
     
-    # Update the page indicator number
+    # Update the page indicator
     pageindicatorstring = str(page) + "/" + str(max_page)
     pg_indicator = tk.Text(selectorfame, width=3, height=1) # FUCK YOU text widget. I hope you die. Your parrents dont love you.
-    pg_indicator.configure(bg= bg_color, fg=font_color, relief='flat')
+    pg_indicator.configure(bg= bg_color, fg=font_color, relief="flat")
     pg_indicator.insert(tk.END, pageindicatorstring)
     pg_indicator.grid(row=0, column=1, padx=0, pady=0)
 
 # Initial logic check
 page_state_update()
 
-# ---------- End of Page mechanism ----------
+# ---------- End ----------
 
 # Closing statement, make the entire thing work so dont touch lmao
 root.mainloop()
+
+
+# ---------- Notes ----------
+# button size: 430 x 205
