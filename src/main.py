@@ -1,4 +1,4 @@
-# ---------- Setup ----------
+# ---------- init ----------
 
 # Import the imigra- libraries, yes, libraries
 import os
@@ -10,21 +10,24 @@ bg_color = "#0D0D0D"
 bg_color_active = "#0C0C0C"
 font_color = "#ffffff"
 font_color_active = "#dddddd"
+
 page = 1
 
 
 # ---------- The Setup ----------
 
 game_definition = [
-    ["Tic tac toe", "description", "src/ttt.py"],
-    ["game 2", "description", "game2.py"],
-    ["game 3", "description", "game3.py"],
-    ["game 4", "description", "game4.py"],
-    ["game 5", "description", "game5.py"],
-    ["game 6", "description", "game6.py"],
+    ["Tic tac toe", "Classic Tic Tac Toe known by everyone", "src/ttt.py"],
+    ["Hangman", "description", "src/hang.py"],
+    ["Sudoku", "description", "src/suku.py"],
+    ["Connect 4", "description", "src/c4.py"],
+    ["Battleship", "description", "src/ship.py"],
+    ["Rock Paper Scisors", "description", "src/rps.py"],
+    ["Snake", "description", "src/snek.py"],
+    ["Minesweeper", "description", "src/mine.py"],
+    ["Dice simulator", "n-sided dice simulator", "src/dice.py"],
 ]
 
-print(len(game_definition), "is the number of list items")
 max_page = int(len(game_definition) / 3) + (len(game_definition) % 3 > 0)
 
 if(len(game_definition) % 3 > 0):
@@ -42,14 +45,12 @@ def game_func(button_index, runstate):
     global page
 
     button_index = ((page - 1) * 3) + button_index
-    print(button_index)
     game = game_definition[button_index - 1]
 
     if(runstate == False):
-        return game[0]
+        return game
     
     elif(runstate == True):
-        print("running", game[2])
         exec(open(game[2]).read())
 
 def page_chng(up):
@@ -98,68 +99,39 @@ logo.configure(bg=bg_color, relief="flat")
 logo.pack()
 
 # Generate and place game buttons
-btn1=tk.Button(gameframe, width=60, height=13, command=lambda: game_func(1, True))
-btn1.configure(bg=bg_color, fg=font_color, activebackground=bg_color_active, activeforeground=font_color_active, relief='flat')
-btn2=tk.Button(gameframe, width=60, height=13, command=lambda: game_func(2, True))
-btn2.configure(bg=bg_color, fg=font_color, activebackground=bg_color_active, activeforeground=font_color_active, relief='flat')
-btn3=tk.Button(gameframe, width=60, height=13, command=lambda: game_func(3, True))
-btn3.configure(bg=bg_color, fg=font_color, activebackground=bg_color_active, activeforeground=font_color_active, relief='flat')
-btn1.grid(row=0, column=0, padx=60, pady=35)
-btn2.grid(row=1, column=0, padx=60, pady=35)
-btn3.grid(row=1, column=1, padx=60, pady=35)
+btn1=tk.Button(gameframe, width=30, height=7, command=lambda: game_func(1, True))
+btn1.configure(bg=bg_color, fg=font_color, activebackground=bg_color_active, activeforeground=font_color_active, relief='flat', font=("Calibri", 16))
+btn2=tk.Button(gameframe, width=30, height=7, command=lambda: game_func(2, True))
+btn2.configure(bg=bg_color, fg=font_color, activebackground=bg_color_active, activeforeground=font_color_active, relief='flat', font=("Calibri", 16))
+btn3=tk.Button(gameframe, width=30, height=7, command=lambda: game_func(3, True))
+btn3.configure(bg=bg_color, fg=font_color, activebackground=bg_color_active, activeforeground=font_color_active, relief='flat', font=("Calibri", 16))
+btn1.grid(row=0, column=0, padx=120, pady=35)
+btn2.grid(row=1, column=0, padx=120, pady=35)
+btn3.grid(row=1, column=1, padx=120, pady=35)
 
 
-# ---------- GIF system ----------
+# ---------- Image mechanism ----------
 
-# Generate GIF widget
-#giflabel = tk.Label(gameframe)
-#giflabel.configure(bg=bg_color, relief='flat')
-#giflabel.grid(row=0, column=1, padx=60, pady=35)
-
-# Trash i wont apologize for!!! im tired.
-#
-#gifimage_objects = []
-#
-## GIF changing system
-#def gif_change(gifpath):
-#    gif_animate(False)
-#    gifimg = Image.open(gifpath)
-#    giframe_count = gifimg.n_frames
-#
-#    for i in range(giframe_count):
-#        obj = tk.PhotoImage(file=gifpath, format=f"gif -index {i}")
-#        gifimage_objects.append(obj)
-#    
-#    gif_animate(True)
-#
-## GIF animator
-#def gif_animate(playing_status):
-#    curr_frame = 0
-#    while(playing_status == True and curr_frame < gif):
-#        image = gifimage_objects[curr_frame]
-#        giflabel.configure(image=image)
-#
-# Initialization
-#gif_change("res/video/Placeholder.gif")
+# PLACEHOLDERRRRRRRRRRRR ASS ASS ASS CUM CUM CUM CUM CUM CUM CUM CUM CUM  CUM CUUUUUM CUM CUM
 
 
 # ---------- Page mechanism ----------
 
 # Generate and place page buttons
 L_pg_btn=tk.Button(selectorfame, text="<", width=3, height=1, command=lambda: page_chng(False))
-L_pg_btn.configure(bg=bg_color, fg=font_color, activebackground=bg_color_active, activeforeground=font_color_active, relief="flat")
+L_pg_btn.configure(bg=bg_color, fg=font_color, activebackground=bg_color_active, activeforeground=font_color_active, relief="flat", font=("Calibri", 16))
 H_pg_btn=tk.Button(selectorfame, text=">", width=3, height=1, command=lambda: page_chng(True))
-H_pg_btn.configure(bg=bg_color, fg=font_color, activebackground=bg_color_active, activeforeground=font_color_active, relief="flat")
-L_pg_btn.grid(row=0, column=0, padx=10, pady=0)
-H_pg_btn.grid(row=0, column=2, padx=10, pady=0)
+H_pg_btn.configure(bg=bg_color, fg=font_color, activebackground=bg_color_active, activeforeground=font_color_active, relief="flat", font=("Calibri", 16))
+L_pg_btn.grid(row=0, column=0, padx=5, pady=0)
+H_pg_btn.grid(row=0, column=2, padx=5, pady=0)
 
 # Page logic
 def page_state_update():
 
     # Recunfigures button labels on page switch
-    btn1.configure(text=game_func(1, False))
-    btn2.configure(text=game_func(2, False))
-    btn3.configure(text=game_func(3, False))
+    btn1.configure(text=game_func(1, False)[0] + "\n" + game_func(1, False)[1])
+    btn2.configure(text=game_func(2, False)[0] + "\n" + game_func(2, False)[1])
+    btn3.configure(text=game_func(3, False)[0] + "\n" + game_func(3, False)[1])
 
     # Page change logic
     # Again, global var, i dont care.
@@ -180,7 +152,7 @@ def page_state_update():
     # Update the page indicator
     pageindicatorstring = str(page) + "/" + str(max_page)
     pg_indicator = tk.Text(selectorfame, width=3, height=1) # FUCK YOU text widget. I hope you die. Your parrents dont love you.
-    pg_indicator.configure(bg= bg_color, fg=font_color, relief="flat")
+    pg_indicator.configure(bg= bg_color, fg=font_color, relief="flat", font=("Calibri", 12))
     pg_indicator.insert(tk.END, pageindicatorstring)
     pg_indicator.grid(row=0, column=1, padx=0, pady=0)
 
