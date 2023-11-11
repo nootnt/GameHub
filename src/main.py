@@ -11,13 +11,12 @@ bg_color_active = "#0C0C0C"
 font_color = "#ffffff"
 font_color_active = "#dddddd"
 page = 1
-gif_fps = 5
 
 
 # ---------- The Setup ----------
 
 game_definition = [
-    ["Tic tac toe", "description", "ttt.py"],
+    ["Tic tac toe", "description", "src/ttt.py"],
     ["game 2", "description", "game2.py"],
     ["game 3", "description", "game3.py"],
     ["game 4", "description", "game4.py"],
@@ -51,7 +50,7 @@ def game_func(button_index, runstate):
     
     elif(runstate == True):
         print("running", game[2])
-
+        exec(open(game[2]).read())
 
 def page_chng(up):
     # Again, I know im not supposed to do this, but i dont care
@@ -113,9 +112,9 @@ btn3.grid(row=1, column=1, padx=60, pady=35)
 # ---------- GIF system ----------
 
 # Generate GIF widget
-giflabel = tk.Label(gameframe)
-giflabel.configure(bg=bg_color, relief='flat')
-giflabel.grid(row=0, column=1, padx=60, pady=35)
+#giflabel = tk.Label(gameframe)
+#giflabel.configure(bg=bg_color, relief='flat')
+#giflabel.grid(row=0, column=1, padx=60, pady=35)
 
 # Trash i wont apologize for!!! im tired.
 #
