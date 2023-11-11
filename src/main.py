@@ -11,8 +11,26 @@ bg_color_active = "#0C0C0C"
 font_color = "#ffffff"
 font_color_active = "#dddddd"
 page = 1
-max_page = 2
 gif_fps = 5
+
+
+# ---------- The Setup ----------
+
+game_definition = [
+    ["Tic tac toe", "description", "ttt.py"],
+    ["game 2", "description", "game2.py"],
+    ["game 3", "description", "game3.py"],
+    ["game 4", "description", "game4.py"],
+    ["game 5", "description", "game5.py"],
+    ["game 6", "description", "game6.py"],
+]
+
+print(len(game_definition), "is the number of list items")
+max_page = int(len(game_definition) / 3) + (len(game_definition) % 3 > 0)
+
+if(len(game_definition) % 3 > 0):
+    game_definition.append(["Missing", "There is no game here...", "missing.py"],)
+    game_definition.append(["Missing", "There is no game here...", "missing.py"],)
 
 # Define root window
 root=tk.Tk()
@@ -20,32 +38,35 @@ root=tk.Tk()
 
 # ---------- General Functions ----------
 
-def game_start(game_index):
+def game_func(button_index, runstate):
     # I know im not supposed to do this, but i dont care
     global page
-    # Placeholder
-    print("ello lov", game_index, page)
 
-def page_prv():
-    # Again, I know im not supposed to do this, but i dont care
-    global page
-    if(page > 1):
-        page = page - 1
-    page_state_update()
+    button_index = ((page - 1) * 3) + button_index
+    print(button_index)
+    game = game_definition[button_index - 1]
 
-def page_nxt():
-    # Again, I know im not supposed to do this, but i dont care
-    global page
-    if(page < max_page):
-        page = page + 1
-    page_state_update()
-
-def whatgameami(buttonnum):
-    # Again, i dont care.
-    global page
+    if(runstate == False):
+        return game[0]
     
-    game = "game " + str(buttonnum) + " haha" + str(page)
-    return game
+    elif(runstate == True):
+        print("running", game[2])
+
+
+def page_chng(up):
+    # Again, I know im not supposed to do this, but i dont care
+    global page
+
+    if(up == True):
+        if(page < max_page):
+            page = page + 1
+    elif(up == False):
+        if(page > 1):
+            page = page - 1
+    else:
+        print("something went wrong, invalid value in page change function")
+    
+    page_state_update()
 
 
 # ---------- General Setup ----------
@@ -78,11 +99,11 @@ logo.configure(bg=bg_color, relief="flat")
 logo.pack()
 
 # Generate and place game buttons
-btn1=tk.Button(gameframe, width=60, height=13, command=lambda: game_start(1))
+btn1=tk.Button(gameframe, width=60, height=13, command=lambda: game_func(1, True))
 btn1.configure(bg=bg_color, fg=font_color, activebackground=bg_color_active, activeforeground=font_color_active, relief='flat')
-btn2=tk.Button(gameframe, width=60, height=13, command=lambda: game_start(2))
+btn2=tk.Button(gameframe, width=60, height=13, command=lambda: game_func(2, True))
 btn2.configure(bg=bg_color, fg=font_color, activebackground=bg_color_active, activeforeground=font_color_active, relief='flat')
-btn3=tk.Button(gameframe, width=60, height=13, command=lambda: game_start(3))
+btn3=tk.Button(gameframe, width=60, height=13, command=lambda: game_func(3, True))
 btn3.configure(bg=bg_color, fg=font_color, activebackground=bg_color_active, activeforeground=font_color_active, relief='flat')
 btn1.grid(row=0, column=0, padx=60, pady=35)
 btn2.grid(row=1, column=0, padx=60, pady=35)
@@ -122,32 +143,24 @@ giflabel.grid(row=0, column=1, padx=60, pady=35)
 # Initialization
 #gif_change("res/video/Placeholder.gif")
 
+
 # ---------- Page mechanism ----------
 
 # Generate and place page buttons
-L_pg_btn=tk.Button(selectorfame, text="<", width=3, height=1, command=page_prv)
+L_pg_btn=tk.Button(selectorfame, text="<", width=3, height=1, command=lambda: page_chng(False))
 L_pg_btn.configure(bg=bg_color, fg=font_color, activebackground=bg_color_active, activeforeground=font_color_active, relief="flat")
-H_pg_btn=tk.Button(selectorfame, text=">", width=3, height=1, command=page_nxt)
+H_pg_btn=tk.Button(selectorfame, text=">", width=3, height=1, command=lambda: page_chng(True))
 H_pg_btn.configure(bg=bg_color, fg=font_color, activebackground=bg_color_active, activeforeground=font_color_active, relief="flat")
 L_pg_btn.grid(row=0, column=0, padx=10, pady=0)
 H_pg_btn.grid(row=0, column=2, padx=10, pady=0)
-
-# Generate page inicator label. this is janky, (was) not working and im killing myself.
-# Nevermind this I moved this shit cause it wouldnt work so ignore this block of code.
-# Still gonna killmyself tho for sure.
-# kill yourself NOW!
-#pageindicatorstring = str(page) + "/" + str(max_page)
-#pg_indicator = tk.Text(selectorfame, width=3, height=1, bg= bg_color, fg=font_color, relief="flat") # << you see this? fuck this fucking shit in particular.
-#pg_indicator.insert(tk.END, pageindicatorstring)
-#pg_indicator.grid(row=0, column=1, padx=0, pady=0)
 
 # Page logic
 def page_state_update():
 
     # Recunfigures button labels on page switch
-    btn1.configure(text=whatgameami(1))
-    btn2.configure(text=whatgameami(2))
-    btn3.configure(text=whatgameami(3))
+    btn1.configure(text=game_func(1, False))
+    btn2.configure(text=game_func(2, False))
+    btn3.configure(text=game_func(3, False))
 
     # Page change logic
     # Again, global var, i dont care.
@@ -174,6 +187,7 @@ def page_state_update():
 
 # Initial logic check
 page_state_update()
+
 
 # ---------- End ----------
 
