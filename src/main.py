@@ -2,6 +2,7 @@
 
 # Import the imigra- libraries, yes, libraries
 import os
+import sys
 import tkinter as tk
 from PIL import ImageTk, Image
 
@@ -11,21 +12,26 @@ bg_color_active = "#0C0C0C"
 font_color = "#ffffff"
 font_color_active = "#dddddd"
 
+#image paths
+icon_img_path = "res/icon/icon_s.ico"
+logo_img_path = "res/banners/logo_fullsize.png"
+banner_default_img_path = "res/banners/temp_banner.png"
+
 page = 1
 
 
 # ---------- The Setup ----------
 
 game_definition = [
-    ["Tic tac toe", "Classic Tic Tac Toe known by everyone", "src/ttt.py"],
-    ["Hangman", "description", "src/hang.py"],
-    ["Sudoku", "description", "src/suku.py"],
-    ["Connect 4", "description", "src/c4.py"],
-    ["Battleship", "description", "src/ship.py"],
-    ["Rock Paper Scisors", "description", "src/rps.py"],
-    ["Snake", "description", "src/snek.py"],
-    ["Minesweeper", "description", "src/mine.py"],
-    ["Dice simulator", "n-sided dice simulator", "src/dice.py"],
+    ["Tic tac toe", "Classic Tic Tac Toe known by everyone", "src/ttt.py", "res/banners/temp_banner2.png"],
+    ["Hangman", "description", "src/hang.py", "res/banners/temp_banner2.png"],
+    ["Sudoku", "description", "src/suku.py", "res/banners/temp_banner2.png"],
+    ["Connect 4", "description", "src/c4.py", "res/banners/temp_banner2.png"],
+    ["Battleship", "description", "src/ship.py", "res/banners/temp_banner2.png"],
+    ["Rock Paper Scisors", "description", "src/rps.py", "res/banners/temp_banner2.png"],
+    ["Snake", "description", "src/snek.py", "res/banners/temp_banner2.png"],
+    ["Minesweeper", "description", "src/mine.py", "res/banners/temp_banner2.png"],
+    ["Dice simulator", "n-sided dice simulator", "src/dice.py", "res/banners/temp_banner2.png"],
 ]
 
 max_page = int(len(game_definition) / 3) + (len(game_definition) % 3 > 0)
@@ -51,7 +57,9 @@ def game_func(button_index, runstate):
         return game
     
     elif(runstate == True):
+        root.withdraw()
         exec(open(game[2]).read())
+        root.deiconify()
 
 def page_chng(up):
     # Again, I know im not supposed to do this, but i dont care
@@ -73,9 +81,11 @@ def page_chng(up):
 
 # Create root widndow (and lock size an shit ykyk)
 root.title("GameHub(tm) application: Game chooser(tm)")
-root.geometry("1280x720")
+spawn_posx = int((root.winfo_screenwidth()/2) - 640)
+spawn_posy = int((root.winfo_screenheight()/2) - 360 - 20)
+root.geometry("1280x720+" + str(spawn_posx) + "+" + str(spawn_posy))
 root.resizable(width=False, height=False)
-root.iconbitmap("res/icon/icon_s.ico")
+root.iconbitmap(icon_img_path)
 root["bg"] = bg_color
 
 # Generate layout frames
@@ -93,7 +103,7 @@ selectorfame.grid(row=2, column=0, padx=0, pady=0)
 selectorfame["bg"] = bg_color
 
 # Drawing the logo
-logoimg = ImageTk.PhotoImage(Image.open("res/icon/logo_fullsize.png"))
+logoimg = ImageTk.PhotoImage(Image.open(logo_img_path))
 logo = tk.Label(logoframe, image=logoimg)
 logo.configure(bg=bg_color, relief="flat")
 logo.pack()
@@ -110,9 +120,12 @@ btn2.grid(row=1, column=0, padx=120, pady=35)
 btn3.grid(row=1, column=1, padx=120, pady=35)
 
 
-# ---------- Image mechanism ----------
+# ---------- Image banner mechanism ----------
 
-# PLACEHOLDERRRRRRRRRRRR ASS ASS ASS CUM CUM CUM CUM CUM CUM CUM CUM CUM  CUM CUUUUUM CUM CUM
+# Generate and place the default banner
+bannerimg = ImageTk.PhotoImage(Image.open(banner_default_img_path))
+bannerlabel=tk.Label(gameframe, image= bannerimg, relief="flat", bg=bg_color)
+bannerlabel.grid(row=0, column=1, padx=120, pady=35)
 
 
 # ---------- Page mechanism ----------
@@ -164,7 +177,3 @@ page_state_update()
 
 # Closing statement, make the entire thing work so dont touch lmao
 root.mainloop()
-
-
-# ---------- Notes ----------
-# button size: 430 x 205
