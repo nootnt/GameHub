@@ -129,9 +129,9 @@ H_pg_btn.grid(row=0, column=2, padx=5, pady=0)
 def page_state_update():
 
     # Recunfigures button labels on page switch
-    btn1.configure(text=game_func(1, False)[0] + "\n" + game_func(1, False)[1])
-    btn2.configure(text=game_func(2, False)[0] + "\n" + game_func(2, False)[1])
-    btn3.configure(text=game_func(3, False)[0] + "\n" + game_func(3, False)[1])
+    btn1.configure(text=game_func(1, False)[0] + ":\n\n" + game_func(1, False)[1])
+    btn2.configure(text=game_func(2, False)[0] + ":\n\n" + game_func(2, False)[1])
+    btn3.configure(text=game_func(3, False)[0] + ":\n\n" + game_func(3, False)[1])
 
     # Page change logic
     # Again, global var, i dont care.
