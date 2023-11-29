@@ -2,6 +2,7 @@
 
 # Import the imigra- libraries, yes, libraries
 import os
+import sys
 import tkinter as tk
 from PIL import ImageTk, Image
 
@@ -51,7 +52,9 @@ def game_func(button_index, runstate):
         return game
     
     elif(runstate == True):
+        root.withdraw()
         exec(open(game[2]).read())
+        root.deiconify()
 
 def page_chng(up):
     # Again, I know im not supposed to do this, but i dont care
@@ -74,7 +77,7 @@ def page_chng(up):
 # Create root widndow (and lock size an shit ykyk)
 root.title("GameHub(tm) application: Game chooser(tm)")
 spawn_posx = int((root.winfo_screenwidth()/2) - 640)
-spawn_posy = int((root.winfo_screenheight()/2) - 360)
+spawn_posy = int((root.winfo_screenheight()/2) - 360 - 20)
 root.geometry("1280x720+" + str(spawn_posx) + "+" + str(spawn_posy))
 root.resizable(width=False, height=False)
 root.iconbitmap("res/icon/icon_s.ico")
