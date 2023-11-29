@@ -73,7 +73,9 @@ def page_chng(up):
 
 # Create root widndow (and lock size an shit ykyk)
 root.title("GameHub(tm) application: Game chooser(tm)")
-root.geometry("1280x720")
+spawn_posx = int((root.winfo_screenwidth()/2) - 640)
+spawn_posy = int((root.winfo_screenheight()/2) - 360)
+root.geometry("1280x720+" + str(spawn_posx) + "+" + str(spawn_posy))
 root.resizable(width=False, height=False)
 root.iconbitmap("res/icon/icon_s.ico")
 root["bg"] = bg_color
@@ -110,7 +112,7 @@ btn2.grid(row=1, column=0, padx=120, pady=35)
 btn3.grid(row=1, column=1, padx=120, pady=35)
 
 
-# ---------- Image mechanism ----------
+# ---------- Image banner mechanism ----------
 
 # PLACEHOLDERRRRRRRRRRRR ASS ASS ASS CUM CUM CUM CUM CUM CUM CUM CUM CUM  CUM CUUUUUM CUM CUM
 
