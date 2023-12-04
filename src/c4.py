@@ -1,71 +1,71 @@
-# Example file showing a circle moving on screen
 import pygame
+import sys
 
-# pygame setup
-pygame.init()
-screen = pygame.display.set_mode((1280, 720))
-clock = pygame.time.Clock()
-running = True
-dt = 0
+# Constants
+ROW_COUNT = 6
+COLUMN_COUNT = 7
+BLUE = (0, 0, 255)
+BLACK = (0, 0, 0)
+RED = (255, 0, 0)
+YELLOW = (255, 255, 0)
+SQUARE_SIZE = 100
+RADIUS = int(SQUARE_SIZE / 2 - 5)
 
-player_pos = pygame.Vector2(screen.get_width() / 2, screen.get_height() / 2)
 
-while running:
-    # poll for events
-    # pygame.QUIT event means the user clicked X to close your window
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
+def create_board():
+    board = [[0 for _ in range(COLUMN_COUNT)] for _ in range(ROW_COUNT)]
+    return board
 
-    # fill the screen with a color to wipe away anything from last frame
-    screen.fill("black")
 
-    pygame.draw.circle(screen, "white", pygame.mouse.get_pos(), 40)
+def draw_board(board):
+    for col in range(COLUMN_COUNT):
+        for row in range(ROW_COUNT):
+            pygame.draw.rect(
+                screen,
+                BLUE,
+                (
+                    col * SQUARE_SIZE,
+                    (row + 1) * SQUARE_SIZE,
+                    SQUARE_SIZE,
+                    SQUARE_SIZE,
+                ),
+            )
+            pygame.draw.circle(
+                screen,
+                BLACK,
+                (
+                    int(col * SQUARE_SIZE + SQUARE_SIZE / 2),
+                    int((row + 1) * SQUARE_SIZE + SQUARE_SIZE / 2),
+                ),
+                RADIUS,
+            )
 
-    
-    
-    # flip() the display to put your work on screen
-    pygame.display.flip()
+    for col in range(COLUMN_COUNT):
+        for row in range(ROW_COUNT):
+            if board[row][col] == 1:
+                pygame.draw.circle(
+                    screen,
+                    RED,
+                    (
+                        int(col * SQUARE_SIZE + SQUARE_SIZE / 2),
+                        height - int(row * SQUARE_SIZE + SQUARE_SIZE / 2),
+                    ),
+                    RADIUS,
+                )
+            elif board[row][col] == 2:
+                pygame.draw.circle(
+                    screen,
+                    YELLOW,
+                    (
+                        int(col * SQUARE_SIZE + SQUARE_SIZE / 2),
+                        height - int(row * SQUARE_SIZE + SQUARE_SIZE / 2),
+                    ),
+                    RADIUS,
+                )
+    pygame.display.update()
 
-    # limits FPS to 60
-    # dt is delta time in seconds since last frame, used for framerate-
-    # independent physics.
-    dt = clock.tick(60) / 1000
 
-    if event.type == pygame.MOUSEBUTTONDOWN:
-            pygame.draw.rect(screen, BLACK, (0, 0, width, SQUARE_SIZE))
-            # Ask for Player 1 Input
-            if turn == 0:
-                posx = event.pos[0]
-                col = int(posx // SQUARE_SIZE)
-
-                if is_valid_location(board, col):
-                    row = get_next_open_row(board, col)
-                    drop_piece(board, row, col, 1)
-
-                    if winning_move(board, 1):
-                        label = my_font.render(
-                            "Player 1 wins!!", 1, RED
-                        )
-                        screen.blit(label, (40, 10))
-                        game_over = True
-
-            # Ask for Player 2 Input
-            else:
-                posx = event.pos[0]
-                col = int(posx // SQUARE_SIZE)
-
-                if is_valid_location(board, col):
-                    row = get_next_open_row(board, col)
-                    drop_piece(board, row, col, 2)
-
-                    if winning_move(board, 2):
-                        label = my_font.render(
-                            "Player 2 wins!!", 1, YELLOW
-                        )
-                        screen.blit(label, (40, 10))
-                        game_over = True
-         def drop_piece(board, row, col, piece):
+def drop_piece(board, row, col, piece):
     board[row][col] = piece
 
 
@@ -124,5 +124,66 @@ def winning_move(board, piece):
             ):
                 return True
 
+    return False
 
-pygame.quit()
+
+pygame.init()
+width = COLUMN_COUNT * SQUARE_SIZE
+height = (ROW_COUNT + 1) * SQUARE_SIZE
+size = (width, height)
+screen = pygame.display.set_mode(size)
+my_font = pygame.font.SysFont("monospace", 75)
+
+board = create_board()
+draw_board(board)
+pygame.display.update()
+
+game_over = False
+turn = 0
+
+while not game_over:
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            sys.exit()
+
+        if event.type == pygame.MOUSEMOTION:
+            pygame.draw.rect(screen, BLACK, (0, 0, width, SQUARE_SIZE))
+            posx = event.pos[0]
+            if turn == 0:
+                pygame.draw.circle(
+                    screen, RED, (posx, int(SQUARE_SIZE / 2)), RADIUS
+                )
+            else:
+                pygame.draw.circle(
+                    screen, YELLOW, (posx, int(SQUARE_SIZE / 2)), RADIUS
+                )
+            pygame.display.update()
+
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            posx = event.pos[0]
+            col = int(posx // SQUARE_SIZE)
+
+            if is_valid_location(board, col):
+                row = get_next_open_row(board, col)
+                drop_piece(board, row, col, turn + 1)
+
+                if winning_move(board, turn + 1):
+                    if turn == 0:
+                        label = my_font.render(
+                            "Player 1 wins!!", 1, RED
+                        )
+                    else:
+                        label = my_font.render(
+                            "Player 2 wins!!", 1, YELLOW
+                        )
+                    screen.blit(label, (40, 10))
+                    game_over = True
+
+                draw_board(board)
+                pygame.display.update()
+                turn += 1
+                turn %= 2
+
+                if game_over:
+                    pygame.time.wait(3000)
