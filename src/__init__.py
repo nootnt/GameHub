@@ -12,26 +12,26 @@ bg_color_active = "#0C0C0C"
 font_color = "#ffffff"
 font_color_active = "#dddddd"
 
-#image paths
-icon_img_path = "res/icon/icon_s.ico"
-logo_img_path = "res/banners/logo_fullsize.png"
-banner_default_img_path = "res/banners/temp_banner.png"
-
 page = 1
 
 
 # ---------- The Setup ----------
 
+#image paths
+icon_img_path = "res/GH.ico"
+logo_img_path = "res/logo_fullsize.png"
+banner_default_img_path = "res/temp_banner.png"
+
 game_definition = [
-    ["Tic tac toe", "Classic Tic Tac Toe known by everyone", "src/1_ttt.py", "res/banners/temp_banner2.png"],
-    ["Hangman", "description", "src/2_hang.py", "res/banners/temp_banner2.png"],
-    ["Sudoku", "description", "src/3_suku.py", "res/banners/temp_banner2.png"],
-    ["Connect 4", "description", "src/4_c4.py", "res/banners/temp_banner2.png"],
-    ["Battleship", "description", "src/5_ship.py", "res/banners/temp_banner2.png"],
-    ["Rock Paper Scisors", "description", "src/6_rps.py", "res/banners/temp_banner2.png"],
-    ["Snake", "description", "src/7_snek.py", "res/banners/temp_banner2.png"],
-    ["Minesweeper", "description", "src/8_mine.py", "res/banners/temp_banner2.png"],
-    ["Dice simulator", "n-sided dice simulator", "src/9_dice.py", "res/banners/temp_banner2.png"],
+    ["Tic tac toe", "Classic Tic Tac Toe known by everyone", "src/1_ttt.py", "res/temp_banner2.png"],
+    ["Hangman", "description", "src/2_hang.py", "res/temp_banner2.png"],
+    ["Sudoku", "description", "src/3_suku.py", "res/temp_banner2.png"],
+    ["Connect 4", "description", "src/4_c4.py", "res/temp_banner2.png"],
+    ["Battleship", "description", "src/5_ship.py", "res/temp_banner2.png"],
+    ["Rock Paper Scisors", "description", "src/6_rps.py", "res/temp_banner2.png"],
+    ["Snake", "description", "src/7_snek.py", "res/temp_banner2.png"],
+    ["Minesweeper", "description", "src/8_mine.py", "res/temp_banner2.png"],
+    ["Dice simulator", "n-sided dice simulator", "src/9_dice.py", "res/temp_banner2.png"],
 ]
 
 max_page = int(len(game_definition) / 3) + (len(game_definition) % 3 > 0)
