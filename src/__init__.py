@@ -1,45 +1,48 @@
 # ---------- init ----------
-
-# Import the imigra- libraries, yes, libraries
 import os
-import subprocess
 import sys
+import subprocess
+import configparser
 import tkinter as tk
 from PIL import ImageTk, Image
-
-# Define values
-bg_color = "#0D0D0D"
-bg_color_active = "#0C0C0C"
-font_color = "#ffffff"
-font_color_active = "#dddddd"
-
-page = 1
 
 
 # ---------- The Setup ----------
 
-#image paths
-icon_img_path = "res/GH.ico"
-logo_img_path = "res/logo_fullsize.png"
-banner_default_img_path = "res/temp_banner.png"
+# values to be used inside functions
+page = 1
+game_selected = [""]
+
+# load config
+config = configparser.ConfigParser()
+config.read("src/launcher.cfg")   
+
+bg_color = config.get("color", "bg_color")
+bg_color_active = config.get("color", "bg_color_active")
+font_color = config.get("color", "font_color")
+font_color_active = config.get("color", "font_color_active")
+
+icon_img_path = config.get("img", "icon_img_path")
+logo_img_path = config.get("img", "logo_img_path")
+banner_default_img_path = config.get("img", "banner_default_img_path")
 
 game_definition = [
-    ["Tic tac toe", "Classic Tic Tac Toe known by everyone", "src/test_npp/notepad++.exe", "res/temp_banner2.png"],
-    ["Hangman", "description", "src/2_hang.py", "res/temp_banner2.png"],
-    ["Sudoku", "description", "src/3_suku.py", "res/temp_banner2.png"],
-    ["Connect 4", "description", "src/4_c4.py", "res/temp_banner2.png"],
-    ["Battleship", "description", "src/5_ship.py", "res/temp_banner2.png"],
-    ["Rock Paper Scisors", "description", "src/6_rps.py", "res/temp_banner2.png"],
-    ["Snake", "description", "src/7_snek.py", "res/temp_banner2.png"],
-    ["Minesweeper", "description", "src/8_mine.py", "res/temp_banner2.png"],
-    ["Dice simulator", "n-sided dice simulator", "src/9_dice.py", "res/temp_banner2.png"],
+    ["Tic tac toe", "Classic Tic Tac Toe known by everyone", "", "res/temp_banner2.png"],
+    ["Hangman", "description", "", "res/temp_banner.png"],
+    ["Sudoku", "description", "", "res/temp_banner2.png"],
+    ["Connect 4", "description", "", "res/temp_banner.png"],
+    ["Battleship", "description", "", "res/temp_banner2.png"],
+    ["Rock Paper Scisors", "description", "", "res/temp_banner.png"],
+    ["Snake", "description", "", "res/temp_banner2.png"],
+    ["Minesweeper", "description", "", "res/temp_banner.png"],
+    ["Dice simulator", "n-sided dice simulator", "", "res/temp_banner2.png"],
 ]
 
 max_page = int(len(game_definition) / 3) + (len(game_definition) % 3 > 0)
 
 if(len(game_definition) % 3 > 0):
-    game_definition.append(["Missing", "There is no game here...", "0_missing.py"],)
-    game_definition.append(["Missing", "There is no game here...", "0_missing.py"],)
+    game_definition.append(["Missing", "There is no game here..."])
+    game_definition.append(["Missing", "There is no game here..."])
 
 # Define root window
 root=tk.Tk()
@@ -50,17 +53,42 @@ root=tk.Tk()
 def game_func(button_index, runstate):
     # I know im not supposed to do this, but i dont care
     global page
+    global game_selected
 
     button_index = ((page - 1) * 3) + button_index
     game = game_definition[button_index - 1]
 
-    if(runstate == False):
+    if(runstate == True):
+
+        if(game == game_selected):
+
+            root.withdraw()
+            print("launching " + game[0])
+            subprocess.call([game[2]])
+            root.deiconify()
+
+        else:
+
+            game_selected = game
+            
+            # im sorry to whoever reads this next part, its absolutely janktastic but hey, it works!
+            banner_update(game)
+            if(button_index == 1):
+                btn1.configure(text=game[0] + ":\n\n" + game[1])
+                btn2.configure(text=game_func(2, False)[0])
+                btn3.configure(text=game_func(3, False)[0])
+            elif(button_index == 2):
+                btn1.configure(text=game_func(1, False)[0])
+                btn2.configure(text=game[0] + ":\n\n" + game[1])
+                btn3.configure(text=game_func(3, False)[0])
+            elif(button_index == 3):
+                btn1.configure(text=game_func(1, False)[0])
+                btn2.configure(text=game_func(2, False)[0])
+                btn3.configure(text=game[0] + ":\n\n" + game[1])
+
+    else:
+        
         return game
-    
-    elif(runstate == True):
-        root.withdraw()
-        subprocess.call([game[2]])
-        root.deiconify()
 
 def page_chng(up):
     # Again, I know im not supposed to do this, but i dont care
@@ -72,8 +100,6 @@ def page_chng(up):
     elif(up == False):
         if(page > 1):
             page = page - 1
-    else:
-        print("something went wrong, invalid value in page change function")
     
     page_state_update()
 
@@ -128,6 +154,11 @@ bannerimg = ImageTk.PhotoImage(Image.open(banner_default_img_path))
 bannerlabel=tk.Label(gameframe, image= bannerimg, relief="flat", bg=bg_color)
 bannerlabel.grid(row=0, column=1, padx=120, pady=35)
 
+def banner_update(game):
+    bannerimg = ImageTk.PhotoImage(Image.open(game[3]))
+    bannerlabel.configure(image=bannerimg)
+    bannerlabel.image=bannerimg # this is stupid, i hate tkinter. tk, please, i beg you to kys (keep yourself safe).
+
 
 # ---------- Page mechanism ----------
 
@@ -143,12 +174,12 @@ H_pg_btn.grid(row=0, column=2, padx=5, pady=0)
 def page_state_update():
 
     # Recunfigures button labels on page switch
-    btn1.configure(text=game_func(1, False)[0] + ":\n\n" + game_func(1, False)[1])
-    btn2.configure(text=game_func(2, False)[0] + ":\n\n" + game_func(2, False)[1])
-    btn3.configure(text=game_func(3, False)[0] + ":\n\n" + game_func(3, False)[1])
+    btn1.configure(text=game_func(1, False)[0])
+    btn2.configure(text=game_func(2, False)[0])
+    btn3.configure(text=game_func(3, False)[0])
 
     # Page change logic
-    # Again, global var, i dont care.
+    # Again, i dont care.
     global page
     if (page == 1):
         L_pg_btn["state"] = "disabled"
