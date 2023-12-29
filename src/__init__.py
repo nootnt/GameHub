@@ -2,6 +2,7 @@
 
 # Import the imigra- libraries, yes, libraries
 import os
+import subprocess
 import sys
 import tkinter as tk
 from PIL import ImageTk, Image
@@ -23,7 +24,7 @@ logo_img_path = "res/logo_fullsize.png"
 banner_default_img_path = "res/temp_banner.png"
 
 game_definition = [
-    ["Tic tac toe", "Classic Tic Tac Toe known by everyone", "src/1_ttt.py", "res/temp_banner2.png"],
+    ["Tic tac toe", "Classic Tic Tac Toe known by everyone", "src/test_npp/notepad++.exe", "res/temp_banner2.png"],
     ["Hangman", "description", "src/2_hang.py", "res/temp_banner2.png"],
     ["Sudoku", "description", "src/3_suku.py", "res/temp_banner2.png"],
     ["Connect 4", "description", "src/4_c4.py", "res/temp_banner2.png"],
@@ -58,7 +59,7 @@ def game_func(button_index, runstate):
     
     elif(runstate == True):
         root.withdraw()
-        exec(open(game[2]).read())
+        subprocess.call([game[2]])
         root.deiconify()
 
 def page_chng(up):
