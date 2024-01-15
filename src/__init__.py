@@ -35,7 +35,7 @@ game_definition = [
     ["Rock Paper Scisors", "description", "", "res/temp_banner.png"],
     ["Snake", "description", "", "res/temp_banner2.png"],
     ["Minesweeper", "description", "", "res/temp_banner.png"],
-    ["Dice simulator", "n-sided dice simulator", "", "res/temp_banner2.png"],
+    ["Dice simulator", "Simulates a many-sided dice", "bin/9_dice.exe", "res/temp_banner2.png"],
 ]
 
 max_page = int(len(game_definition) / 3) + (len(game_definition) % 3 > 0)
@@ -55,16 +55,15 @@ def game_func(button_index, runstate):
     global page
     global game_selected
 
-    button_index = ((page - 1) * 3) + button_index
-    game = game_definition[button_index - 1]
+    button_global = ((page - 1) * 3) + button_index
+    game = game_definition[button_global - 1]
 
     if(runstate == True):
 
         if(game == game_selected):
 
             root.withdraw()
-            print("launching " + game[0])
-            #subprocess.call([game[2]])
+            subprocess.call([game[2]])
             root.deiconify()
 
         else:
