@@ -48,7 +48,7 @@ if(len(game_definition) % 3 > 0):
 root=tk.Tk()
 
 
-# ---------- General Functions ----------
+# ---------- Functions ----------
 
 def game_func(button_index, runstate):
     # I know im not supposed to do this, but i dont care
@@ -64,7 +64,7 @@ def game_func(button_index, runstate):
 
             root.withdraw()
             print("launching " + game[0])
-            subprocess.call([game[2]])
+            #subprocess.call([game[2]])
             root.deiconify()
 
         else:
@@ -104,7 +104,7 @@ def page_chng(up):
     page_state_update()
 
 
-# ---------- General Setup ----------
+# ---------- Window Setup ----------
 
 # Create root widndow (and lock size an shit ykyk)
 root.title("GameHub(tm) application: Game chooser(tm)")
@@ -201,11 +201,8 @@ def page_state_update():
     pg_indicator.insert(tk.END, pageindicatorstring)
     pg_indicator.grid(row=0, column=1, padx=0, pady=0)
 
-# Initial logic check
+# Initial logic/sanity check
 page_state_update()
-
-
-# ---------- End ----------
 
 # Closing statement, make the entire thing work so dont touch lmao
 root.mainloop()
