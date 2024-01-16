@@ -1,4 +1,3 @@
-# ---------- init ----------
 import os
 import sys
 import subprocess
@@ -6,7 +5,7 @@ import configparser
 import tkinter as tk
 from PIL import ImageTk, Image
 
-# ---------- The Setup ----------
+# ---------- init ----------
 
 # values to be used inside functions
 page = 1
