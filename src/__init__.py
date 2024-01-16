@@ -6,7 +6,6 @@ import configparser
 import tkinter as tk
 from PIL import ImageTk, Image
 
-
 # ---------- The Setup ----------
 
 # values to be used inside functions
@@ -27,15 +26,15 @@ logo_img_path = config.get("img", "logo_img_path")
 banner_default_img_path = config.get("img", "banner_default_img_path")
 
 game_definition = [
-    ["Tic tac toe", "Classic Tic Tac Toe known by everyone", "", "res/temp_banner2.png"],
-    ["Hangman", "description", "", "res/temp_banner.png"],
-    ["Sudoku", "description", "", "res/temp_banner2.png"],
-    ["Connect 4", "description", "", "res/temp_banner.png"],
-    ["Battleship", "description", "", "res/temp_banner2.png"],
-    ["Rock Paper Scisors", "description", "", "res/temp_banner.png"],
-    ["Snake", "description", "", "res/temp_banner2.png"],
-    ["Minesweeper", "description", "", "res/temp_banner.png"],
-    ["Dice simulator", "Simulates a many-sided dice", "bin/9_dice.exe", "res/temp_banner2.png"],
+    [config.get("game", "1"), config.get("desc", "1"), config.get("path", "1"), config.get("banner", "1")],
+    [config.get("game", "2"), config.get("desc", "2"), config.get("path", "2"), config.get("banner", "2")],
+    [config.get("game", "3"), config.get("desc", "3"), config.get("path", "3"), config.get("banner", "3")],
+    [config.get("game", "4"), config.get("desc", "4"), config.get("path", "4"), config.get("banner", "4")],
+    [config.get("game", "5"), config.get("desc", "5"), config.get("path", "5"), config.get("banner", "5")],
+    [config.get("game", "6"), config.get("desc", "6"), config.get("path", "6"), config.get("banner", "6")],
+    [config.get("game", "7"), config.get("desc", "7"), config.get("path", "7"), config.get("banner", "7")],
+    [config.get("game", "8"), config.get("desc", "8"), config.get("path", "8"), config.get("banner", "8")],
+    [config.get("game", "9"), config.get("desc", "9"), config.get("path", "9"), config.get("banner", "9")],
 ]
 
 max_page = int(len(game_definition) / 3) + (len(game_definition) % 3 > 0)
@@ -46,7 +45,6 @@ if(len(game_definition) % 3 > 0):
 
 # Define root window
 root=tk.Tk()
-
 
 # ---------- Functions ----------
 
@@ -102,7 +100,6 @@ def page_chng(up):
     
     page_state_update()
 
-
 # ---------- Window Setup ----------
 
 # Create root widndow (and lock size an shit ykyk)
@@ -145,7 +142,6 @@ btn1.grid(row=0, column=0, padx=120, pady=35)
 btn2.grid(row=1, column=0, padx=120, pady=35)
 btn3.grid(row=1, column=1, padx=120, pady=35)
 
-
 # ---------- Image banner mechanism ----------
 
 # Generate and place the default banner
@@ -157,7 +153,6 @@ def banner_update(game):
     bannerimg = ImageTk.PhotoImage(Image.open(game[3]))
     bannerlabel.configure(image=bannerimg)
     bannerlabel.image=bannerimg # this is stupid, i hate tkinter. tk, please, i beg you to kys (keep yourself safe).
-
 
 # ---------- Page mechanism ----------
 
