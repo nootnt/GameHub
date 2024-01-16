@@ -2,16 +2,14 @@ import pygame
 import sys
 import random
 
-# Initialize Pygame
+# Init pygame
 pygame.init()
 
-# Constants
+# Define constant variables
 WIDTH, HEIGHT = 1280, 720
 CELL_SIZE = 20
-FPS = 20
+FPS = 18
 
-
-# Snake class
 class Snake:
     def __init__(self):
         self.body = [(100, 100), (90, 100), (80, 100)]
@@ -31,7 +29,6 @@ class Snake:
         x, y = self.body[0]
         return not (0 <= x < WIDTH and 0 <= y < HEIGHT)
 
-# Food class
 class Food:
     def __init__(self):
         self.position = (0, 0)
@@ -44,8 +41,12 @@ class Food:
 
 # Initialize the game window
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Snake Game")
+pygame.display.set_caption("GameHub(tm) Snake Game")
 clock = pygame.time.Clock()
+
+# set window icon
+ico = pygame.image.load("res/GH.png")
+pygame.display.set_icon(ico)
 
 # Initialize the snake and food
 snake = Snake()
@@ -81,14 +82,14 @@ while True:
         food.spawn_food()
 
     # Draw everything
-    screen.fill("black")
+    screen.fill("#0D0D0D")
 
     # Draw the snake
     for segment in snake.body:
-        pygame.draw.rect(screen, "orange", (segment[0], segment[1], CELL_SIZE, CELL_SIZE))
+        pygame.draw.rect(screen, "#F66600", (segment[0], segment[1], CELL_SIZE, CELL_SIZE))
 
     # Draw the food
-    pygame.draw.rect(screen, "white", (food.position[0], food.position[1], CELL_SIZE, CELL_SIZE))
+    pygame.draw.rect(screen, "#00A1EA", (food.position[0], food.position[1], CELL_SIZE, CELL_SIZE))
 
     # Update the display
     pygame.display.flip()
