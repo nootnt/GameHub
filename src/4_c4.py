@@ -51,6 +51,7 @@ def winning_move(board, piece):
                 return True
     
 def draw_board(board): # Board update function
+    screen.fill("#0D0D0D")
     for c in range(COLUMN_COUNT):
         for r in range(ROW_COUNT):
             pygame.draw.rect(screen,("#ffffff"), (c*SQUARESIZE + 290, r*SQUARESIZE + SQUARESIZE, SQUARESIZE, SQUARESIZE)) # white
@@ -89,21 +90,9 @@ pygame.display.set_icon(ico)
 
 myfont = pygame.font.SysFont("monospace", 75)
 
-mouse_x, mouse_y = pygame.mouse.get_pos()
-
 locked_positions = [340,440,540,640,740,840,940]
 
-player_x = mouse_x
-player_y = 53
-
 # Lock X position to specific values
-for pos in locked_positions:
-    if pos - 50 <= mouse_x <= pos + 50:
-        player_x = pos
-    elif(mouse_x < 290):
-        player_x = pos - 600
-    elif(mouse_x > 990):
-        player_x = pos
 
 while not game_over:
 
@@ -111,14 +100,26 @@ while not game_over:
         if event.type == pygame.QUIT:
             sys.exit()
 
-        if event.type == pygame.MOUSEMOTION:
-            pygame.draw.rect(screen, "#0D0D0D", (290, 0, width, SQUARESIZE)) # black
-            player_x = event.pos[0]
-            
-            if turn == 0:
-                pygame.draw.circle(screen, "#F66600", (int(player_x), int(player_y)), RADIUS) # orange
-            else: 
-                pygame.draw.circle(screen, "#00A1EA", (int(player_x), int(player_y)), RADIUS) # cyan
+        #if event.type == pygame.MOUSEMOTION:
+        pygame.draw.rect(screen, "#0D0D0D", (0, 0, 1280, SQUARESIZE)) # black
+        #player_x = event.pos[1]
+        
+        mouse_x, mouse_y = pygame.mouse.get_pos()
+        
+        player_x = mouse_x
+        player_y = 53
+        for pos in locked_positions:
+            if pos - 50 <= mouse_x <= pos + 50:
+                player_x = pos
+            elif(mouse_x < 290):
+                player_x = pos - 600
+            elif(mouse_x > 990):
+                player_x = pos
+
+        if turn == 0:
+            pygame.draw.circle(screen, "#F66600", (int(player_x), int(player_y)), RADIUS) # orange
+        else: 
+            pygame.draw.circle(screen, "#00A1EA", (int(player_x), int(player_y)), RADIUS) # cyan
                           
 
         pygame.display.update()
