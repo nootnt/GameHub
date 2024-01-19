@@ -1,10 +1,19 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://theme/fonts/Roboto_Bold_128.tres" type="DynamicFont" id=1]
 [ext_resource path="res://theme/main.tres" type="Theme" id=2]
 [ext_resource path="res://theme/fonts/Roboto_Bold_32.tres" type="DynamicFont" id=3]
 [ext_resource path="res://theme/fonts/Roboto_Bold_64.tres" type="DynamicFont" id=4]
 [ext_resource path="res://scripts/game.gd" type="Script" id=5]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://theme/fonts/LEMONMILK-Regular.otf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 128
+use_mipmaps = true
+use_filter = true
+font_data = SubResource( 1 )
 
 [node name="game" type="Control"]
 anchor_right = 1.0
@@ -44,24 +53,24 @@ anchor_top = 0.5
 anchor_bottom = 0.5
 margin_top = -20.0
 margin_right = 15.0
-margin_bottom = 190.0
+margin_bottom = 225.0
 rect_rotation = -90.0
 
 [node name="pole3" type="ColorRect" parent="HBoxContainer/man_container/man"]
 anchor_top = 0.5
 anchor_bottom = 0.5
-margin_left = 205.0
+margin_left = 207.0
 margin_top = -35.0
-margin_right = 210.0
+margin_right = 211.0
 margin_bottom = 65.0
 
 [node name="head" type="Label" parent="HBoxContainer/man_container/man"]
-margin_left = 165.497
-margin_top = 50.0
-margin_right = 253.497
-margin_bottom = 211.0
+margin_left = 152.0
+margin_top = 35.0
+margin_right = 266.0
+margin_bottom = 216.0
 theme = ExtResource( 2 )
-custom_fonts/font = ExtResource( 1 )
+custom_fonts/font = SubResource( 2 )
 text = "O"
 align = 1
 uppercase = true
