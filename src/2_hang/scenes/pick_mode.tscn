@@ -1,0 +1,59 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://theme/fonts/Roboto_Bold_128.tres" type="DynamicFont" id=1]
+[ext_resource path="res://scripts/pick_mode.gd" type="Script" id=2]
+[ext_resource path="res://theme/main.tres" type="Theme" id=3]
+
+[node name="pick_mode" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="bg" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.0509804, 0.0509804, 0.0509804, 1 )
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -353.0
+margin_top = 15.0
+margin_right = 353.0
+margin_bottom = 161.0
+theme = ExtResource( 3 )
+custom_fonts/font = ExtResource( 1 )
+text = "Pick a mode"
+
+[node name="btn_manual" type="Button" parent="."]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 80.0
+margin_top = -80.5
+margin_right = 447.0
+margin_bottom = 80.5
+size_flags_horizontal = 2
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+custom_fonts/font = ExtResource( 1 )
+text = "Manual"
+icon_align = 1
+
+[node name="btn_auto" type="Button" parent="."]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -695.0
+margin_top = -80.5
+margin_right = -80.0
+margin_bottom = 80.5
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+custom_fonts/font = ExtResource( 1 )
+text = "Automatic"
+icon_align = 1
+
+[connection signal="pressed" from="btn_manual" to="." method="_on_btn_manual_pressed"]
+[connection signal="pressed" from="btn_auto" to="." method="_on_btn_auto_pressed"]

@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://theme/fonts/Roboto_Bold_32.tres" type="DynamicFont" id=1]
+[ext_resource path="res://theme/fonts/Roboto_Bold_128.tres" type="DynamicFont" id=2]
+[ext_resource path="res://theme/main.tres" type="Theme" id=3]
+[ext_resource path="res://scripts/pick_word.gd" type="Script" id=4]
+
+[node name="pick_word" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+
+[node name="bg" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.0509804, 0.0509804, 0.0509804, 1 )
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -425.0
+margin_top = 15.0
+margin_right = 425.0
+margin_bottom = 161.0
+size_flags_horizontal = 4
+theme = ExtResource( 3 )
+custom_fonts/font = ExtResource( 2 )
+text = "Pick your word"
+
+[node name="Textbox" type="LineEdit" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -500.0
+margin_top = -24.0
+margin_right = 500.0
+margin_bottom = 24.0
+theme = ExtResource( 3 )
+custom_fonts/font = ExtResource( 1 )
+align = 1
+max_length = 15
+placeholder_text = "Pick your word... (press ENTER to confirm)"
+placeholder_alpha = 0.85
+caret_blink = true
+
+[connection signal="text_entered" from="Textbox" to="." method="_on_Textbox_text_entered"]
