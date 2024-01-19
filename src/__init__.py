@@ -3,7 +3,7 @@ import sys
 import subprocess
 import configparser
 import tkinter as tk
-from pillow import ImageTk, Image
+from PIL import ImageTk, Image
 
 # ---------- init ----------
 
