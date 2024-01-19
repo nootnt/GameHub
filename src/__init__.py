@@ -102,7 +102,7 @@ def page_chng(up):
 # ---------- Window Setup ----------
 
 # Create root widndow (and lock size an shit ykyk)
-root.title("GameHub(tm) application: Game chooser(tm)")
+root.title("GameHub(tm) Game chooser(tm)")
 spawn_posx = int((root.winfo_screenwidth()/2) - 640)
 spawn_posy = int((root.winfo_screenheight()/2) - 360 - 20)
 root.geometry("1280x720+" + str(spawn_posx) + "+" + str(spawn_posy))
