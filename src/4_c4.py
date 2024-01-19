@@ -51,7 +51,6 @@ def winning_move(board, piece):
                 return True
     
 def draw_board(board): # Board update function
-    screen.fill("#0D0D0D")
     for c in range(COLUMN_COUNT):
         for r in range(ROW_COUNT):
             pygame.draw.rect(screen,("#ffffff"), (c*SQUARESIZE + 290, r*SQUARESIZE + SQUARESIZE, SQUARESIZE, SQUARESIZE)) # white
@@ -80,6 +79,7 @@ RADIUS = 44
 # Game init
 pygame.init()
 screen = pygame.display.set_mode((1280,720))
+screen.fill("#0D0D0D")
 draw_board(board)
 pygame.display.update()
 pygame.display.set_caption("GameHub(tm) Connect 4")
@@ -88,7 +88,7 @@ pygame.display.set_caption("GameHub(tm) Connect 4")
 ico = pygame.image.load("res/GH.png")
 pygame.display.set_icon(ico)
 
-myfont = pygame.font.SysFont("monospace", 75)
+myfont = pygame.font.SysFont("calibri monospace", 135)
 
 locked_positions = [340,440,540,640,740,840,940]
 
@@ -126,7 +126,7 @@ while not game_over:
             
         if event.type == pygame.MOUSEBUTTONDOWN:
             pygame.draw.rect(screen, "#0D0D0D", (290,0, width, SQUARESIZE)) # black
-            
+
             #Ask for player 1 input
             if turn == 0:
                 player_x = event.pos[0]
@@ -138,10 +138,9 @@ while not game_over:
 
                     if winning_move(board, 1):
                         label = myfont.render("Player 1 wins!!", 1, "#F66600") # orange
+                        pygame.display.update()
                         screen.blit(label, (300,10))
                         game_over = True
-
-
 
             #Ask for player 2 input
             else:
@@ -153,13 +152,13 @@ while not game_over:
                     drop_piece(board, row, col , 2)
 
                     if winning_move(board, 2):
-                        label = myfont.render("Player 2 wins!!", 2, "#00A1EA") # cyan
+                        label = myfont.render("Player 2 wins!!", 2,"#00A1EA") # cyan
+                        pygame.display.update()
                         screen.blit(label, (300,10))
                         game_over = True
             
-            
-            print_board(board)
             draw_board(board)
+
             turn += 1
             turn = turn % 2
             if game_over:
