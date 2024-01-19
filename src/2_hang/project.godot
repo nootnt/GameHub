@@ -12,7 +12,6 @@ config_version=4
 
 config/name="GameHub(tm) Hangman"
 run/main_scene="res://scenes/root.tscn"
-run/disable_stdout=true
 boot_splash/show_image=false
 config/icon="res://GH.png"
 config/windows_native_icon="res://GH.ico"

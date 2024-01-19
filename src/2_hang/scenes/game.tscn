@@ -16,17 +16,17 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0.0509804, 0.0509804, 0.0509804, 1 )
 
-[node name="HSplitContainer" type="HSplitContainer" parent="."]
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
 
-[node name="man_container" type="Control" parent="HSplitContainer"]
-margin_right = 634.0
+[node name="man_container" type="Control" parent="HBoxContainer"]
+margin_right = 638.0
 margin_bottom = 720.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="man" type="Control" parent="HSplitContainer/man_container"]
+[node name="man" type="Control" parent="HBoxContainer/man_container"]
 anchor_top = 0.5
 anchor_bottom = 0.5
 margin_left = 200.0
@@ -34,12 +34,12 @@ margin_top = -210.0
 margin_right = 240.0
 margin_bottom = -170.0
 
-[node name="pole1" type="ColorRect" parent="HSplitContainer/man_container/man"]
+[node name="pole1" type="ColorRect" parent="HBoxContainer/man_container/man"]
 anchor_bottom = 1.0
 margin_right = 15.0
 margin_bottom = 385.0
 
-[node name="pole2" type="ColorRect" parent="HSplitContainer/man_container/man"]
+[node name="pole2" type="ColorRect" parent="HBoxContainer/man_container/man"]
 anchor_top = 0.5
 anchor_bottom = 0.5
 margin_top = -20.0
@@ -47,7 +47,7 @@ margin_right = 15.0
 margin_bottom = 190.0
 rect_rotation = -90.0
 
-[node name="pole3" type="ColorRect" parent="HSplitContainer/man_container/man"]
+[node name="pole3" type="ColorRect" parent="HBoxContainer/man_container/man"]
 anchor_top = 0.5
 anchor_bottom = 0.5
 margin_left = 205.0
@@ -55,7 +55,7 @@ margin_top = -35.0
 margin_right = 210.0
 margin_bottom = 65.0
 
-[node name="head" type="Label" parent="HSplitContainer/man_container/man"]
+[node name="head" type="Label" parent="HBoxContainer/man_container/man"]
 margin_left = 165.497
 margin_top = 50.0
 margin_right = 253.497
@@ -66,7 +66,7 @@ text = "O"
 align = 1
 uppercase = true
 
-[node name="body" type="ColorRect" parent="HSplitContainer/man_container/man"]
+[node name="body" type="ColorRect" parent="HBoxContainer/man_container/man"]
 anchor_top = 0.5
 anchor_bottom = 0.5
 margin_left = 204.497
@@ -74,7 +74,7 @@ margin_top = 151.0
 margin_right = 214.497
 margin_bottom = 301.0
 
-[node name="arm1" type="ColorRect" parent="HSplitContainer/man_container/man"]
+[node name="arm1" type="ColorRect" parent="HBoxContainer/man_container/man"]
 anchor_top = 0.5
 anchor_bottom = 0.5
 margin_left = 202.498
@@ -83,7 +83,7 @@ margin_right = 212.498
 margin_bottom = 228.0
 rect_rotation = -45.0
 
-[node name="arm2" type="ColorRect" parent="HSplitContainer/man_container/man"]
+[node name="arm2" type="ColorRect" parent="HBoxContainer/man_container/man"]
 anchor_top = 0.5
 anchor_bottom = 0.5
 margin_left = 209.498
@@ -92,7 +92,7 @@ margin_right = 219.498
 margin_bottom = 221.0
 rect_rotation = 45.0
 
-[node name="leg1" type="ColorRect" parent="HSplitContainer/man_container/man"]
+[node name="leg1" type="ColorRect" parent="HBoxContainer/man_container/man"]
 anchor_top = 0.5
 anchor_bottom = 0.5
 margin_left = 202.497
@@ -101,7 +101,7 @@ margin_right = 212.497
 margin_bottom = 372.0
 rect_rotation = -45.0
 
-[node name="leg2" type="ColorRect" parent="HSplitContainer/man_container/man"]
+[node name="leg2" type="ColorRect" parent="HBoxContainer/man_container/man"]
 anchor_top = 0.5
 anchor_bottom = 0.5
 margin_left = 209.497
@@ -110,40 +110,42 @@ margin_right = 219.497
 margin_bottom = 365.0
 rect_rotation = 45.0
 
-[node name="VSplitContainer" type="VSplitContainer" parent="HSplitContainer"]
-margin_left = 646.0
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+margin_left = 642.0
 margin_right = 1280.0
 margin_bottom = 720.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="MarginContainer" type="MarginContainer" parent="HSplitContainer/VSplitContainer"]
-margin_left = 317.0
-margin_right = 317.0
-margin_bottom = 354.0
+[node name="word_contrainer" type="MarginContainer" parent="HBoxContainer/VBoxContainer"]
+margin_left = 319.0
+margin_right = 319.0
+margin_bottom = 358.0
 size_flags_horizontal = 4
 size_flags_vertical = 3
 
-[node name="word" type="Label" parent="HSplitContainer/VSplitContainer/MarginContainer"]
-margin_top = 134.0
-margin_bottom = 220.0
+[node name="word_label" type="Label" parent="HBoxContainer/VBoxContainer/word_contrainer"]
+margin_top = 136.0
+margin_bottom = 222.0
 size_flags_horizontal = 4
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 4 )
 valign = 1
 
-[node name="GridContainer" type="GridContainer" parent="HSplitContainer/VSplitContainer"]
-margin_left = 109.0
-margin_top = 366.0
-margin_right = 525.0
+[node name="keyboard" type="GridContainer" parent="HBoxContainer/VBoxContainer"]
+margin_left = 87.0
+margin_top = 362.0
+margin_right = 551.0
 margin_bottom = 720.0
 rect_pivot_offset = Vector2( -1005, 48 )
 size_flags_horizontal = 4
 size_flags_vertical = 3
 theme = ExtResource( 2 )
+custom_constants/vseparation = 5
+custom_constants/hseparation = 10
 columns = 9
 
-[node name="A" type="Button" parent="HSplitContainer/VSplitContainer/GridContainer"]
+[node name="A" type="Button" parent="HBoxContainer/VBoxContainer/keyboard"]
 margin_right = 40.0
 margin_bottom = 48.0
 theme = ExtResource( 2 )
@@ -151,241 +153,241 @@ custom_fonts/font = ExtResource( 3 )
 text = "A"
 icon_align = 1
 
-[node name="B" type="Button" parent="HSplitContainer/VSplitContainer/GridContainer"]
-margin_left = 44.0
-margin_right = 84.0
+[node name="B" type="Button" parent="HBoxContainer/VBoxContainer/keyboard"]
+margin_left = 50.0
+margin_right = 90.0
 margin_bottom = 48.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
 text = "B"
 icon_align = 1
 
-[node name="C" type="Button" parent="HSplitContainer/VSplitContainer/GridContainer"]
-margin_left = 88.0
-margin_right = 130.0
+[node name="C" type="Button" parent="HBoxContainer/VBoxContainer/keyboard"]
+margin_left = 100.0
+margin_right = 142.0
 margin_bottom = 48.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
 text = "C"
 icon_align = 1
 
-[node name="D" type="Button" parent="HSplitContainer/VSplitContainer/GridContainer"]
-margin_left = 134.0
-margin_right = 182.0
+[node name="D" type="Button" parent="HBoxContainer/VBoxContainer/keyboard"]
+margin_left = 152.0
+margin_right = 200.0
 margin_bottom = 48.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
 text = "D"
 icon_align = 1
 
-[node name="E" type="Button" parent="HSplitContainer/VSplitContainer/GridContainer"]
-margin_left = 186.0
-margin_right = 234.0
+[node name="E" type="Button" parent="HBoxContainer/VBoxContainer/keyboard"]
+margin_left = 210.0
+margin_right = 258.0
 margin_bottom = 48.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
 text = "E"
 icon_align = 1
 
-[node name="F" type="Button" parent="HSplitContainer/VSplitContainer/GridContainer"]
-margin_left = 238.0
-margin_right = 280.0
+[node name="F" type="Button" parent="HBoxContainer/VBoxContainer/keyboard"]
+margin_left = 268.0
+margin_right = 310.0
 margin_bottom = 48.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
 text = "F"
 icon_align = 1
 
-[node name="G" type="Button" parent="HSplitContainer/VSplitContainer/GridContainer"]
-margin_left = 284.0
-margin_right = 325.0
+[node name="G" type="Button" parent="HBoxContainer/VBoxContainer/keyboard"]
+margin_left = 320.0
+margin_right = 361.0
 margin_bottom = 48.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
 text = "G"
 icon_align = 1
 
-[node name="H" type="Button" parent="HSplitContainer/VSplitContainer/GridContainer"]
-margin_left = 329.0
-margin_right = 372.0
+[node name="H" type="Button" parent="HBoxContainer/VBoxContainer/keyboard"]
+margin_left = 371.0
+margin_right = 414.0
 margin_bottom = 48.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
 text = "H"
 icon_align = 1
 
-[node name="I" type="Button" parent="HSplitContainer/VSplitContainer/GridContainer"]
-margin_left = 376.0
-margin_right = 416.0
+[node name="I" type="Button" parent="HBoxContainer/VBoxContainer/keyboard"]
+margin_left = 424.0
+margin_right = 464.0
 margin_bottom = 48.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
 text = "I"
 icon_align = 1
 
-[node name="J" type="Button" parent="HSplitContainer/VSplitContainer/GridContainer"]
-margin_top = 52.0
+[node name="J" type="Button" parent="HBoxContainer/VBoxContainer/keyboard"]
+margin_top = 53.0
 margin_right = 40.0
-margin_bottom = 100.0
+margin_bottom = 101.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
 text = "J"
 icon_align = 1
 
-[node name="K" type="Button" parent="HSplitContainer/VSplitContainer/GridContainer"]
-margin_left = 44.0
-margin_top = 52.0
-margin_right = 84.0
-margin_bottom = 100.0
+[node name="K" type="Button" parent="HBoxContainer/VBoxContainer/keyboard"]
+margin_left = 50.0
+margin_top = 53.0
+margin_right = 90.0
+margin_bottom = 101.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
 text = "K"
 icon_align = 1
 
-[node name="L" type="Button" parent="HSplitContainer/VSplitContainer/GridContainer"]
-margin_left = 88.0
-margin_top = 52.0
-margin_right = 130.0
-margin_bottom = 100.0
+[node name="L" type="Button" parent="HBoxContainer/VBoxContainer/keyboard"]
+margin_left = 100.0
+margin_top = 53.0
+margin_right = 142.0
+margin_bottom = 101.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
 text = "L"
 icon_align = 1
 
-[node name="M" type="Button" parent="HSplitContainer/VSplitContainer/GridContainer"]
-margin_left = 134.0
-margin_top = 52.0
-margin_right = 182.0
-margin_bottom = 100.0
+[node name="M" type="Button" parent="HBoxContainer/VBoxContainer/keyboard"]
+margin_left = 152.0
+margin_top = 53.0
+margin_right = 200.0
+margin_bottom = 101.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
 text = "M"
 icon_align = 1
 
-[node name="N" type="Button" parent="HSplitContainer/VSplitContainer/GridContainer"]
-margin_left = 186.0
-margin_top = 52.0
-margin_right = 234.0
-margin_bottom = 100.0
+[node name="N" type="Button" parent="HBoxContainer/VBoxContainer/keyboard"]
+margin_left = 210.0
+margin_top = 53.0
+margin_right = 258.0
+margin_bottom = 101.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
 text = "N"
 icon_align = 1
 
-[node name="O" type="Button" parent="HSplitContainer/VSplitContainer/GridContainer"]
-margin_left = 238.0
-margin_top = 52.0
-margin_right = 280.0
-margin_bottom = 100.0
+[node name="O" type="Button" parent="HBoxContainer/VBoxContainer/keyboard"]
+margin_left = 268.0
+margin_top = 53.0
+margin_right = 310.0
+margin_bottom = 101.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
 text = "O"
 icon_align = 1
 
-[node name="P" type="Button" parent="HSplitContainer/VSplitContainer/GridContainer"]
-margin_left = 284.0
-margin_top = 52.0
-margin_right = 325.0
-margin_bottom = 100.0
+[node name="P" type="Button" parent="HBoxContainer/VBoxContainer/keyboard"]
+margin_left = 320.0
+margin_top = 53.0
+margin_right = 361.0
+margin_bottom = 101.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
 text = "P"
 icon_align = 1
 
-[node name="Q" type="Button" parent="HSplitContainer/VSplitContainer/GridContainer"]
-margin_left = 329.0
-margin_top = 52.0
-margin_right = 372.0
-margin_bottom = 100.0
+[node name="Q" type="Button" parent="HBoxContainer/VBoxContainer/keyboard"]
+margin_left = 371.0
+margin_top = 53.0
+margin_right = 414.0
+margin_bottom = 101.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
 text = "Q"
 icon_align = 1
 
-[node name="R" type="Button" parent="HSplitContainer/VSplitContainer/GridContainer"]
-margin_left = 376.0
-margin_top = 52.0
-margin_right = 416.0
-margin_bottom = 100.0
+[node name="R" type="Button" parent="HBoxContainer/VBoxContainer/keyboard"]
+margin_left = 424.0
+margin_top = 53.0
+margin_right = 464.0
+margin_bottom = 101.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
 text = "R"
 icon_align = 1
 
-[node name="S" type="Button" parent="HSplitContainer/VSplitContainer/GridContainer"]
-margin_top = 104.0
+[node name="S" type="Button" parent="HBoxContainer/VBoxContainer/keyboard"]
+margin_top = 106.0
 margin_right = 40.0
-margin_bottom = 152.0
+margin_bottom = 154.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
 text = "S"
 icon_align = 1
 
-[node name="T" type="Button" parent="HSplitContainer/VSplitContainer/GridContainer"]
-margin_left = 44.0
-margin_top = 104.0
-margin_right = 84.0
-margin_bottom = 152.0
+[node name="T" type="Button" parent="HBoxContainer/VBoxContainer/keyboard"]
+margin_left = 50.0
+margin_top = 106.0
+margin_right = 90.0
+margin_bottom = 154.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
 text = "T"
 icon_align = 1
 
-[node name="U" type="Button" parent="HSplitContainer/VSplitContainer/GridContainer"]
-margin_left = 88.0
-margin_top = 104.0
-margin_right = 130.0
-margin_bottom = 152.0
+[node name="U" type="Button" parent="HBoxContainer/VBoxContainer/keyboard"]
+margin_left = 100.0
+margin_top = 106.0
+margin_right = 142.0
+margin_bottom = 154.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
 text = "U"
 icon_align = 1
 
-[node name="V" type="Button" parent="HSplitContainer/VSplitContainer/GridContainer"]
-margin_left = 134.0
-margin_top = 104.0
-margin_right = 182.0
-margin_bottom = 152.0
+[node name="V" type="Button" parent="HBoxContainer/VBoxContainer/keyboard"]
+margin_left = 152.0
+margin_top = 106.0
+margin_right = 200.0
+margin_bottom = 154.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
 text = "V"
 icon_align = 1
 
-[node name="W" type="Button" parent="HSplitContainer/VSplitContainer/GridContainer"]
-margin_left = 186.0
-margin_top = 104.0
-margin_right = 234.0
-margin_bottom = 152.0
+[node name="W" type="Button" parent="HBoxContainer/VBoxContainer/keyboard"]
+margin_left = 210.0
+margin_top = 106.0
+margin_right = 258.0
+margin_bottom = 154.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
 text = "W"
 icon_align = 1
 
-[node name="X" type="Button" parent="HSplitContainer/VSplitContainer/GridContainer"]
-margin_left = 238.0
-margin_top = 104.0
-margin_right = 280.0
-margin_bottom = 152.0
+[node name="X" type="Button" parent="HBoxContainer/VBoxContainer/keyboard"]
+margin_left = 268.0
+margin_top = 106.0
+margin_right = 310.0
+margin_bottom = 154.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
 text = "X"
 icon_align = 1
 
-[node name="Y" type="Button" parent="HSplitContainer/VSplitContainer/GridContainer"]
-margin_left = 284.0
-margin_top = 104.0
-margin_right = 325.0
-margin_bottom = 152.0
+[node name="Y" type="Button" parent="HBoxContainer/VBoxContainer/keyboard"]
+margin_left = 320.0
+margin_top = 106.0
+margin_right = 361.0
+margin_bottom = 154.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
 text = "Y"
 icon_align = 1
 
-[node name="Z" type="Button" parent="HSplitContainer/VSplitContainer/GridContainer"]
-margin_left = 329.0
-margin_top = 104.0
-margin_right = 372.0
-margin_bottom = 152.0
+[node name="Z" type="Button" parent="HBoxContainer/VBoxContainer/keyboard"]
+margin_left = 371.0
+margin_top = 106.0
+margin_right = 414.0
+margin_bottom = 154.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
 text = "Z"
@@ -395,7 +397,6 @@ icon_align = 1
 anchor_right = 1.0
 anchor_bottom = 1.0
 theme = ExtResource( 2 )
-custom_colors/font_color = Color( 0, 0.631373, 0.917647, 1 )
 custom_fonts/font = ExtResource( 1 )
 align = 1
 valign = 1
@@ -410,31 +411,31 @@ autostart = true
 wait_time = 3.0
 one_shot = true
 
-[connection signal="pressed" from="HSplitContainer/VSplitContainer/GridContainer/A" to="." method="_on_A_pressed"]
-[connection signal="pressed" from="HSplitContainer/VSplitContainer/GridContainer/B" to="." method="_on_B_pressed"]
-[connection signal="pressed" from="HSplitContainer/VSplitContainer/GridContainer/C" to="." method="_on_C_pressed"]
-[connection signal="pressed" from="HSplitContainer/VSplitContainer/GridContainer/D" to="." method="_on_D_pressed"]
-[connection signal="pressed" from="HSplitContainer/VSplitContainer/GridContainer/E" to="." method="_on_E_pressed"]
-[connection signal="pressed" from="HSplitContainer/VSplitContainer/GridContainer/F" to="." method="_on_F_pressed"]
-[connection signal="pressed" from="HSplitContainer/VSplitContainer/GridContainer/G" to="." method="_on_G_pressed"]
-[connection signal="pressed" from="HSplitContainer/VSplitContainer/GridContainer/H" to="." method="_on_H_pressed"]
-[connection signal="pressed" from="HSplitContainer/VSplitContainer/GridContainer/I" to="." method="_on_I_pressed"]
-[connection signal="pressed" from="HSplitContainer/VSplitContainer/GridContainer/J" to="." method="_on_J_pressed"]
-[connection signal="pressed" from="HSplitContainer/VSplitContainer/GridContainer/K" to="." method="_on_K_pressed"]
-[connection signal="pressed" from="HSplitContainer/VSplitContainer/GridContainer/L" to="." method="_on_L_pressed"]
-[connection signal="pressed" from="HSplitContainer/VSplitContainer/GridContainer/M" to="." method="_on_M_pressed"]
-[connection signal="pressed" from="HSplitContainer/VSplitContainer/GridContainer/N" to="." method="_on_N_pressed"]
-[connection signal="pressed" from="HSplitContainer/VSplitContainer/GridContainer/O" to="." method="_on_O_pressed"]
-[connection signal="pressed" from="HSplitContainer/VSplitContainer/GridContainer/P" to="." method="_on_P_pressed"]
-[connection signal="pressed" from="HSplitContainer/VSplitContainer/GridContainer/Q" to="." method="_on_Q_pressed"]
-[connection signal="pressed" from="HSplitContainer/VSplitContainer/GridContainer/R" to="." method="_on_R_pressed"]
-[connection signal="pressed" from="HSplitContainer/VSplitContainer/GridContainer/S" to="." method="_on_S_pressed"]
-[connection signal="pressed" from="HSplitContainer/VSplitContainer/GridContainer/T" to="." method="_on_T_pressed"]
-[connection signal="pressed" from="HSplitContainer/VSplitContainer/GridContainer/U" to="." method="_on_U_pressed"]
-[connection signal="pressed" from="HSplitContainer/VSplitContainer/GridContainer/V" to="." method="_on_V_pressed"]
-[connection signal="pressed" from="HSplitContainer/VSplitContainer/GridContainer/W" to="." method="_on_W_pressed"]
-[connection signal="pressed" from="HSplitContainer/VSplitContainer/GridContainer/X" to="." method="_on_X_pressed"]
-[connection signal="pressed" from="HSplitContainer/VSplitContainer/GridContainer/Y" to="." method="_on_Y_pressed"]
-[connection signal="pressed" from="HSplitContainer/VSplitContainer/GridContainer/Z" to="." method="_on_Z_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/keyboard/A" to="." method="_on_A_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/keyboard/B" to="." method="_on_B_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/keyboard/C" to="." method="_on_C_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/keyboard/D" to="." method="_on_D_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/keyboard/E" to="." method="_on_E_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/keyboard/F" to="." method="_on_F_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/keyboard/G" to="." method="_on_G_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/keyboard/H" to="." method="_on_H_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/keyboard/I" to="." method="_on_I_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/keyboard/J" to="." method="_on_J_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/keyboard/K" to="." method="_on_K_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/keyboard/L" to="." method="_on_L_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/keyboard/M" to="." method="_on_M_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/keyboard/N" to="." method="_on_N_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/keyboard/O" to="." method="_on_O_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/keyboard/P" to="." method="_on_P_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/keyboard/Q" to="." method="_on_Q_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/keyboard/R" to="." method="_on_R_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/keyboard/S" to="." method="_on_S_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/keyboard/T" to="." method="_on_T_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/keyboard/U" to="." method="_on_U_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/keyboard/V" to="." method="_on_V_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/keyboard/W" to="." method="_on_W_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/keyboard/X" to="." method="_on_X_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/keyboard/Y" to="." method="_on_Y_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/keyboard/Z" to="." method="_on_Z_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="timeout" from="Close_timer" to="." method="_on_Close_timer_timeout"]

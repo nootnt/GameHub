@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://theme/fonts/Roboto_Bold_32.tres" type="DynamicFont" id=1]
 [ext_resource path="res://theme/fonts/Roboto_Bold_128.tres" type="DynamicFont" id=2]
 [ext_resource path="res://theme/main.tres" type="Theme" id=3]
 [ext_resource path="res://scripts/pick_word.gd" type="Script" id=4]
+[ext_resource path="res://scripts/Text_control.gd" type="Script" id=5]
+[ext_resource path="res://theme/fonts/Roboto_Bold_18.tres" type="DynamicFont" id=6]
 
 [node name="pick_word" type="Control"]
 anchor_right = 1.0
@@ -40,8 +42,28 @@ theme = ExtResource( 3 )
 custom_fonts/font = ExtResource( 1 )
 align = 1
 max_length = 15
+secret = true
 placeholder_text = "Pick your word... (press ENTER to confirm)"
 placeholder_alpha = 0.85
 caret_blink = true
+script = ExtResource( 5 )
 
+[node name="CheckButton" type="CheckButton" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 375.0
+margin_top = 55.0
+margin_right = 500.0
+margin_bottom = 97.0
+theme = ExtResource( 3 )
+custom_fonts/font = ExtResource( 6 )
+pressed = true
+text = "Hide"
+align = 1
+icon_align = 1
+
+[connection signal="text_changed" from="Textbox" to="Textbox" method="_on_Textbox_text_changed"]
 [connection signal="text_entered" from="Textbox" to="." method="_on_Textbox_text_entered"]
+[connection signal="toggled" from="CheckButton" to="Textbox" method="_on_CheckButton_toggled"]
