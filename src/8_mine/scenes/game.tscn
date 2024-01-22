@@ -1,0 +1,5266 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scripts/game.gd" type="Script" id=1]
+[ext_resource path="res://theme/main.tres" type="Theme" id=2]
+[ext_resource path="res://theme/bomb_btn_theme.tres" type="Theme" id=3]
+[ext_resource path="res://theme/fonts/Roboto_Bold_128.tres" type="DynamicFont" id=4]
+[ext_resource path="res://theme/fonts/Roboto_Bold_32.tres" type="DynamicFont" id=5]
+[ext_resource path="res://theme/fonts/Roboto_Bold_42.tres" type="DynamicFont" id=6]
+
+[node name="game" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="background" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.0509804, 0.0509804, 0.0509804, 1 )
+
+[node name="flag_node_checkbox" type="CheckBox" parent="."]
+margin_left = 40.0
+margin_top = 40.0
+margin_right = 231.0
+margin_bottom = 88.0
+theme = ExtResource( 2 )
+custom_fonts/font = ExtResource( 5 )
+text = "Flag mode"
+align = 1
+icon_align = 1
+
+[node name="bomb_indicator" type="Label" parent="."]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 60.0
+margin_top = -225.0
+margin_right = 205.0
+margin_bottom = -165.0
+theme = ExtResource( 2 )
+custom_fonts/font = ExtResource( 6 )
+text = "Bombs:"
+align = 1
+valign = 1
+
+[node name="bomb_count" type="Label" parent="bomb_indicator"]
+margin_top = 70.0
+margin_right = 48.0
+margin_bottom = 130.0
+theme = ExtResource( 2 )
+custom_fonts/font = ExtResource( 6 )
+text = "--"
+
+[node name="flag_indicator" type="Label" parent="."]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 60.0
+margin_top = -30.0
+margin_right = 175.0
+margin_bottom = 30.0
+theme = ExtResource( 2 )
+custom_fonts/font = ExtResource( 6 )
+text = "Flags:"
+
+[node name="flag_count" type="Label" parent="flag_indicator"]
+margin_top = 70.0
+margin_right = 40.0
+margin_bottom = 130.0
+theme = ExtResource( 2 )
+custom_fonts/font = ExtResource( 6 )
+text = "--"
+
+[node name="grid" type="GridContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -360.0
+margin_top = -360.0
+margin_right = 360.0
+margin_bottom = 360.0
+rect_pivot_offset = Vector2( -637, -341 )
+theme = ExtResource( 2 )
+custom_constants/vseparation = 0
+custom_constants/hseparation = 0
+columns = 20
+
+[node name="btn1" type="Button" parent="grid"]
+margin_right = 36.0
+margin_bottom = 36.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn2" type="Button" parent="grid"]
+margin_left = 36.0
+margin_right = 72.0
+margin_bottom = 36.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn3" type="Button" parent="grid"]
+margin_left = 72.0
+margin_right = 108.0
+margin_bottom = 36.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn4" type="Button" parent="grid"]
+margin_left = 108.0
+margin_right = 144.0
+margin_bottom = 36.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn5" type="Button" parent="grid"]
+margin_left = 144.0
+margin_right = 180.0
+margin_bottom = 36.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn6" type="Button" parent="grid"]
+margin_left = 180.0
+margin_right = 216.0
+margin_bottom = 36.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn7" type="Button" parent="grid"]
+margin_left = 216.0
+margin_right = 252.0
+margin_bottom = 36.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn8" type="Button" parent="grid"]
+margin_left = 252.0
+margin_right = 288.0
+margin_bottom = 36.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn9" type="Button" parent="grid"]
+margin_left = 288.0
+margin_right = 324.0
+margin_bottom = 36.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn10" type="Button" parent="grid"]
+margin_left = 324.0
+margin_right = 360.0
+margin_bottom = 36.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn11" type="Button" parent="grid"]
+margin_left = 360.0
+margin_right = 396.0
+margin_bottom = 36.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn12" type="Button" parent="grid"]
+margin_left = 396.0
+margin_right = 432.0
+margin_bottom = 36.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn13" type="Button" parent="grid"]
+margin_left = 432.0
+margin_right = 468.0
+margin_bottom = 36.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn14" type="Button" parent="grid"]
+margin_left = 468.0
+margin_right = 504.0
+margin_bottom = 36.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn15" type="Button" parent="grid"]
+margin_left = 504.0
+margin_right = 540.0
+margin_bottom = 36.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn16" type="Button" parent="grid"]
+margin_left = 540.0
+margin_right = 576.0
+margin_bottom = 36.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn17" type="Button" parent="grid"]
+margin_left = 576.0
+margin_right = 612.0
+margin_bottom = 36.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn18" type="Button" parent="grid"]
+margin_left = 612.0
+margin_right = 648.0
+margin_bottom = 36.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn19" type="Button" parent="grid"]
+margin_left = 648.0
+margin_right = 684.0
+margin_bottom = 36.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn20" type="Button" parent="grid"]
+margin_left = 684.0
+margin_right = 720.0
+margin_bottom = 36.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn21" type="Button" parent="grid"]
+margin_top = 36.0
+margin_right = 36.0
+margin_bottom = 72.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn22" type="Button" parent="grid"]
+margin_left = 36.0
+margin_top = 36.0
+margin_right = 72.0
+margin_bottom = 72.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn23" type="Button" parent="grid"]
+margin_left = 72.0
+margin_top = 36.0
+margin_right = 108.0
+margin_bottom = 72.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn24" type="Button" parent="grid"]
+margin_left = 108.0
+margin_top = 36.0
+margin_right = 144.0
+margin_bottom = 72.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn25" type="Button" parent="grid"]
+margin_left = 144.0
+margin_top = 36.0
+margin_right = 180.0
+margin_bottom = 72.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn26" type="Button" parent="grid"]
+margin_left = 180.0
+margin_top = 36.0
+margin_right = 216.0
+margin_bottom = 72.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn27" type="Button" parent="grid"]
+margin_left = 216.0
+margin_top = 36.0
+margin_right = 252.0
+margin_bottom = 72.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn28" type="Button" parent="grid"]
+margin_left = 252.0
+margin_top = 36.0
+margin_right = 288.0
+margin_bottom = 72.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn29" type="Button" parent="grid"]
+margin_left = 288.0
+margin_top = 36.0
+margin_right = 324.0
+margin_bottom = 72.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn30" type="Button" parent="grid"]
+margin_left = 324.0
+margin_top = 36.0
+margin_right = 360.0
+margin_bottom = 72.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn31" type="Button" parent="grid"]
+margin_left = 360.0
+margin_top = 36.0
+margin_right = 396.0
+margin_bottom = 72.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn32" type="Button" parent="grid"]
+margin_left = 396.0
+margin_top = 36.0
+margin_right = 432.0
+margin_bottom = 72.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn33" type="Button" parent="grid"]
+margin_left = 432.0
+margin_top = 36.0
+margin_right = 468.0
+margin_bottom = 72.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn34" type="Button" parent="grid"]
+margin_left = 468.0
+margin_top = 36.0
+margin_right = 504.0
+margin_bottom = 72.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn35" type="Button" parent="grid"]
+margin_left = 504.0
+margin_top = 36.0
+margin_right = 540.0
+margin_bottom = 72.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn36" type="Button" parent="grid"]
+margin_left = 540.0
+margin_top = 36.0
+margin_right = 576.0
+margin_bottom = 72.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn37" type="Button" parent="grid"]
+margin_left = 576.0
+margin_top = 36.0
+margin_right = 612.0
+margin_bottom = 72.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn38" type="Button" parent="grid"]
+margin_left = 612.0
+margin_top = 36.0
+margin_right = 648.0
+margin_bottom = 72.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn39" type="Button" parent="grid"]
+margin_left = 648.0
+margin_top = 36.0
+margin_right = 684.0
+margin_bottom = 72.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn40" type="Button" parent="grid"]
+margin_left = 684.0
+margin_top = 36.0
+margin_right = 720.0
+margin_bottom = 72.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn41" type="Button" parent="grid"]
+margin_top = 72.0
+margin_right = 36.0
+margin_bottom = 108.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn42" type="Button" parent="grid"]
+margin_left = 36.0
+margin_top = 72.0
+margin_right = 72.0
+margin_bottom = 108.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn43" type="Button" parent="grid"]
+margin_left = 72.0
+margin_top = 72.0
+margin_right = 108.0
+margin_bottom = 108.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn44" type="Button" parent="grid"]
+margin_left = 108.0
+margin_top = 72.0
+margin_right = 144.0
+margin_bottom = 108.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn45" type="Button" parent="grid"]
+margin_left = 144.0
+margin_top = 72.0
+margin_right = 180.0
+margin_bottom = 108.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn46" type="Button" parent="grid"]
+margin_left = 180.0
+margin_top = 72.0
+margin_right = 216.0
+margin_bottom = 108.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn47" type="Button" parent="grid"]
+margin_left = 216.0
+margin_top = 72.0
+margin_right = 252.0
+margin_bottom = 108.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn48" type="Button" parent="grid"]
+margin_left = 252.0
+margin_top = 72.0
+margin_right = 288.0
+margin_bottom = 108.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn49" type="Button" parent="grid"]
+margin_left = 288.0
+margin_top = 72.0
+margin_right = 324.0
+margin_bottom = 108.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn50" type="Button" parent="grid"]
+margin_left = 324.0
+margin_top = 72.0
+margin_right = 360.0
+margin_bottom = 108.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn51" type="Button" parent="grid"]
+margin_left = 360.0
+margin_top = 72.0
+margin_right = 396.0
+margin_bottom = 108.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn52" type="Button" parent="grid"]
+margin_left = 396.0
+margin_top = 72.0
+margin_right = 432.0
+margin_bottom = 108.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn53" type="Button" parent="grid"]
+margin_left = 432.0
+margin_top = 72.0
+margin_right = 468.0
+margin_bottom = 108.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn54" type="Button" parent="grid"]
+margin_left = 468.0
+margin_top = 72.0
+margin_right = 504.0
+margin_bottom = 108.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn55" type="Button" parent="grid"]
+margin_left = 504.0
+margin_top = 72.0
+margin_right = 540.0
+margin_bottom = 108.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn56" type="Button" parent="grid"]
+margin_left = 540.0
+margin_top = 72.0
+margin_right = 576.0
+margin_bottom = 108.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn57" type="Button" parent="grid"]
+margin_left = 576.0
+margin_top = 72.0
+margin_right = 612.0
+margin_bottom = 108.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn58" type="Button" parent="grid"]
+margin_left = 612.0
+margin_top = 72.0
+margin_right = 648.0
+margin_bottom = 108.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn59" type="Button" parent="grid"]
+margin_left = 648.0
+margin_top = 72.0
+margin_right = 684.0
+margin_bottom = 108.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn60" type="Button" parent="grid"]
+margin_left = 684.0
+margin_top = 72.0
+margin_right = 720.0
+margin_bottom = 108.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn61" type="Button" parent="grid"]
+margin_top = 108.0
+margin_right = 36.0
+margin_bottom = 144.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn62" type="Button" parent="grid"]
+margin_left = 36.0
+margin_top = 108.0
+margin_right = 72.0
+margin_bottom = 144.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn63" type="Button" parent="grid"]
+margin_left = 72.0
+margin_top = 108.0
+margin_right = 108.0
+margin_bottom = 144.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn64" type="Button" parent="grid"]
+margin_left = 108.0
+margin_top = 108.0
+margin_right = 144.0
+margin_bottom = 144.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn65" type="Button" parent="grid"]
+margin_left = 144.0
+margin_top = 108.0
+margin_right = 180.0
+margin_bottom = 144.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn66" type="Button" parent="grid"]
+margin_left = 180.0
+margin_top = 108.0
+margin_right = 216.0
+margin_bottom = 144.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn67" type="Button" parent="grid"]
+margin_left = 216.0
+margin_top = 108.0
+margin_right = 252.0
+margin_bottom = 144.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn68" type="Button" parent="grid"]
+margin_left = 252.0
+margin_top = 108.0
+margin_right = 288.0
+margin_bottom = 144.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn69" type="Button" parent="grid"]
+margin_left = 288.0
+margin_top = 108.0
+margin_right = 324.0
+margin_bottom = 144.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn70" type="Button" parent="grid"]
+margin_left = 324.0
+margin_top = 108.0
+margin_right = 360.0
+margin_bottom = 144.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn71" type="Button" parent="grid"]
+margin_left = 360.0
+margin_top = 108.0
+margin_right = 396.0
+margin_bottom = 144.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn72" type="Button" parent="grid"]
+margin_left = 396.0
+margin_top = 108.0
+margin_right = 432.0
+margin_bottom = 144.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn73" type="Button" parent="grid"]
+margin_left = 432.0
+margin_top = 108.0
+margin_right = 468.0
+margin_bottom = 144.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn74" type="Button" parent="grid"]
+margin_left = 468.0
+margin_top = 108.0
+margin_right = 504.0
+margin_bottom = 144.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn75" type="Button" parent="grid"]
+margin_left = 504.0
+margin_top = 108.0
+margin_right = 540.0
+margin_bottom = 144.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn76" type="Button" parent="grid"]
+margin_left = 540.0
+margin_top = 108.0
+margin_right = 576.0
+margin_bottom = 144.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn77" type="Button" parent="grid"]
+margin_left = 576.0
+margin_top = 108.0
+margin_right = 612.0
+margin_bottom = 144.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn78" type="Button" parent="grid"]
+margin_left = 612.0
+margin_top = 108.0
+margin_right = 648.0
+margin_bottom = 144.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn79" type="Button" parent="grid"]
+margin_left = 648.0
+margin_top = 108.0
+margin_right = 684.0
+margin_bottom = 144.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn80" type="Button" parent="grid"]
+margin_left = 684.0
+margin_top = 108.0
+margin_right = 720.0
+margin_bottom = 144.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn81" type="Button" parent="grid"]
+margin_top = 144.0
+margin_right = 36.0
+margin_bottom = 180.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn82" type="Button" parent="grid"]
+margin_left = 36.0
+margin_top = 144.0
+margin_right = 72.0
+margin_bottom = 180.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn83" type="Button" parent="grid"]
+margin_left = 72.0
+margin_top = 144.0
+margin_right = 108.0
+margin_bottom = 180.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn84" type="Button" parent="grid"]
+margin_left = 108.0
+margin_top = 144.0
+margin_right = 144.0
+margin_bottom = 180.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn85" type="Button" parent="grid"]
+margin_left = 144.0
+margin_top = 144.0
+margin_right = 180.0
+margin_bottom = 180.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn86" type="Button" parent="grid"]
+margin_left = 180.0
+margin_top = 144.0
+margin_right = 216.0
+margin_bottom = 180.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn87" type="Button" parent="grid"]
+margin_left = 216.0
+margin_top = 144.0
+margin_right = 252.0
+margin_bottom = 180.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn88" type="Button" parent="grid"]
+margin_left = 252.0
+margin_top = 144.0
+margin_right = 288.0
+margin_bottom = 180.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn89" type="Button" parent="grid"]
+margin_left = 288.0
+margin_top = 144.0
+margin_right = 324.0
+margin_bottom = 180.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn90" type="Button" parent="grid"]
+margin_left = 324.0
+margin_top = 144.0
+margin_right = 360.0
+margin_bottom = 180.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn91" type="Button" parent="grid"]
+margin_left = 360.0
+margin_top = 144.0
+margin_right = 396.0
+margin_bottom = 180.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn92" type="Button" parent="grid"]
+margin_left = 396.0
+margin_top = 144.0
+margin_right = 432.0
+margin_bottom = 180.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn93" type="Button" parent="grid"]
+margin_left = 432.0
+margin_top = 144.0
+margin_right = 468.0
+margin_bottom = 180.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn94" type="Button" parent="grid"]
+margin_left = 468.0
+margin_top = 144.0
+margin_right = 504.0
+margin_bottom = 180.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn95" type="Button" parent="grid"]
+margin_left = 504.0
+margin_top = 144.0
+margin_right = 540.0
+margin_bottom = 180.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn96" type="Button" parent="grid"]
+margin_left = 540.0
+margin_top = 144.0
+margin_right = 576.0
+margin_bottom = 180.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn97" type="Button" parent="grid"]
+margin_left = 576.0
+margin_top = 144.0
+margin_right = 612.0
+margin_bottom = 180.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn98" type="Button" parent="grid"]
+margin_left = 612.0
+margin_top = 144.0
+margin_right = 648.0
+margin_bottom = 180.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn99" type="Button" parent="grid"]
+margin_left = 648.0
+margin_top = 144.0
+margin_right = 684.0
+margin_bottom = 180.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn100" type="Button" parent="grid"]
+margin_left = 684.0
+margin_top = 144.0
+margin_right = 720.0
+margin_bottom = 180.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn101" type="Button" parent="grid"]
+margin_top = 180.0
+margin_right = 36.0
+margin_bottom = 216.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn102" type="Button" parent="grid"]
+margin_left = 36.0
+margin_top = 180.0
+margin_right = 72.0
+margin_bottom = 216.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn103" type="Button" parent="grid"]
+margin_left = 72.0
+margin_top = 180.0
+margin_right = 108.0
+margin_bottom = 216.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn104" type="Button" parent="grid"]
+margin_left = 108.0
+margin_top = 180.0
+margin_right = 144.0
+margin_bottom = 216.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn105" type="Button" parent="grid"]
+margin_left = 144.0
+margin_top = 180.0
+margin_right = 180.0
+margin_bottom = 216.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn106" type="Button" parent="grid"]
+margin_left = 180.0
+margin_top = 180.0
+margin_right = 216.0
+margin_bottom = 216.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn107" type="Button" parent="grid"]
+margin_left = 216.0
+margin_top = 180.0
+margin_right = 252.0
+margin_bottom = 216.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn108" type="Button" parent="grid"]
+margin_left = 252.0
+margin_top = 180.0
+margin_right = 288.0
+margin_bottom = 216.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn109" type="Button" parent="grid"]
+margin_left = 288.0
+margin_top = 180.0
+margin_right = 324.0
+margin_bottom = 216.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn110" type="Button" parent="grid"]
+margin_left = 324.0
+margin_top = 180.0
+margin_right = 360.0
+margin_bottom = 216.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn111" type="Button" parent="grid"]
+margin_left = 360.0
+margin_top = 180.0
+margin_right = 396.0
+margin_bottom = 216.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn112" type="Button" parent="grid"]
+margin_left = 396.0
+margin_top = 180.0
+margin_right = 432.0
+margin_bottom = 216.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn113" type="Button" parent="grid"]
+margin_left = 432.0
+margin_top = 180.0
+margin_right = 468.0
+margin_bottom = 216.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn114" type="Button" parent="grid"]
+margin_left = 468.0
+margin_top = 180.0
+margin_right = 504.0
+margin_bottom = 216.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn115" type="Button" parent="grid"]
+margin_left = 504.0
+margin_top = 180.0
+margin_right = 540.0
+margin_bottom = 216.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn116" type="Button" parent="grid"]
+margin_left = 540.0
+margin_top = 180.0
+margin_right = 576.0
+margin_bottom = 216.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn117" type="Button" parent="grid"]
+margin_left = 576.0
+margin_top = 180.0
+margin_right = 612.0
+margin_bottom = 216.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn118" type="Button" parent="grid"]
+margin_left = 612.0
+margin_top = 180.0
+margin_right = 648.0
+margin_bottom = 216.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn119" type="Button" parent="grid"]
+margin_left = 648.0
+margin_top = 180.0
+margin_right = 684.0
+margin_bottom = 216.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn120" type="Button" parent="grid"]
+margin_left = 684.0
+margin_top = 180.0
+margin_right = 720.0
+margin_bottom = 216.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn121" type="Button" parent="grid"]
+margin_top = 216.0
+margin_right = 36.0
+margin_bottom = 252.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn122" type="Button" parent="grid"]
+margin_left = 36.0
+margin_top = 216.0
+margin_right = 72.0
+margin_bottom = 252.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn123" type="Button" parent="grid"]
+margin_left = 72.0
+margin_top = 216.0
+margin_right = 108.0
+margin_bottom = 252.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn124" type="Button" parent="grid"]
+margin_left = 108.0
+margin_top = 216.0
+margin_right = 144.0
+margin_bottom = 252.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn125" type="Button" parent="grid"]
+margin_left = 144.0
+margin_top = 216.0
+margin_right = 180.0
+margin_bottom = 252.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn126" type="Button" parent="grid"]
+margin_left = 180.0
+margin_top = 216.0
+margin_right = 216.0
+margin_bottom = 252.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn127" type="Button" parent="grid"]
+margin_left = 216.0
+margin_top = 216.0
+margin_right = 252.0
+margin_bottom = 252.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn128" type="Button" parent="grid"]
+margin_left = 252.0
+margin_top = 216.0
+margin_right = 288.0
+margin_bottom = 252.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn129" type="Button" parent="grid"]
+margin_left = 288.0
+margin_top = 216.0
+margin_right = 324.0
+margin_bottom = 252.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn130" type="Button" parent="grid"]
+margin_left = 324.0
+margin_top = 216.0
+margin_right = 360.0
+margin_bottom = 252.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn131" type="Button" parent="grid"]
+margin_left = 360.0
+margin_top = 216.0
+margin_right = 396.0
+margin_bottom = 252.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn132" type="Button" parent="grid"]
+margin_left = 396.0
+margin_top = 216.0
+margin_right = 432.0
+margin_bottom = 252.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn133" type="Button" parent="grid"]
+margin_left = 432.0
+margin_top = 216.0
+margin_right = 468.0
+margin_bottom = 252.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn134" type="Button" parent="grid"]
+margin_left = 468.0
+margin_top = 216.0
+margin_right = 504.0
+margin_bottom = 252.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn135" type="Button" parent="grid"]
+margin_left = 504.0
+margin_top = 216.0
+margin_right = 540.0
+margin_bottom = 252.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn136" type="Button" parent="grid"]
+margin_left = 540.0
+margin_top = 216.0
+margin_right = 576.0
+margin_bottom = 252.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn137" type="Button" parent="grid"]
+margin_left = 576.0
+margin_top = 216.0
+margin_right = 612.0
+margin_bottom = 252.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn138" type="Button" parent="grid"]
+margin_left = 612.0
+margin_top = 216.0
+margin_right = 648.0
+margin_bottom = 252.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn139" type="Button" parent="grid"]
+margin_left = 648.0
+margin_top = 216.0
+margin_right = 684.0
+margin_bottom = 252.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn140" type="Button" parent="grid"]
+margin_left = 684.0
+margin_top = 216.0
+margin_right = 720.0
+margin_bottom = 252.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn141" type="Button" parent="grid"]
+margin_top = 252.0
+margin_right = 36.0
+margin_bottom = 288.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn142" type="Button" parent="grid"]
+margin_left = 36.0
+margin_top = 252.0
+margin_right = 72.0
+margin_bottom = 288.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn143" type="Button" parent="grid"]
+margin_left = 72.0
+margin_top = 252.0
+margin_right = 108.0
+margin_bottom = 288.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn144" type="Button" parent="grid"]
+margin_left = 108.0
+margin_top = 252.0
+margin_right = 144.0
+margin_bottom = 288.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn145" type="Button" parent="grid"]
+margin_left = 144.0
+margin_top = 252.0
+margin_right = 180.0
+margin_bottom = 288.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn146" type="Button" parent="grid"]
+margin_left = 180.0
+margin_top = 252.0
+margin_right = 216.0
+margin_bottom = 288.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn147" type="Button" parent="grid"]
+margin_left = 216.0
+margin_top = 252.0
+margin_right = 252.0
+margin_bottom = 288.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn148" type="Button" parent="grid"]
+margin_left = 252.0
+margin_top = 252.0
+margin_right = 288.0
+margin_bottom = 288.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn149" type="Button" parent="grid"]
+margin_left = 288.0
+margin_top = 252.0
+margin_right = 324.0
+margin_bottom = 288.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn150" type="Button" parent="grid"]
+margin_left = 324.0
+margin_top = 252.0
+margin_right = 360.0
+margin_bottom = 288.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn151" type="Button" parent="grid"]
+margin_left = 360.0
+margin_top = 252.0
+margin_right = 396.0
+margin_bottom = 288.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn152" type="Button" parent="grid"]
+margin_left = 396.0
+margin_top = 252.0
+margin_right = 432.0
+margin_bottom = 288.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn153" type="Button" parent="grid"]
+margin_left = 432.0
+margin_top = 252.0
+margin_right = 468.0
+margin_bottom = 288.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn154" type="Button" parent="grid"]
+margin_left = 468.0
+margin_top = 252.0
+margin_right = 504.0
+margin_bottom = 288.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn155" type="Button" parent="grid"]
+margin_left = 504.0
+margin_top = 252.0
+margin_right = 540.0
+margin_bottom = 288.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn156" type="Button" parent="grid"]
+margin_left = 540.0
+margin_top = 252.0
+margin_right = 576.0
+margin_bottom = 288.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn157" type="Button" parent="grid"]
+margin_left = 576.0
+margin_top = 252.0
+margin_right = 612.0
+margin_bottom = 288.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn158" type="Button" parent="grid"]
+margin_left = 612.0
+margin_top = 252.0
+margin_right = 648.0
+margin_bottom = 288.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn159" type="Button" parent="grid"]
+margin_left = 648.0
+margin_top = 252.0
+margin_right = 684.0
+margin_bottom = 288.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn160" type="Button" parent="grid"]
+margin_left = 684.0
+margin_top = 252.0
+margin_right = 720.0
+margin_bottom = 288.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn161" type="Button" parent="grid"]
+margin_top = 288.0
+margin_right = 36.0
+margin_bottom = 324.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn162" type="Button" parent="grid"]
+margin_left = 36.0
+margin_top = 288.0
+margin_right = 72.0
+margin_bottom = 324.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn163" type="Button" parent="grid"]
+margin_left = 72.0
+margin_top = 288.0
+margin_right = 108.0
+margin_bottom = 324.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn164" type="Button" parent="grid"]
+margin_left = 108.0
+margin_top = 288.0
+margin_right = 144.0
+margin_bottom = 324.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn165" type="Button" parent="grid"]
+margin_left = 144.0
+margin_top = 288.0
+margin_right = 180.0
+margin_bottom = 324.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn166" type="Button" parent="grid"]
+margin_left = 180.0
+margin_top = 288.0
+margin_right = 216.0
+margin_bottom = 324.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn167" type="Button" parent="grid"]
+margin_left = 216.0
+margin_top = 288.0
+margin_right = 252.0
+margin_bottom = 324.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn168" type="Button" parent="grid"]
+margin_left = 252.0
+margin_top = 288.0
+margin_right = 288.0
+margin_bottom = 324.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn169" type="Button" parent="grid"]
+margin_left = 288.0
+margin_top = 288.0
+margin_right = 324.0
+margin_bottom = 324.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn170" type="Button" parent="grid"]
+margin_left = 324.0
+margin_top = 288.0
+margin_right = 360.0
+margin_bottom = 324.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn171" type="Button" parent="grid"]
+margin_left = 360.0
+margin_top = 288.0
+margin_right = 396.0
+margin_bottom = 324.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn172" type="Button" parent="grid"]
+margin_left = 396.0
+margin_top = 288.0
+margin_right = 432.0
+margin_bottom = 324.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn173" type="Button" parent="grid"]
+margin_left = 432.0
+margin_top = 288.0
+margin_right = 468.0
+margin_bottom = 324.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn174" type="Button" parent="grid"]
+margin_left = 468.0
+margin_top = 288.0
+margin_right = 504.0
+margin_bottom = 324.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn175" type="Button" parent="grid"]
+margin_left = 504.0
+margin_top = 288.0
+margin_right = 540.0
+margin_bottom = 324.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn176" type="Button" parent="grid"]
+margin_left = 540.0
+margin_top = 288.0
+margin_right = 576.0
+margin_bottom = 324.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn177" type="Button" parent="grid"]
+margin_left = 576.0
+margin_top = 288.0
+margin_right = 612.0
+margin_bottom = 324.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn178" type="Button" parent="grid"]
+margin_left = 612.0
+margin_top = 288.0
+margin_right = 648.0
+margin_bottom = 324.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn179" type="Button" parent="grid"]
+margin_left = 648.0
+margin_top = 288.0
+margin_right = 684.0
+margin_bottom = 324.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn180" type="Button" parent="grid"]
+margin_left = 684.0
+margin_top = 288.0
+margin_right = 720.0
+margin_bottom = 324.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn181" type="Button" parent="grid"]
+margin_top = 324.0
+margin_right = 36.0
+margin_bottom = 360.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn182" type="Button" parent="grid"]
+margin_left = 36.0
+margin_top = 324.0
+margin_right = 72.0
+margin_bottom = 360.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn183" type="Button" parent="grid"]
+margin_left = 72.0
+margin_top = 324.0
+margin_right = 108.0
+margin_bottom = 360.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn184" type="Button" parent="grid"]
+margin_left = 108.0
+margin_top = 324.0
+margin_right = 144.0
+margin_bottom = 360.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn185" type="Button" parent="grid"]
+margin_left = 144.0
+margin_top = 324.0
+margin_right = 180.0
+margin_bottom = 360.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn186" type="Button" parent="grid"]
+margin_left = 180.0
+margin_top = 324.0
+margin_right = 216.0
+margin_bottom = 360.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn187" type="Button" parent="grid"]
+margin_left = 216.0
+margin_top = 324.0
+margin_right = 252.0
+margin_bottom = 360.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn188" type="Button" parent="grid"]
+margin_left = 252.0
+margin_top = 324.0
+margin_right = 288.0
+margin_bottom = 360.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn189" type="Button" parent="grid"]
+margin_left = 288.0
+margin_top = 324.0
+margin_right = 324.0
+margin_bottom = 360.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn190" type="Button" parent="grid"]
+margin_left = 324.0
+margin_top = 324.0
+margin_right = 360.0
+margin_bottom = 360.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn191" type="Button" parent="grid"]
+margin_left = 360.0
+margin_top = 324.0
+margin_right = 396.0
+margin_bottom = 360.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn192" type="Button" parent="grid"]
+margin_left = 396.0
+margin_top = 324.0
+margin_right = 432.0
+margin_bottom = 360.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn193" type="Button" parent="grid"]
+margin_left = 432.0
+margin_top = 324.0
+margin_right = 468.0
+margin_bottom = 360.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn194" type="Button" parent="grid"]
+margin_left = 468.0
+margin_top = 324.0
+margin_right = 504.0
+margin_bottom = 360.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn195" type="Button" parent="grid"]
+margin_left = 504.0
+margin_top = 324.0
+margin_right = 540.0
+margin_bottom = 360.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn196" type="Button" parent="grid"]
+margin_left = 540.0
+margin_top = 324.0
+margin_right = 576.0
+margin_bottom = 360.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn197" type="Button" parent="grid"]
+margin_left = 576.0
+margin_top = 324.0
+margin_right = 612.0
+margin_bottom = 360.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn198" type="Button" parent="grid"]
+margin_left = 612.0
+margin_top = 324.0
+margin_right = 648.0
+margin_bottom = 360.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn199" type="Button" parent="grid"]
+margin_left = 648.0
+margin_top = 324.0
+margin_right = 684.0
+margin_bottom = 360.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn200" type="Button" parent="grid"]
+margin_left = 684.0
+margin_top = 324.0
+margin_right = 720.0
+margin_bottom = 360.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn201" type="Button" parent="grid"]
+margin_top = 360.0
+margin_right = 36.0
+margin_bottom = 396.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn202" type="Button" parent="grid"]
+margin_left = 36.0
+margin_top = 360.0
+margin_right = 72.0
+margin_bottom = 396.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn203" type="Button" parent="grid"]
+margin_left = 72.0
+margin_top = 360.0
+margin_right = 108.0
+margin_bottom = 396.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn204" type="Button" parent="grid"]
+margin_left = 108.0
+margin_top = 360.0
+margin_right = 144.0
+margin_bottom = 396.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn205" type="Button" parent="grid"]
+margin_left = 144.0
+margin_top = 360.0
+margin_right = 180.0
+margin_bottom = 396.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn206" type="Button" parent="grid"]
+margin_left = 180.0
+margin_top = 360.0
+margin_right = 216.0
+margin_bottom = 396.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn207" type="Button" parent="grid"]
+margin_left = 216.0
+margin_top = 360.0
+margin_right = 252.0
+margin_bottom = 396.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn208" type="Button" parent="grid"]
+margin_left = 252.0
+margin_top = 360.0
+margin_right = 288.0
+margin_bottom = 396.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn209" type="Button" parent="grid"]
+margin_left = 288.0
+margin_top = 360.0
+margin_right = 324.0
+margin_bottom = 396.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn210" type="Button" parent="grid"]
+margin_left = 324.0
+margin_top = 360.0
+margin_right = 360.0
+margin_bottom = 396.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn211" type="Button" parent="grid"]
+margin_left = 360.0
+margin_top = 360.0
+margin_right = 396.0
+margin_bottom = 396.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn212" type="Button" parent="grid"]
+margin_left = 396.0
+margin_top = 360.0
+margin_right = 432.0
+margin_bottom = 396.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn213" type="Button" parent="grid"]
+margin_left = 432.0
+margin_top = 360.0
+margin_right = 468.0
+margin_bottom = 396.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn214" type="Button" parent="grid"]
+margin_left = 468.0
+margin_top = 360.0
+margin_right = 504.0
+margin_bottom = 396.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn215" type="Button" parent="grid"]
+margin_left = 504.0
+margin_top = 360.0
+margin_right = 540.0
+margin_bottom = 396.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn216" type="Button" parent="grid"]
+margin_left = 540.0
+margin_top = 360.0
+margin_right = 576.0
+margin_bottom = 396.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn217" type="Button" parent="grid"]
+margin_left = 576.0
+margin_top = 360.0
+margin_right = 612.0
+margin_bottom = 396.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn218" type="Button" parent="grid"]
+margin_left = 612.0
+margin_top = 360.0
+margin_right = 648.0
+margin_bottom = 396.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn219" type="Button" parent="grid"]
+margin_left = 648.0
+margin_top = 360.0
+margin_right = 684.0
+margin_bottom = 396.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn220" type="Button" parent="grid"]
+margin_left = 684.0
+margin_top = 360.0
+margin_right = 720.0
+margin_bottom = 396.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn221" type="Button" parent="grid"]
+margin_top = 396.0
+margin_right = 36.0
+margin_bottom = 432.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn222" type="Button" parent="grid"]
+margin_left = 36.0
+margin_top = 396.0
+margin_right = 72.0
+margin_bottom = 432.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn223" type="Button" parent="grid"]
+margin_left = 72.0
+margin_top = 396.0
+margin_right = 108.0
+margin_bottom = 432.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn224" type="Button" parent="grid"]
+margin_left = 108.0
+margin_top = 396.0
+margin_right = 144.0
+margin_bottom = 432.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn225" type="Button" parent="grid"]
+margin_left = 144.0
+margin_top = 396.0
+margin_right = 180.0
+margin_bottom = 432.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn226" type="Button" parent="grid"]
+margin_left = 180.0
+margin_top = 396.0
+margin_right = 216.0
+margin_bottom = 432.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn227" type="Button" parent="grid"]
+margin_left = 216.0
+margin_top = 396.0
+margin_right = 252.0
+margin_bottom = 432.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn228" type="Button" parent="grid"]
+margin_left = 252.0
+margin_top = 396.0
+margin_right = 288.0
+margin_bottom = 432.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn229" type="Button" parent="grid"]
+margin_left = 288.0
+margin_top = 396.0
+margin_right = 324.0
+margin_bottom = 432.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn230" type="Button" parent="grid"]
+margin_left = 324.0
+margin_top = 396.0
+margin_right = 360.0
+margin_bottom = 432.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn231" type="Button" parent="grid"]
+margin_left = 360.0
+margin_top = 396.0
+margin_right = 396.0
+margin_bottom = 432.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn232" type="Button" parent="grid"]
+margin_left = 396.0
+margin_top = 396.0
+margin_right = 432.0
+margin_bottom = 432.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn233" type="Button" parent="grid"]
+margin_left = 432.0
+margin_top = 396.0
+margin_right = 468.0
+margin_bottom = 432.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn234" type="Button" parent="grid"]
+margin_left = 468.0
+margin_top = 396.0
+margin_right = 504.0
+margin_bottom = 432.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn235" type="Button" parent="grid"]
+margin_left = 504.0
+margin_top = 396.0
+margin_right = 540.0
+margin_bottom = 432.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn236" type="Button" parent="grid"]
+margin_left = 540.0
+margin_top = 396.0
+margin_right = 576.0
+margin_bottom = 432.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn237" type="Button" parent="grid"]
+margin_left = 576.0
+margin_top = 396.0
+margin_right = 612.0
+margin_bottom = 432.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn238" type="Button" parent="grid"]
+margin_left = 612.0
+margin_top = 396.0
+margin_right = 648.0
+margin_bottom = 432.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn239" type="Button" parent="grid"]
+margin_left = 648.0
+margin_top = 396.0
+margin_right = 684.0
+margin_bottom = 432.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn240" type="Button" parent="grid"]
+margin_left = 684.0
+margin_top = 396.0
+margin_right = 720.0
+margin_bottom = 432.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn241" type="Button" parent="grid"]
+margin_top = 432.0
+margin_right = 36.0
+margin_bottom = 468.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn242" type="Button" parent="grid"]
+margin_left = 36.0
+margin_top = 432.0
+margin_right = 72.0
+margin_bottom = 468.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn243" type="Button" parent="grid"]
+margin_left = 72.0
+margin_top = 432.0
+margin_right = 108.0
+margin_bottom = 468.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn244" type="Button" parent="grid"]
+margin_left = 108.0
+margin_top = 432.0
+margin_right = 144.0
+margin_bottom = 468.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn245" type="Button" parent="grid"]
+margin_left = 144.0
+margin_top = 432.0
+margin_right = 180.0
+margin_bottom = 468.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn246" type="Button" parent="grid"]
+margin_left = 180.0
+margin_top = 432.0
+margin_right = 216.0
+margin_bottom = 468.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn247" type="Button" parent="grid"]
+margin_left = 216.0
+margin_top = 432.0
+margin_right = 252.0
+margin_bottom = 468.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn248" type="Button" parent="grid"]
+margin_left = 252.0
+margin_top = 432.0
+margin_right = 288.0
+margin_bottom = 468.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn249" type="Button" parent="grid"]
+margin_left = 288.0
+margin_top = 432.0
+margin_right = 324.0
+margin_bottom = 468.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn250" type="Button" parent="grid"]
+margin_left = 324.0
+margin_top = 432.0
+margin_right = 360.0
+margin_bottom = 468.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn251" type="Button" parent="grid"]
+margin_left = 360.0
+margin_top = 432.0
+margin_right = 396.0
+margin_bottom = 468.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn252" type="Button" parent="grid"]
+margin_left = 396.0
+margin_top = 432.0
+margin_right = 432.0
+margin_bottom = 468.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn253" type="Button" parent="grid"]
+margin_left = 432.0
+margin_top = 432.0
+margin_right = 468.0
+margin_bottom = 468.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn254" type="Button" parent="grid"]
+margin_left = 468.0
+margin_top = 432.0
+margin_right = 504.0
+margin_bottom = 468.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn255" type="Button" parent="grid"]
+margin_left = 504.0
+margin_top = 432.0
+margin_right = 540.0
+margin_bottom = 468.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn256" type="Button" parent="grid"]
+margin_left = 540.0
+margin_top = 432.0
+margin_right = 576.0
+margin_bottom = 468.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn257" type="Button" parent="grid"]
+margin_left = 576.0
+margin_top = 432.0
+margin_right = 612.0
+margin_bottom = 468.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn258" type="Button" parent="grid"]
+margin_left = 612.0
+margin_top = 432.0
+margin_right = 648.0
+margin_bottom = 468.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn259" type="Button" parent="grid"]
+margin_left = 648.0
+margin_top = 432.0
+margin_right = 684.0
+margin_bottom = 468.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn260" type="Button" parent="grid"]
+margin_left = 684.0
+margin_top = 432.0
+margin_right = 720.0
+margin_bottom = 468.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn261" type="Button" parent="grid"]
+margin_top = 468.0
+margin_right = 36.0
+margin_bottom = 504.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn262" type="Button" parent="grid"]
+margin_left = 36.0
+margin_top = 468.0
+margin_right = 72.0
+margin_bottom = 504.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn263" type="Button" parent="grid"]
+margin_left = 72.0
+margin_top = 468.0
+margin_right = 108.0
+margin_bottom = 504.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn264" type="Button" parent="grid"]
+margin_left = 108.0
+margin_top = 468.0
+margin_right = 144.0
+margin_bottom = 504.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn265" type="Button" parent="grid"]
+margin_left = 144.0
+margin_top = 468.0
+margin_right = 180.0
+margin_bottom = 504.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn266" type="Button" parent="grid"]
+margin_left = 180.0
+margin_top = 468.0
+margin_right = 216.0
+margin_bottom = 504.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn267" type="Button" parent="grid"]
+margin_left = 216.0
+margin_top = 468.0
+margin_right = 252.0
+margin_bottom = 504.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn268" type="Button" parent="grid"]
+margin_left = 252.0
+margin_top = 468.0
+margin_right = 288.0
+margin_bottom = 504.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn269" type="Button" parent="grid"]
+margin_left = 288.0
+margin_top = 468.0
+margin_right = 324.0
+margin_bottom = 504.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn270" type="Button" parent="grid"]
+margin_left = 324.0
+margin_top = 468.0
+margin_right = 360.0
+margin_bottom = 504.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn271" type="Button" parent="grid"]
+margin_left = 360.0
+margin_top = 468.0
+margin_right = 396.0
+margin_bottom = 504.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn272" type="Button" parent="grid"]
+margin_left = 396.0
+margin_top = 468.0
+margin_right = 432.0
+margin_bottom = 504.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn273" type="Button" parent="grid"]
+margin_left = 432.0
+margin_top = 468.0
+margin_right = 468.0
+margin_bottom = 504.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn274" type="Button" parent="grid"]
+margin_left = 468.0
+margin_top = 468.0
+margin_right = 504.0
+margin_bottom = 504.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn275" type="Button" parent="grid"]
+margin_left = 504.0
+margin_top = 468.0
+margin_right = 540.0
+margin_bottom = 504.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn276" type="Button" parent="grid"]
+margin_left = 540.0
+margin_top = 468.0
+margin_right = 576.0
+margin_bottom = 504.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn277" type="Button" parent="grid"]
+margin_left = 576.0
+margin_top = 468.0
+margin_right = 612.0
+margin_bottom = 504.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn278" type="Button" parent="grid"]
+margin_left = 612.0
+margin_top = 468.0
+margin_right = 648.0
+margin_bottom = 504.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn279" type="Button" parent="grid"]
+margin_left = 648.0
+margin_top = 468.0
+margin_right = 684.0
+margin_bottom = 504.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn280" type="Button" parent="grid"]
+margin_left = 684.0
+margin_top = 468.0
+margin_right = 720.0
+margin_bottom = 504.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn281" type="Button" parent="grid"]
+margin_top = 504.0
+margin_right = 36.0
+margin_bottom = 540.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn282" type="Button" parent="grid"]
+margin_left = 36.0
+margin_top = 504.0
+margin_right = 72.0
+margin_bottom = 540.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn283" type="Button" parent="grid"]
+margin_left = 72.0
+margin_top = 504.0
+margin_right = 108.0
+margin_bottom = 540.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn284" type="Button" parent="grid"]
+margin_left = 108.0
+margin_top = 504.0
+margin_right = 144.0
+margin_bottom = 540.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn285" type="Button" parent="grid"]
+margin_left = 144.0
+margin_top = 504.0
+margin_right = 180.0
+margin_bottom = 540.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn286" type="Button" parent="grid"]
+margin_left = 180.0
+margin_top = 504.0
+margin_right = 216.0
+margin_bottom = 540.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn287" type="Button" parent="grid"]
+margin_left = 216.0
+margin_top = 504.0
+margin_right = 252.0
+margin_bottom = 540.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn288" type="Button" parent="grid"]
+margin_left = 252.0
+margin_top = 504.0
+margin_right = 288.0
+margin_bottom = 540.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn289" type="Button" parent="grid"]
+margin_left = 288.0
+margin_top = 504.0
+margin_right = 324.0
+margin_bottom = 540.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn290" type="Button" parent="grid"]
+margin_left = 324.0
+margin_top = 504.0
+margin_right = 360.0
+margin_bottom = 540.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn291" type="Button" parent="grid"]
+margin_left = 360.0
+margin_top = 504.0
+margin_right = 396.0
+margin_bottom = 540.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn292" type="Button" parent="grid"]
+margin_left = 396.0
+margin_top = 504.0
+margin_right = 432.0
+margin_bottom = 540.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn293" type="Button" parent="grid"]
+margin_left = 432.0
+margin_top = 504.0
+margin_right = 468.0
+margin_bottom = 540.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn294" type="Button" parent="grid"]
+margin_left = 468.0
+margin_top = 504.0
+margin_right = 504.0
+margin_bottom = 540.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn295" type="Button" parent="grid"]
+margin_left = 504.0
+margin_top = 504.0
+margin_right = 540.0
+margin_bottom = 540.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn296" type="Button" parent="grid"]
+margin_left = 540.0
+margin_top = 504.0
+margin_right = 576.0
+margin_bottom = 540.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn297" type="Button" parent="grid"]
+margin_left = 576.0
+margin_top = 504.0
+margin_right = 612.0
+margin_bottom = 540.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn298" type="Button" parent="grid"]
+margin_left = 612.0
+margin_top = 504.0
+margin_right = 648.0
+margin_bottom = 540.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn299" type="Button" parent="grid"]
+margin_left = 648.0
+margin_top = 504.0
+margin_right = 684.0
+margin_bottom = 540.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn300" type="Button" parent="grid"]
+margin_left = 684.0
+margin_top = 504.0
+margin_right = 720.0
+margin_bottom = 540.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn301" type="Button" parent="grid"]
+margin_top = 540.0
+margin_right = 36.0
+margin_bottom = 576.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn302" type="Button" parent="grid"]
+margin_left = 36.0
+margin_top = 540.0
+margin_right = 72.0
+margin_bottom = 576.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn303" type="Button" parent="grid"]
+margin_left = 72.0
+margin_top = 540.0
+margin_right = 108.0
+margin_bottom = 576.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn304" type="Button" parent="grid"]
+margin_left = 108.0
+margin_top = 540.0
+margin_right = 144.0
+margin_bottom = 576.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn305" type="Button" parent="grid"]
+margin_left = 144.0
+margin_top = 540.0
+margin_right = 180.0
+margin_bottom = 576.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn306" type="Button" parent="grid"]
+margin_left = 180.0
+margin_top = 540.0
+margin_right = 216.0
+margin_bottom = 576.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn307" type="Button" parent="grid"]
+margin_left = 216.0
+margin_top = 540.0
+margin_right = 252.0
+margin_bottom = 576.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn308" type="Button" parent="grid"]
+margin_left = 252.0
+margin_top = 540.0
+margin_right = 288.0
+margin_bottom = 576.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn309" type="Button" parent="grid"]
+margin_left = 288.0
+margin_top = 540.0
+margin_right = 324.0
+margin_bottom = 576.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn310" type="Button" parent="grid"]
+margin_left = 324.0
+margin_top = 540.0
+margin_right = 360.0
+margin_bottom = 576.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn311" type="Button" parent="grid"]
+margin_left = 360.0
+margin_top = 540.0
+margin_right = 396.0
+margin_bottom = 576.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn312" type="Button" parent="grid"]
+margin_left = 396.0
+margin_top = 540.0
+margin_right = 432.0
+margin_bottom = 576.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn313" type="Button" parent="grid"]
+margin_left = 432.0
+margin_top = 540.0
+margin_right = 468.0
+margin_bottom = 576.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn314" type="Button" parent="grid"]
+margin_left = 468.0
+margin_top = 540.0
+margin_right = 504.0
+margin_bottom = 576.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn315" type="Button" parent="grid"]
+margin_left = 504.0
+margin_top = 540.0
+margin_right = 540.0
+margin_bottom = 576.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn316" type="Button" parent="grid"]
+margin_left = 540.0
+margin_top = 540.0
+margin_right = 576.0
+margin_bottom = 576.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn317" type="Button" parent="grid"]
+margin_left = 576.0
+margin_top = 540.0
+margin_right = 612.0
+margin_bottom = 576.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn318" type="Button" parent="grid"]
+margin_left = 612.0
+margin_top = 540.0
+margin_right = 648.0
+margin_bottom = 576.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn319" type="Button" parent="grid"]
+margin_left = 648.0
+margin_top = 540.0
+margin_right = 684.0
+margin_bottom = 576.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn320" type="Button" parent="grid"]
+margin_left = 684.0
+margin_top = 540.0
+margin_right = 720.0
+margin_bottom = 576.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn321" type="Button" parent="grid"]
+margin_top = 576.0
+margin_right = 36.0
+margin_bottom = 612.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn322" type="Button" parent="grid"]
+margin_left = 36.0
+margin_top = 576.0
+margin_right = 72.0
+margin_bottom = 612.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn323" type="Button" parent="grid"]
+margin_left = 72.0
+margin_top = 576.0
+margin_right = 108.0
+margin_bottom = 612.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn324" type="Button" parent="grid"]
+margin_left = 108.0
+margin_top = 576.0
+margin_right = 144.0
+margin_bottom = 612.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn325" type="Button" parent="grid"]
+margin_left = 144.0
+margin_top = 576.0
+margin_right = 180.0
+margin_bottom = 612.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn326" type="Button" parent="grid"]
+margin_left = 180.0
+margin_top = 576.0
+margin_right = 216.0
+margin_bottom = 612.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn327" type="Button" parent="grid"]
+margin_left = 216.0
+margin_top = 576.0
+margin_right = 252.0
+margin_bottom = 612.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn328" type="Button" parent="grid"]
+margin_left = 252.0
+margin_top = 576.0
+margin_right = 288.0
+margin_bottom = 612.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn329" type="Button" parent="grid"]
+margin_left = 288.0
+margin_top = 576.0
+margin_right = 324.0
+margin_bottom = 612.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn330" type="Button" parent="grid"]
+margin_left = 324.0
+margin_top = 576.0
+margin_right = 360.0
+margin_bottom = 612.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn331" type="Button" parent="grid"]
+margin_left = 360.0
+margin_top = 576.0
+margin_right = 396.0
+margin_bottom = 612.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn332" type="Button" parent="grid"]
+margin_left = 396.0
+margin_top = 576.0
+margin_right = 432.0
+margin_bottom = 612.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn333" type="Button" parent="grid"]
+margin_left = 432.0
+margin_top = 576.0
+margin_right = 468.0
+margin_bottom = 612.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn334" type="Button" parent="grid"]
+margin_left = 468.0
+margin_top = 576.0
+margin_right = 504.0
+margin_bottom = 612.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn335" type="Button" parent="grid"]
+margin_left = 504.0
+margin_top = 576.0
+margin_right = 540.0
+margin_bottom = 612.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn336" type="Button" parent="grid"]
+margin_left = 540.0
+margin_top = 576.0
+margin_right = 576.0
+margin_bottom = 612.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn337" type="Button" parent="grid"]
+margin_left = 576.0
+margin_top = 576.0
+margin_right = 612.0
+margin_bottom = 612.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn338" type="Button" parent="grid"]
+margin_left = 612.0
+margin_top = 576.0
+margin_right = 648.0
+margin_bottom = 612.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn339" type="Button" parent="grid"]
+margin_left = 648.0
+margin_top = 576.0
+margin_right = 684.0
+margin_bottom = 612.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn340" type="Button" parent="grid"]
+margin_left = 684.0
+margin_top = 576.0
+margin_right = 720.0
+margin_bottom = 612.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn341" type="Button" parent="grid"]
+margin_top = 612.0
+margin_right = 36.0
+margin_bottom = 648.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn342" type="Button" parent="grid"]
+margin_left = 36.0
+margin_top = 612.0
+margin_right = 72.0
+margin_bottom = 648.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn343" type="Button" parent="grid"]
+margin_left = 72.0
+margin_top = 612.0
+margin_right = 108.0
+margin_bottom = 648.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn344" type="Button" parent="grid"]
+margin_left = 108.0
+margin_top = 612.0
+margin_right = 144.0
+margin_bottom = 648.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn345" type="Button" parent="grid"]
+margin_left = 144.0
+margin_top = 612.0
+margin_right = 180.0
+margin_bottom = 648.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn346" type="Button" parent="grid"]
+margin_left = 180.0
+margin_top = 612.0
+margin_right = 216.0
+margin_bottom = 648.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn347" type="Button" parent="grid"]
+margin_left = 216.0
+margin_top = 612.0
+margin_right = 252.0
+margin_bottom = 648.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn348" type="Button" parent="grid"]
+margin_left = 252.0
+margin_top = 612.0
+margin_right = 288.0
+margin_bottom = 648.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn349" type="Button" parent="grid"]
+margin_left = 288.0
+margin_top = 612.0
+margin_right = 324.0
+margin_bottom = 648.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn350" type="Button" parent="grid"]
+margin_left = 324.0
+margin_top = 612.0
+margin_right = 360.0
+margin_bottom = 648.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn351" type="Button" parent="grid"]
+margin_left = 360.0
+margin_top = 612.0
+margin_right = 396.0
+margin_bottom = 648.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn352" type="Button" parent="grid"]
+margin_left = 396.0
+margin_top = 612.0
+margin_right = 432.0
+margin_bottom = 648.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn353" type="Button" parent="grid"]
+margin_left = 432.0
+margin_top = 612.0
+margin_right = 468.0
+margin_bottom = 648.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn354" type="Button" parent="grid"]
+margin_left = 468.0
+margin_top = 612.0
+margin_right = 504.0
+margin_bottom = 648.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn355" type="Button" parent="grid"]
+margin_left = 504.0
+margin_top = 612.0
+margin_right = 540.0
+margin_bottom = 648.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn356" type="Button" parent="grid"]
+margin_left = 540.0
+margin_top = 612.0
+margin_right = 576.0
+margin_bottom = 648.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn357" type="Button" parent="grid"]
+margin_left = 576.0
+margin_top = 612.0
+margin_right = 612.0
+margin_bottom = 648.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn358" type="Button" parent="grid"]
+margin_left = 612.0
+margin_top = 612.0
+margin_right = 648.0
+margin_bottom = 648.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn359" type="Button" parent="grid"]
+margin_left = 648.0
+margin_top = 612.0
+margin_right = 684.0
+margin_bottom = 648.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn360" type="Button" parent="grid"]
+margin_left = 684.0
+margin_top = 612.0
+margin_right = 720.0
+margin_bottom = 648.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn361" type="Button" parent="grid"]
+margin_top = 648.0
+margin_right = 36.0
+margin_bottom = 684.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn362" type="Button" parent="grid"]
+margin_left = 36.0
+margin_top = 648.0
+margin_right = 72.0
+margin_bottom = 684.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn363" type="Button" parent="grid"]
+margin_left = 72.0
+margin_top = 648.0
+margin_right = 108.0
+margin_bottom = 684.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn364" type="Button" parent="grid"]
+margin_left = 108.0
+margin_top = 648.0
+margin_right = 144.0
+margin_bottom = 684.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn365" type="Button" parent="grid"]
+margin_left = 144.0
+margin_top = 648.0
+margin_right = 180.0
+margin_bottom = 684.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn366" type="Button" parent="grid"]
+margin_left = 180.0
+margin_top = 648.0
+margin_right = 216.0
+margin_bottom = 684.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn367" type="Button" parent="grid"]
+margin_left = 216.0
+margin_top = 648.0
+margin_right = 252.0
+margin_bottom = 684.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn368" type="Button" parent="grid"]
+margin_left = 252.0
+margin_top = 648.0
+margin_right = 288.0
+margin_bottom = 684.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn369" type="Button" parent="grid"]
+margin_left = 288.0
+margin_top = 648.0
+margin_right = 324.0
+margin_bottom = 684.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn370" type="Button" parent="grid"]
+margin_left = 324.0
+margin_top = 648.0
+margin_right = 360.0
+margin_bottom = 684.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn371" type="Button" parent="grid"]
+margin_left = 360.0
+margin_top = 648.0
+margin_right = 396.0
+margin_bottom = 684.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn372" type="Button" parent="grid"]
+margin_left = 396.0
+margin_top = 648.0
+margin_right = 432.0
+margin_bottom = 684.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn373" type="Button" parent="grid"]
+margin_left = 432.0
+margin_top = 648.0
+margin_right = 468.0
+margin_bottom = 684.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn374" type="Button" parent="grid"]
+margin_left = 468.0
+margin_top = 648.0
+margin_right = 504.0
+margin_bottom = 684.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn375" type="Button" parent="grid"]
+margin_left = 504.0
+margin_top = 648.0
+margin_right = 540.0
+margin_bottom = 684.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn376" type="Button" parent="grid"]
+margin_left = 540.0
+margin_top = 648.0
+margin_right = 576.0
+margin_bottom = 684.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn377" type="Button" parent="grid"]
+margin_left = 576.0
+margin_top = 648.0
+margin_right = 612.0
+margin_bottom = 684.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn378" type="Button" parent="grid"]
+margin_left = 612.0
+margin_top = 648.0
+margin_right = 648.0
+margin_bottom = 684.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn379" type="Button" parent="grid"]
+margin_left = 648.0
+margin_top = 648.0
+margin_right = 684.0
+margin_bottom = 684.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn380" type="Button" parent="grid"]
+margin_left = 684.0
+margin_top = 648.0
+margin_right = 720.0
+margin_bottom = 684.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn381" type="Button" parent="grid"]
+margin_top = 684.0
+margin_right = 36.0
+margin_bottom = 720.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn382" type="Button" parent="grid"]
+margin_left = 36.0
+margin_top = 684.0
+margin_right = 72.0
+margin_bottom = 720.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn383" type="Button" parent="grid"]
+margin_left = 72.0
+margin_top = 684.0
+margin_right = 108.0
+margin_bottom = 720.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn384" type="Button" parent="grid"]
+margin_left = 108.0
+margin_top = 684.0
+margin_right = 144.0
+margin_bottom = 720.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn385" type="Button" parent="grid"]
+margin_left = 144.0
+margin_top = 684.0
+margin_right = 180.0
+margin_bottom = 720.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn386" type="Button" parent="grid"]
+margin_left = 180.0
+margin_top = 684.0
+margin_right = 216.0
+margin_bottom = 720.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn387" type="Button" parent="grid"]
+margin_left = 216.0
+margin_top = 684.0
+margin_right = 252.0
+margin_bottom = 720.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn388" type="Button" parent="grid"]
+margin_left = 252.0
+margin_top = 684.0
+margin_right = 288.0
+margin_bottom = 720.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn389" type="Button" parent="grid"]
+margin_left = 288.0
+margin_top = 684.0
+margin_right = 324.0
+margin_bottom = 720.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn390" type="Button" parent="grid"]
+margin_left = 324.0
+margin_top = 684.0
+margin_right = 360.0
+margin_bottom = 720.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn391" type="Button" parent="grid"]
+margin_left = 360.0
+margin_top = 684.0
+margin_right = 396.0
+margin_bottom = 720.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn392" type="Button" parent="grid"]
+margin_left = 396.0
+margin_top = 684.0
+margin_right = 432.0
+margin_bottom = 720.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn393" type="Button" parent="grid"]
+margin_left = 432.0
+margin_top = 684.0
+margin_right = 468.0
+margin_bottom = 720.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn394" type="Button" parent="grid"]
+margin_left = 468.0
+margin_top = 684.0
+margin_right = 504.0
+margin_bottom = 720.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn395" type="Button" parent="grid"]
+margin_left = 504.0
+margin_top = 684.0
+margin_right = 540.0
+margin_bottom = 720.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn396" type="Button" parent="grid"]
+margin_left = 540.0
+margin_top = 684.0
+margin_right = 576.0
+margin_bottom = 720.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn397" type="Button" parent="grid"]
+margin_left = 576.0
+margin_top = 684.0
+margin_right = 612.0
+margin_bottom = 720.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn398" type="Button" parent="grid"]
+margin_left = 612.0
+margin_top = 684.0
+margin_right = 648.0
+margin_bottom = 720.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn399" type="Button" parent="grid"]
+margin_left = 648.0
+margin_top = 684.0
+margin_right = 684.0
+margin_bottom = 720.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="btn400" type="Button" parent="grid"]
+margin_left = 684.0
+margin_top = 684.0
+margin_right = 720.0
+margin_bottom = 720.0
+focus_mode = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "8"
+icon_align = 1
+
+[node name="end_state_display" type="Label" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 2 )
+custom_fonts/font = ExtResource( 4 )
+align = 1
+valign = 1
+uppercase = true
+
+[node name="init_timer" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+autostart = true
+
+[node name="close_timer" type="Timer" parent="."]
+wait_time = 3.0
+
+[connection signal="toggled" from="flag_node_checkbox" to="." method="_on_CheckBox_toggled"]
+[connection signal="timeout" from="init_timer" to="." method="_on_init_timer_timeout"]
+[connection signal="timeout" from="close_timer" to="." method="_on_close_timer_timeout"]

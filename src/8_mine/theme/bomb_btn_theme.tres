@@ -1,0 +1,26 @@
+[gd_resource type="Theme" load_steps=7 format=2]
+
+[ext_resource path="res://theme/fonts/Roboto-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://theme/bt_stylebox/hover_styleboxflat.tres" type="StyleBox" id=2]
+[ext_resource path="res://theme/bt_stylebox/normal_styleboxflat.tres" type="StyleBox" id=3]
+
+[sub_resource type="DynamicFont" id=7]
+size = 28
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="StyleBoxEmpty" id=8]
+
+[resource]
+Button/colors/font_color = Color( 1, 1, 1, 1 )
+Button/colors/font_color_disabled = Color( 0.964706, 0.4, 0, 1 )
+Button/colors/font_color_hover = Color( 1, 1, 1, 1 )
+Button/colors/font_color_pressed = Color( 0.0509804, 0.0509804, 0.0509804, 1 )
+Button/fonts/font = SubResource( 7 )
+Button/styles/disabled = SubResource( 6 )
+Button/styles/hover = ExtResource( 2 )
+Button/styles/normal = ExtResource( 3 )
+Button/styles/pressed = SubResource( 8 )

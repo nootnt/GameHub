@@ -1,0 +1,72 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scripts/New_gane.gd" type="Script" id=1]
+[ext_resource path="res://theme/main.tres" type="Theme" id=2]
+[ext_resource path="res://theme/fonts/Roboto_Bold_128.tres" type="DynamicFont" id=3]
+
+[node name="New_gane" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="background" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.0509804, 0.0509804, 0.0509804, 1 )
+
+[node name="Hard_mode_label" type="Label" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -363.0
+margin_right = 363.0
+margin_bottom = 161.0
+theme = ExtResource( 2 )
+custom_fonts/font = ExtResource( 3 )
+text = "HARD MODE"
+
+[node name="bombs_label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -356.0
+margin_top = -205.0
+margin_right = 356.0
+margin_bottom = -44.0
+size_flags_horizontal = 4
+theme = ExtResource( 2 )
+custom_fonts/font = ExtResource( 3 )
+text = "Bombs: 20%"
+
+[node name="bombs_slider" type="HSlider" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -350.0
+margin_top = -12.5
+margin_right = 350.0
+margin_bottom = 12.5
+theme = ExtResource( 2 )
+min_value = 1.0
+max_value = 99.0
+value = 20.0
+rounded = true
+
+[node name="start_btn" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -152.0
+margin_top = -272.0
+margin_right = 152.0
+margin_bottom = -111.0
+theme = ExtResource( 2 )
+custom_fonts/font = ExtResource( 3 )
+text = "Start"
+icon_align = 1
+
+[connection signal="value_changed" from="bombs_slider" to="." method="_on_bombs_slider_value_changed"]
+[connection signal="pressed" from="start_btn" to="." method="_on_start_btn_pressed"]
