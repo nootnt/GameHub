@@ -55,14 +55,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -192.5
-margin_top = -192.5
-margin_right = 192.5
-margin_bottom = 192.5
+margin_left = -215.0
+margin_top = -215.0
+margin_right = 215.0
+margin_bottom = 215.0
 size_flags_horizontal = 5
 size_flags_vertical = 5
-custom_constants/vseparation = 25
-custom_constants/hseparation = 25
+custom_constants/vseparation = 30
+custom_constants/hseparation = 30
 columns = 10
 
 [node name="btn1" type="Button" parent="HBox/L/L_panel"]
@@ -75,8 +75,8 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn2" type="Button" parent="HBox/L/L_panel"]
-margin_left = 41.0
-margin_right = 57.0
+margin_left = 46.0
+margin_right = 62.0
 margin_bottom = 16.0
 focus_mode = 0
 theme = ExtResource( 2 )
@@ -85,8 +85,8 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn3" type="Button" parent="HBox/L/L_panel"]
-margin_left = 82.0
-margin_right = 98.0
+margin_left = 92.0
+margin_right = 108.0
 margin_bottom = 16.0
 focus_mode = 0
 theme = ExtResource( 2 )
@@ -95,8 +95,8 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn4" type="Button" parent="HBox/L/L_panel"]
-margin_left = 123.0
-margin_right = 139.0
+margin_left = 138.0
+margin_right = 154.0
 margin_bottom = 16.0
 focus_mode = 0
 theme = ExtResource( 2 )
@@ -105,8 +105,8 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn5" type="Button" parent="HBox/L/L_panel"]
-margin_left = 164.0
-margin_right = 180.0
+margin_left = 184.0
+margin_right = 200.0
 margin_bottom = 16.0
 focus_mode = 0
 theme = ExtResource( 2 )
@@ -115,8 +115,8 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn6" type="Button" parent="HBox/L/L_panel"]
-margin_left = 205.0
-margin_right = 221.0
+margin_left = 230.0
+margin_right = 246.0
 margin_bottom = 16.0
 focus_mode = 0
 theme = ExtResource( 2 )
@@ -125,8 +125,8 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn7" type="Button" parent="HBox/L/L_panel"]
-margin_left = 246.0
-margin_right = 262.0
+margin_left = 276.0
+margin_right = 292.0
 margin_bottom = 16.0
 focus_mode = 0
 theme = ExtResource( 2 )
@@ -135,8 +135,8 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn8" type="Button" parent="HBox/L/L_panel"]
-margin_left = 287.0
-margin_right = 303.0
+margin_left = 322.0
+margin_right = 338.0
 margin_bottom = 16.0
 focus_mode = 0
 theme = ExtResource( 2 )
@@ -145,8 +145,8 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn9" type="Button" parent="HBox/L/L_panel"]
-margin_left = 328.0
-margin_right = 344.0
+margin_left = 368.0
+margin_right = 384.0
 margin_bottom = 16.0
 focus_mode = 0
 theme = ExtResource( 2 )
@@ -155,8 +155,8 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn10" type="Button" parent="HBox/L/L_panel"]
-margin_left = 369.0
-margin_right = 385.0
+margin_left = 414.0
+margin_right = 430.0
 margin_bottom = 16.0
 focus_mode = 0
 theme = ExtResource( 2 )
@@ -165,9 +165,9 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn11" type="Button" parent="HBox/L/L_panel"]
-margin_top = 41.0
+margin_top = 46.0
 margin_right = 16.0
-margin_bottom = 57.0
+margin_bottom = 62.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -175,10 +175,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn12" type="Button" parent="HBox/L/L_panel"]
-margin_left = 41.0
-margin_top = 41.0
-margin_right = 57.0
-margin_bottom = 57.0
+margin_left = 46.0
+margin_top = 46.0
+margin_right = 62.0
+margin_bottom = 62.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -186,10 +186,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn13" type="Button" parent="HBox/L/L_panel"]
-margin_left = 82.0
-margin_top = 41.0
-margin_right = 98.0
-margin_bottom = 57.0
+margin_left = 92.0
+margin_top = 46.0
+margin_right = 108.0
+margin_bottom = 62.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -197,10 +197,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn14" type="Button" parent="HBox/L/L_panel"]
-margin_left = 123.0
-margin_top = 41.0
-margin_right = 139.0
-margin_bottom = 57.0
+margin_left = 138.0
+margin_top = 46.0
+margin_right = 154.0
+margin_bottom = 62.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -208,10 +208,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn15" type="Button" parent="HBox/L/L_panel"]
-margin_left = 164.0
-margin_top = 41.0
-margin_right = 180.0
-margin_bottom = 57.0
+margin_left = 184.0
+margin_top = 46.0
+margin_right = 200.0
+margin_bottom = 62.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -219,10 +219,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn16" type="Button" parent="HBox/L/L_panel"]
-margin_left = 205.0
-margin_top = 41.0
-margin_right = 221.0
-margin_bottom = 57.0
+margin_left = 230.0
+margin_top = 46.0
+margin_right = 246.0
+margin_bottom = 62.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -230,10 +230,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn17" type="Button" parent="HBox/L/L_panel"]
-margin_left = 246.0
-margin_top = 41.0
-margin_right = 262.0
-margin_bottom = 57.0
+margin_left = 276.0
+margin_top = 46.0
+margin_right = 292.0
+margin_bottom = 62.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -241,10 +241,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn18" type="Button" parent="HBox/L/L_panel"]
-margin_left = 287.0
-margin_top = 41.0
-margin_right = 303.0
-margin_bottom = 57.0
+margin_left = 322.0
+margin_top = 46.0
+margin_right = 338.0
+margin_bottom = 62.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -252,10 +252,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn19" type="Button" parent="HBox/L/L_panel"]
-margin_left = 328.0
-margin_top = 41.0
-margin_right = 344.0
-margin_bottom = 57.0
+margin_left = 368.0
+margin_top = 46.0
+margin_right = 384.0
+margin_bottom = 62.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -263,10 +263,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn20" type="Button" parent="HBox/L/L_panel"]
-margin_left = 369.0
-margin_top = 41.0
-margin_right = 385.0
-margin_bottom = 57.0
+margin_left = 414.0
+margin_top = 46.0
+margin_right = 430.0
+margin_bottom = 62.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -274,9 +274,9 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn21" type="Button" parent="HBox/L/L_panel"]
-margin_top = 82.0
+margin_top = 92.0
 margin_right = 16.0
-margin_bottom = 98.0
+margin_bottom = 108.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -284,10 +284,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn22" type="Button" parent="HBox/L/L_panel"]
-margin_left = 41.0
-margin_top = 82.0
-margin_right = 57.0
-margin_bottom = 98.0
+margin_left = 46.0
+margin_top = 92.0
+margin_right = 62.0
+margin_bottom = 108.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -295,10 +295,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn23" type="Button" parent="HBox/L/L_panel"]
-margin_left = 82.0
-margin_top = 82.0
-margin_right = 98.0
-margin_bottom = 98.0
+margin_left = 92.0
+margin_top = 92.0
+margin_right = 108.0
+margin_bottom = 108.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -306,10 +306,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn24" type="Button" parent="HBox/L/L_panel"]
-margin_left = 123.0
-margin_top = 82.0
-margin_right = 139.0
-margin_bottom = 98.0
+margin_left = 138.0
+margin_top = 92.0
+margin_right = 154.0
+margin_bottom = 108.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -317,10 +317,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn25" type="Button" parent="HBox/L/L_panel"]
-margin_left = 164.0
-margin_top = 82.0
-margin_right = 180.0
-margin_bottom = 98.0
+margin_left = 184.0
+margin_top = 92.0
+margin_right = 200.0
+margin_bottom = 108.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -328,10 +328,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn26" type="Button" parent="HBox/L/L_panel"]
-margin_left = 205.0
-margin_top = 82.0
-margin_right = 221.0
-margin_bottom = 98.0
+margin_left = 230.0
+margin_top = 92.0
+margin_right = 246.0
+margin_bottom = 108.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -339,10 +339,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn27" type="Button" parent="HBox/L/L_panel"]
-margin_left = 246.0
-margin_top = 82.0
-margin_right = 262.0
-margin_bottom = 98.0
+margin_left = 276.0
+margin_top = 92.0
+margin_right = 292.0
+margin_bottom = 108.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -350,10 +350,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn28" type="Button" parent="HBox/L/L_panel"]
-margin_left = 287.0
-margin_top = 82.0
-margin_right = 303.0
-margin_bottom = 98.0
+margin_left = 322.0
+margin_top = 92.0
+margin_right = 338.0
+margin_bottom = 108.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -361,10 +361,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn29" type="Button" parent="HBox/L/L_panel"]
-margin_left = 328.0
-margin_top = 82.0
-margin_right = 344.0
-margin_bottom = 98.0
+margin_left = 368.0
+margin_top = 92.0
+margin_right = 384.0
+margin_bottom = 108.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -372,10 +372,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn30" type="Button" parent="HBox/L/L_panel"]
-margin_left = 369.0
-margin_top = 82.0
-margin_right = 385.0
-margin_bottom = 98.0
+margin_left = 414.0
+margin_top = 92.0
+margin_right = 430.0
+margin_bottom = 108.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -383,9 +383,9 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn31" type="Button" parent="HBox/L/L_panel"]
-margin_top = 123.0
+margin_top = 138.0
 margin_right = 16.0
-margin_bottom = 139.0
+margin_bottom = 154.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -393,10 +393,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn32" type="Button" parent="HBox/L/L_panel"]
-margin_left = 41.0
-margin_top = 123.0
-margin_right = 57.0
-margin_bottom = 139.0
+margin_left = 46.0
+margin_top = 138.0
+margin_right = 62.0
+margin_bottom = 154.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -404,10 +404,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn33" type="Button" parent="HBox/L/L_panel"]
-margin_left = 82.0
-margin_top = 123.0
-margin_right = 98.0
-margin_bottom = 139.0
+margin_left = 92.0
+margin_top = 138.0
+margin_right = 108.0
+margin_bottom = 154.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -415,10 +415,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn34" type="Button" parent="HBox/L/L_panel"]
-margin_left = 123.0
-margin_top = 123.0
-margin_right = 139.0
-margin_bottom = 139.0
+margin_left = 138.0
+margin_top = 138.0
+margin_right = 154.0
+margin_bottom = 154.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -426,10 +426,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn35" type="Button" parent="HBox/L/L_panel"]
-margin_left = 164.0
-margin_top = 123.0
-margin_right = 180.0
-margin_bottom = 139.0
+margin_left = 184.0
+margin_top = 138.0
+margin_right = 200.0
+margin_bottom = 154.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -437,10 +437,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn36" type="Button" parent="HBox/L/L_panel"]
-margin_left = 205.0
-margin_top = 123.0
-margin_right = 221.0
-margin_bottom = 139.0
+margin_left = 230.0
+margin_top = 138.0
+margin_right = 246.0
+margin_bottom = 154.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -448,10 +448,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn37" type="Button" parent="HBox/L/L_panel"]
-margin_left = 246.0
-margin_top = 123.0
-margin_right = 262.0
-margin_bottom = 139.0
+margin_left = 276.0
+margin_top = 138.0
+margin_right = 292.0
+margin_bottom = 154.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -459,10 +459,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn38" type="Button" parent="HBox/L/L_panel"]
-margin_left = 287.0
-margin_top = 123.0
-margin_right = 303.0
-margin_bottom = 139.0
+margin_left = 322.0
+margin_top = 138.0
+margin_right = 338.0
+margin_bottom = 154.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -470,10 +470,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn39" type="Button" parent="HBox/L/L_panel"]
-margin_left = 328.0
-margin_top = 123.0
-margin_right = 344.0
-margin_bottom = 139.0
+margin_left = 368.0
+margin_top = 138.0
+margin_right = 384.0
+margin_bottom = 154.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -481,10 +481,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn40" type="Button" parent="HBox/L/L_panel"]
-margin_left = 369.0
-margin_top = 123.0
-margin_right = 385.0
-margin_bottom = 139.0
+margin_left = 414.0
+margin_top = 138.0
+margin_right = 430.0
+margin_bottom = 154.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -492,9 +492,9 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn41" type="Button" parent="HBox/L/L_panel"]
-margin_top = 164.0
+margin_top = 184.0
 margin_right = 16.0
-margin_bottom = 180.0
+margin_bottom = 200.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -502,10 +502,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn42" type="Button" parent="HBox/L/L_panel"]
-margin_left = 41.0
-margin_top = 164.0
-margin_right = 57.0
-margin_bottom = 180.0
+margin_left = 46.0
+margin_top = 184.0
+margin_right = 62.0
+margin_bottom = 200.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -513,10 +513,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn43" type="Button" parent="HBox/L/L_panel"]
-margin_left = 82.0
-margin_top = 164.0
-margin_right = 98.0
-margin_bottom = 180.0
+margin_left = 92.0
+margin_top = 184.0
+margin_right = 108.0
+margin_bottom = 200.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -524,10 +524,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn44" type="Button" parent="HBox/L/L_panel"]
-margin_left = 123.0
-margin_top = 164.0
-margin_right = 139.0
-margin_bottom = 180.0
+margin_left = 138.0
+margin_top = 184.0
+margin_right = 154.0
+margin_bottom = 200.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -535,10 +535,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn45" type="Button" parent="HBox/L/L_panel"]
-margin_left = 164.0
-margin_top = 164.0
-margin_right = 180.0
-margin_bottom = 180.0
+margin_left = 184.0
+margin_top = 184.0
+margin_right = 200.0
+margin_bottom = 200.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -546,10 +546,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn46" type="Button" parent="HBox/L/L_panel"]
-margin_left = 205.0
-margin_top = 164.0
-margin_right = 221.0
-margin_bottom = 180.0
+margin_left = 230.0
+margin_top = 184.0
+margin_right = 246.0
+margin_bottom = 200.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -557,10 +557,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn47" type="Button" parent="HBox/L/L_panel"]
-margin_left = 246.0
-margin_top = 164.0
-margin_right = 262.0
-margin_bottom = 180.0
+margin_left = 276.0
+margin_top = 184.0
+margin_right = 292.0
+margin_bottom = 200.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -568,10 +568,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn48" type="Button" parent="HBox/L/L_panel"]
-margin_left = 287.0
-margin_top = 164.0
-margin_right = 303.0
-margin_bottom = 180.0
+margin_left = 322.0
+margin_top = 184.0
+margin_right = 338.0
+margin_bottom = 200.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -579,10 +579,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn49" type="Button" parent="HBox/L/L_panel"]
-margin_left = 328.0
-margin_top = 164.0
-margin_right = 344.0
-margin_bottom = 180.0
+margin_left = 368.0
+margin_top = 184.0
+margin_right = 384.0
+margin_bottom = 200.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -590,10 +590,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn50" type="Button" parent="HBox/L/L_panel"]
-margin_left = 369.0
-margin_top = 164.0
-margin_right = 385.0
-margin_bottom = 180.0
+margin_left = 414.0
+margin_top = 184.0
+margin_right = 430.0
+margin_bottom = 200.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -601,9 +601,9 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn51" type="Button" parent="HBox/L/L_panel"]
-margin_top = 205.0
+margin_top = 230.0
 margin_right = 16.0
-margin_bottom = 221.0
+margin_bottom = 246.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -611,10 +611,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn52" type="Button" parent="HBox/L/L_panel"]
-margin_left = 41.0
-margin_top = 205.0
-margin_right = 57.0
-margin_bottom = 221.0
+margin_left = 46.0
+margin_top = 230.0
+margin_right = 62.0
+margin_bottom = 246.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -622,10 +622,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn53" type="Button" parent="HBox/L/L_panel"]
-margin_left = 82.0
-margin_top = 205.0
-margin_right = 98.0
-margin_bottom = 221.0
+margin_left = 92.0
+margin_top = 230.0
+margin_right = 108.0
+margin_bottom = 246.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -633,10 +633,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn54" type="Button" parent="HBox/L/L_panel"]
-margin_left = 123.0
-margin_top = 205.0
-margin_right = 139.0
-margin_bottom = 221.0
+margin_left = 138.0
+margin_top = 230.0
+margin_right = 154.0
+margin_bottom = 246.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -644,10 +644,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn55" type="Button" parent="HBox/L/L_panel"]
-margin_left = 164.0
-margin_top = 205.0
-margin_right = 180.0
-margin_bottom = 221.0
+margin_left = 184.0
+margin_top = 230.0
+margin_right = 200.0
+margin_bottom = 246.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -655,10 +655,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn56" type="Button" parent="HBox/L/L_panel"]
-margin_left = 205.0
-margin_top = 205.0
-margin_right = 221.0
-margin_bottom = 221.0
+margin_left = 230.0
+margin_top = 230.0
+margin_right = 246.0
+margin_bottom = 246.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -666,10 +666,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn57" type="Button" parent="HBox/L/L_panel"]
-margin_left = 246.0
-margin_top = 205.0
-margin_right = 262.0
-margin_bottom = 221.0
+margin_left = 276.0
+margin_top = 230.0
+margin_right = 292.0
+margin_bottom = 246.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -677,10 +677,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn58" type="Button" parent="HBox/L/L_panel"]
-margin_left = 287.0
-margin_top = 205.0
-margin_right = 303.0
-margin_bottom = 221.0
+margin_left = 322.0
+margin_top = 230.0
+margin_right = 338.0
+margin_bottom = 246.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -688,10 +688,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn59" type="Button" parent="HBox/L/L_panel"]
-margin_left = 328.0
-margin_top = 205.0
-margin_right = 344.0
-margin_bottom = 221.0
+margin_left = 368.0
+margin_top = 230.0
+margin_right = 384.0
+margin_bottom = 246.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -699,10 +699,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn60" type="Button" parent="HBox/L/L_panel"]
-margin_left = 369.0
-margin_top = 205.0
-margin_right = 385.0
-margin_bottom = 221.0
+margin_left = 414.0
+margin_top = 230.0
+margin_right = 430.0
+margin_bottom = 246.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -710,9 +710,9 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn61" type="Button" parent="HBox/L/L_panel"]
-margin_top = 246.0
+margin_top = 276.0
 margin_right = 16.0
-margin_bottom = 262.0
+margin_bottom = 292.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -720,10 +720,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn62" type="Button" parent="HBox/L/L_panel"]
-margin_left = 41.0
-margin_top = 246.0
-margin_right = 57.0
-margin_bottom = 262.0
+margin_left = 46.0
+margin_top = 276.0
+margin_right = 62.0
+margin_bottom = 292.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -731,10 +731,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn63" type="Button" parent="HBox/L/L_panel"]
-margin_left = 82.0
-margin_top = 246.0
-margin_right = 98.0
-margin_bottom = 262.0
+margin_left = 92.0
+margin_top = 276.0
+margin_right = 108.0
+margin_bottom = 292.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -742,10 +742,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn64" type="Button" parent="HBox/L/L_panel"]
-margin_left = 123.0
-margin_top = 246.0
-margin_right = 139.0
-margin_bottom = 262.0
+margin_left = 138.0
+margin_top = 276.0
+margin_right = 154.0
+margin_bottom = 292.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -753,10 +753,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn65" type="Button" parent="HBox/L/L_panel"]
-margin_left = 164.0
-margin_top = 246.0
-margin_right = 180.0
-margin_bottom = 262.0
+margin_left = 184.0
+margin_top = 276.0
+margin_right = 200.0
+margin_bottom = 292.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -764,10 +764,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn66" type="Button" parent="HBox/L/L_panel"]
-margin_left = 205.0
-margin_top = 246.0
-margin_right = 221.0
-margin_bottom = 262.0
+margin_left = 230.0
+margin_top = 276.0
+margin_right = 246.0
+margin_bottom = 292.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -775,10 +775,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn67" type="Button" parent="HBox/L/L_panel"]
-margin_left = 246.0
-margin_top = 246.0
-margin_right = 262.0
-margin_bottom = 262.0
+margin_left = 276.0
+margin_top = 276.0
+margin_right = 292.0
+margin_bottom = 292.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -786,10 +786,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn68" type="Button" parent="HBox/L/L_panel"]
-margin_left = 287.0
-margin_top = 246.0
-margin_right = 303.0
-margin_bottom = 262.0
+margin_left = 322.0
+margin_top = 276.0
+margin_right = 338.0
+margin_bottom = 292.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -797,10 +797,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn69" type="Button" parent="HBox/L/L_panel"]
-margin_left = 328.0
-margin_top = 246.0
-margin_right = 344.0
-margin_bottom = 262.0
+margin_left = 368.0
+margin_top = 276.0
+margin_right = 384.0
+margin_bottom = 292.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -808,10 +808,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn70" type="Button" parent="HBox/L/L_panel"]
-margin_left = 369.0
-margin_top = 246.0
-margin_right = 385.0
-margin_bottom = 262.0
+margin_left = 414.0
+margin_top = 276.0
+margin_right = 430.0
+margin_bottom = 292.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -819,9 +819,9 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn71" type="Button" parent="HBox/L/L_panel"]
-margin_top = 287.0
+margin_top = 322.0
 margin_right = 16.0
-margin_bottom = 303.0
+margin_bottom = 338.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -829,10 +829,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn72" type="Button" parent="HBox/L/L_panel"]
-margin_left = 41.0
-margin_top = 287.0
-margin_right = 57.0
-margin_bottom = 303.0
+margin_left = 46.0
+margin_top = 322.0
+margin_right = 62.0
+margin_bottom = 338.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -840,10 +840,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn73" type="Button" parent="HBox/L/L_panel"]
-margin_left = 82.0
-margin_top = 287.0
-margin_right = 98.0
-margin_bottom = 303.0
+margin_left = 92.0
+margin_top = 322.0
+margin_right = 108.0
+margin_bottom = 338.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -851,10 +851,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn74" type="Button" parent="HBox/L/L_panel"]
-margin_left = 123.0
-margin_top = 287.0
-margin_right = 139.0
-margin_bottom = 303.0
+margin_left = 138.0
+margin_top = 322.0
+margin_right = 154.0
+margin_bottom = 338.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -862,10 +862,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn75" type="Button" parent="HBox/L/L_panel"]
-margin_left = 164.0
-margin_top = 287.0
-margin_right = 180.0
-margin_bottom = 303.0
+margin_left = 184.0
+margin_top = 322.0
+margin_right = 200.0
+margin_bottom = 338.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -873,10 +873,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn76" type="Button" parent="HBox/L/L_panel"]
-margin_left = 205.0
-margin_top = 287.0
-margin_right = 221.0
-margin_bottom = 303.0
+margin_left = 230.0
+margin_top = 322.0
+margin_right = 246.0
+margin_bottom = 338.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -884,10 +884,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn77" type="Button" parent="HBox/L/L_panel"]
-margin_left = 246.0
-margin_top = 287.0
-margin_right = 262.0
-margin_bottom = 303.0
+margin_left = 276.0
+margin_top = 322.0
+margin_right = 292.0
+margin_bottom = 338.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -895,10 +895,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn78" type="Button" parent="HBox/L/L_panel"]
-margin_left = 287.0
-margin_top = 287.0
-margin_right = 303.0
-margin_bottom = 303.0
+margin_left = 322.0
+margin_top = 322.0
+margin_right = 338.0
+margin_bottom = 338.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -906,10 +906,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn79" type="Button" parent="HBox/L/L_panel"]
-margin_left = 328.0
-margin_top = 287.0
-margin_right = 344.0
-margin_bottom = 303.0
+margin_left = 368.0
+margin_top = 322.0
+margin_right = 384.0
+margin_bottom = 338.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -917,10 +917,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn80" type="Button" parent="HBox/L/L_panel"]
-margin_left = 369.0
-margin_top = 287.0
-margin_right = 385.0
-margin_bottom = 303.0
+margin_left = 414.0
+margin_top = 322.0
+margin_right = 430.0
+margin_bottom = 338.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -928,9 +928,9 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn81" type="Button" parent="HBox/L/L_panel"]
-margin_top = 328.0
+margin_top = 368.0
 margin_right = 16.0
-margin_bottom = 344.0
+margin_bottom = 384.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -938,10 +938,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn82" type="Button" parent="HBox/L/L_panel"]
-margin_left = 41.0
-margin_top = 328.0
-margin_right = 57.0
-margin_bottom = 344.0
+margin_left = 46.0
+margin_top = 368.0
+margin_right = 62.0
+margin_bottom = 384.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -949,10 +949,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn83" type="Button" parent="HBox/L/L_panel"]
-margin_left = 82.0
-margin_top = 328.0
-margin_right = 98.0
-margin_bottom = 344.0
+margin_left = 92.0
+margin_top = 368.0
+margin_right = 108.0
+margin_bottom = 384.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -960,10 +960,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn84" type="Button" parent="HBox/L/L_panel"]
-margin_left = 123.0
-margin_top = 328.0
-margin_right = 139.0
-margin_bottom = 344.0
+margin_left = 138.0
+margin_top = 368.0
+margin_right = 154.0
+margin_bottom = 384.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -971,10 +971,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn85" type="Button" parent="HBox/L/L_panel"]
-margin_left = 164.0
-margin_top = 328.0
-margin_right = 180.0
-margin_bottom = 344.0
+margin_left = 184.0
+margin_top = 368.0
+margin_right = 200.0
+margin_bottom = 384.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -982,10 +982,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn86" type="Button" parent="HBox/L/L_panel"]
-margin_left = 205.0
-margin_top = 328.0
-margin_right = 221.0
-margin_bottom = 344.0
+margin_left = 230.0
+margin_top = 368.0
+margin_right = 246.0
+margin_bottom = 384.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -993,10 +993,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn87" type="Button" parent="HBox/L/L_panel"]
-margin_left = 246.0
-margin_top = 328.0
-margin_right = 262.0
-margin_bottom = 344.0
+margin_left = 276.0
+margin_top = 368.0
+margin_right = 292.0
+margin_bottom = 384.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -1004,10 +1004,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn88" type="Button" parent="HBox/L/L_panel"]
-margin_left = 287.0
-margin_top = 328.0
-margin_right = 303.0
-margin_bottom = 344.0
+margin_left = 322.0
+margin_top = 368.0
+margin_right = 338.0
+margin_bottom = 384.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -1015,10 +1015,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn89" type="Button" parent="HBox/L/L_panel"]
-margin_left = 328.0
-margin_top = 328.0
-margin_right = 344.0
-margin_bottom = 344.0
+margin_left = 368.0
+margin_top = 368.0
+margin_right = 384.0
+margin_bottom = 384.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -1026,10 +1026,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn90" type="Button" parent="HBox/L/L_panel"]
-margin_left = 369.0
-margin_top = 328.0
-margin_right = 385.0
-margin_bottom = 344.0
+margin_left = 414.0
+margin_top = 368.0
+margin_right = 430.0
+margin_bottom = 384.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -1037,9 +1037,9 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn91" type="Button" parent="HBox/L/L_panel"]
-margin_top = 369.0
+margin_top = 414.0
 margin_right = 16.0
-margin_bottom = 385.0
+margin_bottom = 430.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -1047,10 +1047,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn92" type="Button" parent="HBox/L/L_panel"]
-margin_left = 41.0
-margin_top = 369.0
-margin_right = 57.0
-margin_bottom = 385.0
+margin_left = 46.0
+margin_top = 414.0
+margin_right = 62.0
+margin_bottom = 430.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -1058,10 +1058,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn93" type="Button" parent="HBox/L/L_panel"]
-margin_left = 82.0
-margin_top = 369.0
-margin_right = 98.0
-margin_bottom = 385.0
+margin_left = 92.0
+margin_top = 414.0
+margin_right = 108.0
+margin_bottom = 430.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -1069,10 +1069,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn94" type="Button" parent="HBox/L/L_panel"]
-margin_left = 123.0
-margin_top = 369.0
-margin_right = 139.0
-margin_bottom = 385.0
+margin_left = 138.0
+margin_top = 414.0
+margin_right = 154.0
+margin_bottom = 430.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -1080,10 +1080,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn95" type="Button" parent="HBox/L/L_panel"]
-margin_left = 164.0
-margin_top = 369.0
-margin_right = 180.0
-margin_bottom = 385.0
+margin_left = 184.0
+margin_top = 414.0
+margin_right = 200.0
+margin_bottom = 430.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -1091,10 +1091,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn96" type="Button" parent="HBox/L/L_panel"]
-margin_left = 205.0
-margin_top = 369.0
-margin_right = 221.0
-margin_bottom = 385.0
+margin_left = 230.0
+margin_top = 414.0
+margin_right = 246.0
+margin_bottom = 430.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -1102,10 +1102,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn97" type="Button" parent="HBox/L/L_panel"]
-margin_left = 246.0
-margin_top = 369.0
-margin_right = 262.0
-margin_bottom = 385.0
+margin_left = 276.0
+margin_top = 414.0
+margin_right = 292.0
+margin_bottom = 430.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -1113,10 +1113,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn98" type="Button" parent="HBox/L/L_panel"]
-margin_left = 287.0
-margin_top = 369.0
-margin_right = 303.0
-margin_bottom = 385.0
+margin_left = 322.0
+margin_top = 414.0
+margin_right = 338.0
+margin_bottom = 430.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -1124,10 +1124,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn99" type="Button" parent="HBox/L/L_panel"]
-margin_left = 328.0
-margin_top = 369.0
-margin_right = 344.0
-margin_bottom = 385.0
+margin_left = 368.0
+margin_top = 414.0
+margin_right = 384.0
+margin_bottom = 430.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -1135,10 +1135,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn100" type="Button" parent="HBox/L/L_panel"]
-margin_left = 369.0
-margin_top = 369.0
-margin_right = 385.0
-margin_bottom = 385.0
+margin_left = 414.0
+margin_top = 414.0
+margin_right = 430.0
+margin_bottom = 430.0
 focus_mode = 0
 theme = ExtResource( 2 )
 enabled_focus_mode = 0
@@ -1157,14 +1157,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -192.5
-margin_top = -192.5
-margin_right = 192.5
-margin_bottom = 192.5
+margin_left = -215.0
+margin_top = -215.0
+margin_right = 215.0
+margin_bottom = 215.0
 size_flags_horizontal = 0
 size_flags_vertical = 4
-custom_constants/vseparation = 25
-custom_constants/hseparation = 25
+custom_constants/vseparation = 30
+custom_constants/hseparation = 30
 columns = 10
 
 [node name="btn1" type="Button" parent="HBox/R/R_panel"]
@@ -1178,8 +1178,8 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn2" type="Button" parent="HBox/R/R_panel"]
-margin_left = 41.0
-margin_right = 57.0
+margin_left = 46.0
+margin_right = 62.0
 margin_bottom = 16.0
 focus_mode = 0
 theme = ExtResource( 2 )
@@ -1189,8 +1189,8 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn3" type="Button" parent="HBox/R/R_panel"]
-margin_left = 82.0
-margin_right = 98.0
+margin_left = 92.0
+margin_right = 108.0
 margin_bottom = 16.0
 focus_mode = 0
 theme = ExtResource( 2 )
@@ -1200,8 +1200,8 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn4" type="Button" parent="HBox/R/R_panel"]
-margin_left = 123.0
-margin_right = 139.0
+margin_left = 138.0
+margin_right = 154.0
 margin_bottom = 16.0
 focus_mode = 0
 theme = ExtResource( 2 )
@@ -1211,8 +1211,8 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn5" type="Button" parent="HBox/R/R_panel"]
-margin_left = 164.0
-margin_right = 180.0
+margin_left = 184.0
+margin_right = 200.0
 margin_bottom = 16.0
 focus_mode = 0
 theme = ExtResource( 2 )
@@ -1222,8 +1222,8 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn6" type="Button" parent="HBox/R/R_panel"]
-margin_left = 205.0
-margin_right = 221.0
+margin_left = 230.0
+margin_right = 246.0
 margin_bottom = 16.0
 focus_mode = 0
 theme = ExtResource( 2 )
@@ -1233,8 +1233,8 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn7" type="Button" parent="HBox/R/R_panel"]
-margin_left = 246.0
-margin_right = 262.0
+margin_left = 276.0
+margin_right = 292.0
 margin_bottom = 16.0
 focus_mode = 0
 theme = ExtResource( 2 )
@@ -1244,8 +1244,8 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn8" type="Button" parent="HBox/R/R_panel"]
-margin_left = 287.0
-margin_right = 303.0
+margin_left = 322.0
+margin_right = 338.0
 margin_bottom = 16.0
 focus_mode = 0
 theme = ExtResource( 2 )
@@ -1255,8 +1255,8 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn9" type="Button" parent="HBox/R/R_panel"]
-margin_left = 328.0
-margin_right = 344.0
+margin_left = 368.0
+margin_right = 384.0
 margin_bottom = 16.0
 focus_mode = 0
 theme = ExtResource( 2 )
@@ -1266,8 +1266,8 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn10" type="Button" parent="HBox/R/R_panel"]
-margin_left = 369.0
-margin_right = 385.0
+margin_left = 414.0
+margin_right = 430.0
 margin_bottom = 16.0
 focus_mode = 0
 theme = ExtResource( 2 )
@@ -1277,9 +1277,9 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn11" type="Button" parent="HBox/R/R_panel"]
-margin_top = 41.0
+margin_top = 46.0
 margin_right = 16.0
-margin_bottom = 57.0
+margin_bottom = 62.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1288,10 +1288,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn12" type="Button" parent="HBox/R/R_panel"]
-margin_left = 41.0
-margin_top = 41.0
-margin_right = 57.0
-margin_bottom = 57.0
+margin_left = 46.0
+margin_top = 46.0
+margin_right = 62.0
+margin_bottom = 62.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1300,10 +1300,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn13" type="Button" parent="HBox/R/R_panel"]
-margin_left = 82.0
-margin_top = 41.0
-margin_right = 98.0
-margin_bottom = 57.0
+margin_left = 92.0
+margin_top = 46.0
+margin_right = 108.0
+margin_bottom = 62.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1312,10 +1312,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn14" type="Button" parent="HBox/R/R_panel"]
-margin_left = 123.0
-margin_top = 41.0
-margin_right = 139.0
-margin_bottom = 57.0
+margin_left = 138.0
+margin_top = 46.0
+margin_right = 154.0
+margin_bottom = 62.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1324,10 +1324,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn15" type="Button" parent="HBox/R/R_panel"]
-margin_left = 164.0
-margin_top = 41.0
-margin_right = 180.0
-margin_bottom = 57.0
+margin_left = 184.0
+margin_top = 46.0
+margin_right = 200.0
+margin_bottom = 62.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1336,10 +1336,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn16" type="Button" parent="HBox/R/R_panel"]
-margin_left = 205.0
-margin_top = 41.0
-margin_right = 221.0
-margin_bottom = 57.0
+margin_left = 230.0
+margin_top = 46.0
+margin_right = 246.0
+margin_bottom = 62.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1348,10 +1348,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn17" type="Button" parent="HBox/R/R_panel"]
-margin_left = 246.0
-margin_top = 41.0
-margin_right = 262.0
-margin_bottom = 57.0
+margin_left = 276.0
+margin_top = 46.0
+margin_right = 292.0
+margin_bottom = 62.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1360,10 +1360,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn18" type="Button" parent="HBox/R/R_panel"]
-margin_left = 287.0
-margin_top = 41.0
-margin_right = 303.0
-margin_bottom = 57.0
+margin_left = 322.0
+margin_top = 46.0
+margin_right = 338.0
+margin_bottom = 62.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1372,10 +1372,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn19" type="Button" parent="HBox/R/R_panel"]
-margin_left = 328.0
-margin_top = 41.0
-margin_right = 344.0
-margin_bottom = 57.0
+margin_left = 368.0
+margin_top = 46.0
+margin_right = 384.0
+margin_bottom = 62.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1384,10 +1384,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn20" type="Button" parent="HBox/R/R_panel"]
-margin_left = 369.0
-margin_top = 41.0
-margin_right = 385.0
-margin_bottom = 57.0
+margin_left = 414.0
+margin_top = 46.0
+margin_right = 430.0
+margin_bottom = 62.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1396,9 +1396,9 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn21" type="Button" parent="HBox/R/R_panel"]
-margin_top = 82.0
+margin_top = 92.0
 margin_right = 16.0
-margin_bottom = 98.0
+margin_bottom = 108.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1407,10 +1407,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn22" type="Button" parent="HBox/R/R_panel"]
-margin_left = 41.0
-margin_top = 82.0
-margin_right = 57.0
-margin_bottom = 98.0
+margin_left = 46.0
+margin_top = 92.0
+margin_right = 62.0
+margin_bottom = 108.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1419,10 +1419,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn23" type="Button" parent="HBox/R/R_panel"]
-margin_left = 82.0
-margin_top = 82.0
-margin_right = 98.0
-margin_bottom = 98.0
+margin_left = 92.0
+margin_top = 92.0
+margin_right = 108.0
+margin_bottom = 108.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1431,10 +1431,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn24" type="Button" parent="HBox/R/R_panel"]
-margin_left = 123.0
-margin_top = 82.0
-margin_right = 139.0
-margin_bottom = 98.0
+margin_left = 138.0
+margin_top = 92.0
+margin_right = 154.0
+margin_bottom = 108.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1443,10 +1443,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn25" type="Button" parent="HBox/R/R_panel"]
-margin_left = 164.0
-margin_top = 82.0
-margin_right = 180.0
-margin_bottom = 98.0
+margin_left = 184.0
+margin_top = 92.0
+margin_right = 200.0
+margin_bottom = 108.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1455,10 +1455,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn26" type="Button" parent="HBox/R/R_panel"]
-margin_left = 205.0
-margin_top = 82.0
-margin_right = 221.0
-margin_bottom = 98.0
+margin_left = 230.0
+margin_top = 92.0
+margin_right = 246.0
+margin_bottom = 108.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1467,10 +1467,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn27" type="Button" parent="HBox/R/R_panel"]
-margin_left = 246.0
-margin_top = 82.0
-margin_right = 262.0
-margin_bottom = 98.0
+margin_left = 276.0
+margin_top = 92.0
+margin_right = 292.0
+margin_bottom = 108.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1479,10 +1479,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn28" type="Button" parent="HBox/R/R_panel"]
-margin_left = 287.0
-margin_top = 82.0
-margin_right = 303.0
-margin_bottom = 98.0
+margin_left = 322.0
+margin_top = 92.0
+margin_right = 338.0
+margin_bottom = 108.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1491,10 +1491,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn29" type="Button" parent="HBox/R/R_panel"]
-margin_left = 328.0
-margin_top = 82.0
-margin_right = 344.0
-margin_bottom = 98.0
+margin_left = 368.0
+margin_top = 92.0
+margin_right = 384.0
+margin_bottom = 108.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1503,10 +1503,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn30" type="Button" parent="HBox/R/R_panel"]
-margin_left = 369.0
-margin_top = 82.0
-margin_right = 385.0
-margin_bottom = 98.0
+margin_left = 414.0
+margin_top = 92.0
+margin_right = 430.0
+margin_bottom = 108.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1515,9 +1515,9 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn31" type="Button" parent="HBox/R/R_panel"]
-margin_top = 123.0
+margin_top = 138.0
 margin_right = 16.0
-margin_bottom = 139.0
+margin_bottom = 154.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1526,10 +1526,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn32" type="Button" parent="HBox/R/R_panel"]
-margin_left = 41.0
-margin_top = 123.0
-margin_right = 57.0
-margin_bottom = 139.0
+margin_left = 46.0
+margin_top = 138.0
+margin_right = 62.0
+margin_bottom = 154.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1538,10 +1538,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn33" type="Button" parent="HBox/R/R_panel"]
-margin_left = 82.0
-margin_top = 123.0
-margin_right = 98.0
-margin_bottom = 139.0
+margin_left = 92.0
+margin_top = 138.0
+margin_right = 108.0
+margin_bottom = 154.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1550,10 +1550,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn34" type="Button" parent="HBox/R/R_panel"]
-margin_left = 123.0
-margin_top = 123.0
-margin_right = 139.0
-margin_bottom = 139.0
+margin_left = 138.0
+margin_top = 138.0
+margin_right = 154.0
+margin_bottom = 154.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1562,10 +1562,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn35" type="Button" parent="HBox/R/R_panel"]
-margin_left = 164.0
-margin_top = 123.0
-margin_right = 180.0
-margin_bottom = 139.0
+margin_left = 184.0
+margin_top = 138.0
+margin_right = 200.0
+margin_bottom = 154.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1574,10 +1574,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn36" type="Button" parent="HBox/R/R_panel"]
-margin_left = 205.0
-margin_top = 123.0
-margin_right = 221.0
-margin_bottom = 139.0
+margin_left = 230.0
+margin_top = 138.0
+margin_right = 246.0
+margin_bottom = 154.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1586,10 +1586,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn37" type="Button" parent="HBox/R/R_panel"]
-margin_left = 246.0
-margin_top = 123.0
-margin_right = 262.0
-margin_bottom = 139.0
+margin_left = 276.0
+margin_top = 138.0
+margin_right = 292.0
+margin_bottom = 154.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1598,10 +1598,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn38" type="Button" parent="HBox/R/R_panel"]
-margin_left = 287.0
-margin_top = 123.0
-margin_right = 303.0
-margin_bottom = 139.0
+margin_left = 322.0
+margin_top = 138.0
+margin_right = 338.0
+margin_bottom = 154.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1610,10 +1610,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn39" type="Button" parent="HBox/R/R_panel"]
-margin_left = 328.0
-margin_top = 123.0
-margin_right = 344.0
-margin_bottom = 139.0
+margin_left = 368.0
+margin_top = 138.0
+margin_right = 384.0
+margin_bottom = 154.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1622,10 +1622,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn40" type="Button" parent="HBox/R/R_panel"]
-margin_left = 369.0
-margin_top = 123.0
-margin_right = 385.0
-margin_bottom = 139.0
+margin_left = 414.0
+margin_top = 138.0
+margin_right = 430.0
+margin_bottom = 154.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1634,9 +1634,9 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn41" type="Button" parent="HBox/R/R_panel"]
-margin_top = 164.0
+margin_top = 184.0
 margin_right = 16.0
-margin_bottom = 180.0
+margin_bottom = 200.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1645,10 +1645,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn42" type="Button" parent="HBox/R/R_panel"]
-margin_left = 41.0
-margin_top = 164.0
-margin_right = 57.0
-margin_bottom = 180.0
+margin_left = 46.0
+margin_top = 184.0
+margin_right = 62.0
+margin_bottom = 200.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1657,10 +1657,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn43" type="Button" parent="HBox/R/R_panel"]
-margin_left = 82.0
-margin_top = 164.0
-margin_right = 98.0
-margin_bottom = 180.0
+margin_left = 92.0
+margin_top = 184.0
+margin_right = 108.0
+margin_bottom = 200.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1669,10 +1669,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn44" type="Button" parent="HBox/R/R_panel"]
-margin_left = 123.0
-margin_top = 164.0
-margin_right = 139.0
-margin_bottom = 180.0
+margin_left = 138.0
+margin_top = 184.0
+margin_right = 154.0
+margin_bottom = 200.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1681,10 +1681,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn45" type="Button" parent="HBox/R/R_panel"]
-margin_left = 164.0
-margin_top = 164.0
-margin_right = 180.0
-margin_bottom = 180.0
+margin_left = 184.0
+margin_top = 184.0
+margin_right = 200.0
+margin_bottom = 200.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1693,10 +1693,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn46" type="Button" parent="HBox/R/R_panel"]
-margin_left = 205.0
-margin_top = 164.0
-margin_right = 221.0
-margin_bottom = 180.0
+margin_left = 230.0
+margin_top = 184.0
+margin_right = 246.0
+margin_bottom = 200.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1705,10 +1705,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn47" type="Button" parent="HBox/R/R_panel"]
-margin_left = 246.0
-margin_top = 164.0
-margin_right = 262.0
-margin_bottom = 180.0
+margin_left = 276.0
+margin_top = 184.0
+margin_right = 292.0
+margin_bottom = 200.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1717,10 +1717,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn48" type="Button" parent="HBox/R/R_panel"]
-margin_left = 287.0
-margin_top = 164.0
-margin_right = 303.0
-margin_bottom = 180.0
+margin_left = 322.0
+margin_top = 184.0
+margin_right = 338.0
+margin_bottom = 200.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1729,10 +1729,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn49" type="Button" parent="HBox/R/R_panel"]
-margin_left = 328.0
-margin_top = 164.0
-margin_right = 344.0
-margin_bottom = 180.0
+margin_left = 368.0
+margin_top = 184.0
+margin_right = 384.0
+margin_bottom = 200.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1741,10 +1741,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn50" type="Button" parent="HBox/R/R_panel"]
-margin_left = 369.0
-margin_top = 164.0
-margin_right = 385.0
-margin_bottom = 180.0
+margin_left = 414.0
+margin_top = 184.0
+margin_right = 430.0
+margin_bottom = 200.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1753,9 +1753,9 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn51" type="Button" parent="HBox/R/R_panel"]
-margin_top = 205.0
+margin_top = 230.0
 margin_right = 16.0
-margin_bottom = 221.0
+margin_bottom = 246.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1764,10 +1764,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn52" type="Button" parent="HBox/R/R_panel"]
-margin_left = 41.0
-margin_top = 205.0
-margin_right = 57.0
-margin_bottom = 221.0
+margin_left = 46.0
+margin_top = 230.0
+margin_right = 62.0
+margin_bottom = 246.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1776,10 +1776,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn53" type="Button" parent="HBox/R/R_panel"]
-margin_left = 82.0
-margin_top = 205.0
-margin_right = 98.0
-margin_bottom = 221.0
+margin_left = 92.0
+margin_top = 230.0
+margin_right = 108.0
+margin_bottom = 246.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1788,10 +1788,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn54" type="Button" parent="HBox/R/R_panel"]
-margin_left = 123.0
-margin_top = 205.0
-margin_right = 139.0
-margin_bottom = 221.0
+margin_left = 138.0
+margin_top = 230.0
+margin_right = 154.0
+margin_bottom = 246.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1800,10 +1800,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn55" type="Button" parent="HBox/R/R_panel"]
-margin_left = 164.0
-margin_top = 205.0
-margin_right = 180.0
-margin_bottom = 221.0
+margin_left = 184.0
+margin_top = 230.0
+margin_right = 200.0
+margin_bottom = 246.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1812,10 +1812,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn56" type="Button" parent="HBox/R/R_panel"]
-margin_left = 205.0
-margin_top = 205.0
-margin_right = 221.0
-margin_bottom = 221.0
+margin_left = 230.0
+margin_top = 230.0
+margin_right = 246.0
+margin_bottom = 246.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1824,10 +1824,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn57" type="Button" parent="HBox/R/R_panel"]
-margin_left = 246.0
-margin_top = 205.0
-margin_right = 262.0
-margin_bottom = 221.0
+margin_left = 276.0
+margin_top = 230.0
+margin_right = 292.0
+margin_bottom = 246.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1836,10 +1836,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn58" type="Button" parent="HBox/R/R_panel"]
-margin_left = 287.0
-margin_top = 205.0
-margin_right = 303.0
-margin_bottom = 221.0
+margin_left = 322.0
+margin_top = 230.0
+margin_right = 338.0
+margin_bottom = 246.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1848,10 +1848,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn59" type="Button" parent="HBox/R/R_panel"]
-margin_left = 328.0
-margin_top = 205.0
-margin_right = 344.0
-margin_bottom = 221.0
+margin_left = 368.0
+margin_top = 230.0
+margin_right = 384.0
+margin_bottom = 246.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1860,10 +1860,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn60" type="Button" parent="HBox/R/R_panel"]
-margin_left = 369.0
-margin_top = 205.0
-margin_right = 385.0
-margin_bottom = 221.0
+margin_left = 414.0
+margin_top = 230.0
+margin_right = 430.0
+margin_bottom = 246.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1872,9 +1872,9 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn61" type="Button" parent="HBox/R/R_panel"]
-margin_top = 246.0
+margin_top = 276.0
 margin_right = 16.0
-margin_bottom = 262.0
+margin_bottom = 292.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1883,10 +1883,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn62" type="Button" parent="HBox/R/R_panel"]
-margin_left = 41.0
-margin_top = 246.0
-margin_right = 57.0
-margin_bottom = 262.0
+margin_left = 46.0
+margin_top = 276.0
+margin_right = 62.0
+margin_bottom = 292.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1895,10 +1895,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn63" type="Button" parent="HBox/R/R_panel"]
-margin_left = 82.0
-margin_top = 246.0
-margin_right = 98.0
-margin_bottom = 262.0
+margin_left = 92.0
+margin_top = 276.0
+margin_right = 108.0
+margin_bottom = 292.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1907,10 +1907,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn64" type="Button" parent="HBox/R/R_panel"]
-margin_left = 123.0
-margin_top = 246.0
-margin_right = 139.0
-margin_bottom = 262.0
+margin_left = 138.0
+margin_top = 276.0
+margin_right = 154.0
+margin_bottom = 292.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1919,10 +1919,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn65" type="Button" parent="HBox/R/R_panel"]
-margin_left = 164.0
-margin_top = 246.0
-margin_right = 180.0
-margin_bottom = 262.0
+margin_left = 184.0
+margin_top = 276.0
+margin_right = 200.0
+margin_bottom = 292.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1931,10 +1931,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn66" type="Button" parent="HBox/R/R_panel"]
-margin_left = 205.0
-margin_top = 246.0
-margin_right = 221.0
-margin_bottom = 262.0
+margin_left = 230.0
+margin_top = 276.0
+margin_right = 246.0
+margin_bottom = 292.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1943,10 +1943,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn67" type="Button" parent="HBox/R/R_panel"]
-margin_left = 246.0
-margin_top = 246.0
-margin_right = 262.0
-margin_bottom = 262.0
+margin_left = 276.0
+margin_top = 276.0
+margin_right = 292.0
+margin_bottom = 292.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1955,10 +1955,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn68" type="Button" parent="HBox/R/R_panel"]
-margin_left = 287.0
-margin_top = 246.0
-margin_right = 303.0
-margin_bottom = 262.0
+margin_left = 322.0
+margin_top = 276.0
+margin_right = 338.0
+margin_bottom = 292.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1967,10 +1967,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn69" type="Button" parent="HBox/R/R_panel"]
-margin_left = 328.0
-margin_top = 246.0
-margin_right = 344.0
-margin_bottom = 262.0
+margin_left = 368.0
+margin_top = 276.0
+margin_right = 384.0
+margin_bottom = 292.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1979,10 +1979,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn70" type="Button" parent="HBox/R/R_panel"]
-margin_left = 369.0
-margin_top = 246.0
-margin_right = 385.0
-margin_bottom = 262.0
+margin_left = 414.0
+margin_top = 276.0
+margin_right = 430.0
+margin_bottom = 292.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -1991,9 +1991,9 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn71" type="Button" parent="HBox/R/R_panel"]
-margin_top = 287.0
+margin_top = 322.0
 margin_right = 16.0
-margin_bottom = 303.0
+margin_bottom = 338.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2002,10 +2002,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn72" type="Button" parent="HBox/R/R_panel"]
-margin_left = 41.0
-margin_top = 287.0
-margin_right = 57.0
-margin_bottom = 303.0
+margin_left = 46.0
+margin_top = 322.0
+margin_right = 62.0
+margin_bottom = 338.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2014,10 +2014,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn73" type="Button" parent="HBox/R/R_panel"]
-margin_left = 82.0
-margin_top = 287.0
-margin_right = 98.0
-margin_bottom = 303.0
+margin_left = 92.0
+margin_top = 322.0
+margin_right = 108.0
+margin_bottom = 338.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2026,10 +2026,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn74" type="Button" parent="HBox/R/R_panel"]
-margin_left = 123.0
-margin_top = 287.0
-margin_right = 139.0
-margin_bottom = 303.0
+margin_left = 138.0
+margin_top = 322.0
+margin_right = 154.0
+margin_bottom = 338.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2038,10 +2038,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn75" type="Button" parent="HBox/R/R_panel"]
-margin_left = 164.0
-margin_top = 287.0
-margin_right = 180.0
-margin_bottom = 303.0
+margin_left = 184.0
+margin_top = 322.0
+margin_right = 200.0
+margin_bottom = 338.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2050,10 +2050,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn76" type="Button" parent="HBox/R/R_panel"]
-margin_left = 205.0
-margin_top = 287.0
-margin_right = 221.0
-margin_bottom = 303.0
+margin_left = 230.0
+margin_top = 322.0
+margin_right = 246.0
+margin_bottom = 338.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2062,10 +2062,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn77" type="Button" parent="HBox/R/R_panel"]
-margin_left = 246.0
-margin_top = 287.0
-margin_right = 262.0
-margin_bottom = 303.0
+margin_left = 276.0
+margin_top = 322.0
+margin_right = 292.0
+margin_bottom = 338.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2074,10 +2074,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn78" type="Button" parent="HBox/R/R_panel"]
-margin_left = 287.0
-margin_top = 287.0
-margin_right = 303.0
-margin_bottom = 303.0
+margin_left = 322.0
+margin_top = 322.0
+margin_right = 338.0
+margin_bottom = 338.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2086,10 +2086,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn79" type="Button" parent="HBox/R/R_panel"]
-margin_left = 328.0
-margin_top = 287.0
-margin_right = 344.0
-margin_bottom = 303.0
+margin_left = 368.0
+margin_top = 322.0
+margin_right = 384.0
+margin_bottom = 338.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2098,10 +2098,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn80" type="Button" parent="HBox/R/R_panel"]
-margin_left = 369.0
-margin_top = 287.0
-margin_right = 385.0
-margin_bottom = 303.0
+margin_left = 414.0
+margin_top = 322.0
+margin_right = 430.0
+margin_bottom = 338.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2110,9 +2110,9 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn81" type="Button" parent="HBox/R/R_panel"]
-margin_top = 328.0
+margin_top = 368.0
 margin_right = 16.0
-margin_bottom = 344.0
+margin_bottom = 384.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2121,10 +2121,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn82" type="Button" parent="HBox/R/R_panel"]
-margin_left = 41.0
-margin_top = 328.0
-margin_right = 57.0
-margin_bottom = 344.0
+margin_left = 46.0
+margin_top = 368.0
+margin_right = 62.0
+margin_bottom = 384.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2133,10 +2133,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn83" type="Button" parent="HBox/R/R_panel"]
-margin_left = 82.0
-margin_top = 328.0
-margin_right = 98.0
-margin_bottom = 344.0
+margin_left = 92.0
+margin_top = 368.0
+margin_right = 108.0
+margin_bottom = 384.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2145,10 +2145,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn84" type="Button" parent="HBox/R/R_panel"]
-margin_left = 123.0
-margin_top = 328.0
-margin_right = 139.0
-margin_bottom = 344.0
+margin_left = 138.0
+margin_top = 368.0
+margin_right = 154.0
+margin_bottom = 384.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2157,10 +2157,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn85" type="Button" parent="HBox/R/R_panel"]
-margin_left = 164.0
-margin_top = 328.0
-margin_right = 180.0
-margin_bottom = 344.0
+margin_left = 184.0
+margin_top = 368.0
+margin_right = 200.0
+margin_bottom = 384.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2169,10 +2169,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn86" type="Button" parent="HBox/R/R_panel"]
-margin_left = 205.0
-margin_top = 328.0
-margin_right = 221.0
-margin_bottom = 344.0
+margin_left = 230.0
+margin_top = 368.0
+margin_right = 246.0
+margin_bottom = 384.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2181,10 +2181,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn87" type="Button" parent="HBox/R/R_panel"]
-margin_left = 246.0
-margin_top = 328.0
-margin_right = 262.0
-margin_bottom = 344.0
+margin_left = 276.0
+margin_top = 368.0
+margin_right = 292.0
+margin_bottom = 384.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2193,10 +2193,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn88" type="Button" parent="HBox/R/R_panel"]
-margin_left = 287.0
-margin_top = 328.0
-margin_right = 303.0
-margin_bottom = 344.0
+margin_left = 322.0
+margin_top = 368.0
+margin_right = 338.0
+margin_bottom = 384.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2205,10 +2205,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn89" type="Button" parent="HBox/R/R_panel"]
-margin_left = 328.0
-margin_top = 328.0
-margin_right = 344.0
-margin_bottom = 344.0
+margin_left = 368.0
+margin_top = 368.0
+margin_right = 384.0
+margin_bottom = 384.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2217,10 +2217,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn90" type="Button" parent="HBox/R/R_panel"]
-margin_left = 369.0
-margin_top = 328.0
-margin_right = 385.0
-margin_bottom = 344.0
+margin_left = 414.0
+margin_top = 368.0
+margin_right = 430.0
+margin_bottom = 384.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2229,9 +2229,9 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn91" type="Button" parent="HBox/R/R_panel"]
-margin_top = 369.0
+margin_top = 414.0
 margin_right = 16.0
-margin_bottom = 385.0
+margin_bottom = 430.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2240,10 +2240,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn92" type="Button" parent="HBox/R/R_panel"]
-margin_left = 41.0
-margin_top = 369.0
-margin_right = 57.0
-margin_bottom = 385.0
+margin_left = 46.0
+margin_top = 414.0
+margin_right = 62.0
+margin_bottom = 430.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2252,10 +2252,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn93" type="Button" parent="HBox/R/R_panel"]
-margin_left = 82.0
-margin_top = 369.0
-margin_right = 98.0
-margin_bottom = 385.0
+margin_left = 92.0
+margin_top = 414.0
+margin_right = 108.0
+margin_bottom = 430.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2264,10 +2264,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn94" type="Button" parent="HBox/R/R_panel"]
-margin_left = 123.0
-margin_top = 369.0
-margin_right = 139.0
-margin_bottom = 385.0
+margin_left = 138.0
+margin_top = 414.0
+margin_right = 154.0
+margin_bottom = 430.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2276,10 +2276,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn95" type="Button" parent="HBox/R/R_panel"]
-margin_left = 164.0
-margin_top = 369.0
-margin_right = 180.0
-margin_bottom = 385.0
+margin_left = 184.0
+margin_top = 414.0
+margin_right = 200.0
+margin_bottom = 430.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2288,10 +2288,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn96" type="Button" parent="HBox/R/R_panel"]
-margin_left = 205.0
-margin_top = 369.0
-margin_right = 221.0
-margin_bottom = 385.0
+margin_left = 230.0
+margin_top = 414.0
+margin_right = 246.0
+margin_bottom = 430.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2300,10 +2300,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn97" type="Button" parent="HBox/R/R_panel"]
-margin_left = 246.0
-margin_top = 369.0
-margin_right = 262.0
-margin_bottom = 385.0
+margin_left = 276.0
+margin_top = 414.0
+margin_right = 292.0
+margin_bottom = 430.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2312,10 +2312,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn98" type="Button" parent="HBox/R/R_panel"]
-margin_left = 287.0
-margin_top = 369.0
-margin_right = 303.0
-margin_bottom = 385.0
+margin_left = 322.0
+margin_top = 414.0
+margin_right = 338.0
+margin_bottom = 430.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2324,10 +2324,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn99" type="Button" parent="HBox/R/R_panel"]
-margin_left = 328.0
-margin_top = 369.0
-margin_right = 344.0
-margin_bottom = 385.0
+margin_left = 368.0
+margin_top = 414.0
+margin_right = 384.0
+margin_bottom = 430.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2336,10 +2336,10 @@ icon = ExtResource( 1 )
 icon_align = 1
 
 [node name="btn100" type="Button" parent="HBox/R/R_panel"]
-margin_left = 369.0
-margin_top = 369.0
-margin_right = 385.0
-margin_bottom = 385.0
+margin_left = 414.0
+margin_top = 414.0
+margin_right = 430.0
+margin_bottom = 430.0
 focus_mode = 0
 theme = ExtResource( 2 )
 disabled = true
@@ -2359,7 +2359,7 @@ margin_right = 261.5
 margin_bottom = 80.5
 size_flags_horizontal = 4
 theme = ExtResource( 4 )
-custom_colors/font_color = Color( 0, 1, 0, 1 )
+custom_colors/font_color = Color( 0, 0.631373, 0.917647, 1 )
 custom_fonts/font = ExtResource( 6 )
 text = "You win!!"
 
