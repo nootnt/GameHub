@@ -76,7 +76,7 @@ while True:
         if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
             # Find imput row/collum
             mouseX, mouseY = pygame.mouse.get_pos()
-            clicked_row = mouseY // (height // 3 + 60)
+            clicked_row = mouseY // ((height // 3) +30 )
             clicked_col = mouseX // (width // 3)
        
         
