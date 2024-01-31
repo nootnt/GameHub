@@ -15,7 +15,7 @@ pygame.display.set_caption("GameHub(tm) Rock Paper Scissors")
 pygame.display.set_icon(pygame.image.load("res/GH.png"))
 
 # Load the images
-image = pygame.image.load("res/banners/rps.png")
+image = pygame.image.load("res/rps/main_banner.png")
 image = pygame.transform.scale(image, (WIDTH, 360)) 
 
 rock_img = pygame.image.load("res/rps/rock_orange.png")
@@ -56,10 +56,10 @@ def main():
         screen.fill("#0D0D0D")
         screen.blit(image,(-15,60))
         
-        Player1_text=font.render("Player 1 choose: A(rock) S(paper) D(scissors)",True,"#F66600")
+        Player1_text=font.render("Player 1 choose: A-(rock) S-(paper) D-(scissors)",True,"#F66600")
         screen.blit(Player1_text,(50,490))
         
-        Player2_text=font.render("Player 2 choose: J(rock) K(paper) L(scissors)",True,"#00A1EA")
+        Player2_text=font.render("Player 2 choose: J-(rock) K-(paper) L-(scissors)",True,"#00A1EA")
         screen.blit(Player2_text,(50,580))
 
         pygame.display.flip()
