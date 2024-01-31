@@ -8,27 +8,18 @@ pygame.init()
 WIDTH, HEIGHT = 1280 , 720
 FPS = 60
 
-# Colors
-WHITE = (255, 255, 255)
-BLACK = (0, 0, 0)
-GREY = (13, 13, 13)
-ORANGE = (246, 102, 0)
-
-
-
 # Initialize screen
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("2 Player Rock Paper Scissors")
+pygame.display.set_caption("GameHub(tm) Rock Paper Scissors")
 
-# Load the image
-image = pygame.image.load("C:\\Users\\Saba\\Desktop\\GameHub project\\rock paper scissors 1280, 360.png")
+# Load the images
+image = pygame.image.load("res/banners/rps.png")
 image = pygame.transform.scale(image, (WIDTH, 360)) 
 
-image1 = pygame.image.load("C:\\Users\\Saba\\Desktop\\GameHub project\\Rock image.png")
-image1 = pygame.transform.scale(image1, (250, 250))
+rock_img = pygame.image.load("res/rps/rock_image.png")
+rock_img = pygame.transform.scale(rock_img, (250, 250))
 
-
-font = pygame.font.Font(None, 36)
+font = pygame.font.SysFont("calibri monospace", 36)
 
 # Game loop
 def main():
@@ -60,13 +51,13 @@ def main():
             player2_choice = None
 
 
-        screen.fill(GREY)
+        screen.fill("#0D0D0D")
         screen.blit(image,(-15,60))
         
-        Player1_text=font.render("Player 1 choose: A(rock) S(paper) D(scissors)",True,ORANGE)
+        Player1_text=font.render("Player 1 choose: A(rock) S(paper) D(scissors)",True,"#F66600")
         screen.blit(Player1_text,(50,490))
         
-        Player2_text=font.render("Player 2 choose: J(rock) K(paper) L(scissors)",True,ORANGE)
+        Player2_text=font.render("Player 2 choose: J(rock) K(paper) L(scissors)",True,"#00A1EA")
         screen.blit(Player2_text,(50,580))
 
         pygame.display.flip()
@@ -77,7 +68,7 @@ def main():
 # Function to get the choice from the key pressed
 def get_choice_from_key(key):
     if key == pygame.K_a:
-        return image1
+        return rock_img
     elif key == pygame.K_s:
         return "paper"
     elif key == pygame.K_d:
@@ -94,8 +85,8 @@ def determine_winner(player1_choice, player2_choice):
     if player1_choice == player2_choice:
         return "It's a tie!"
     elif (
-        (player1_choice == image1 and player2_choice == "scissors")
-        or (player1_choice == "paper" and player2_choice == image1)
+        (player1_choice == rock_img and player2_choice == "scissors")
+        or (player1_choice == "paper" and player2_choice == rock_img)
         or (player1_choice == "scissors" and player2_choice == "paper")
     ):
         return "Player 1 wins!"
