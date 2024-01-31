@@ -48,7 +48,7 @@ root=tk.Tk()
 # ---------- Functions ----------
 
 def game_func(button_index, runstate):
-    # I know im not supposed to do this, but i dont care
+    # I know im not supposed to do this, but i dont care cause it works so
     global page
     global game_selected
 
@@ -67,7 +67,7 @@ def game_func(button_index, runstate):
 
             game_selected = game
             
-            # im sorry to whoever reads this next part, its absolutely janktastic but hey, it works!
+            # im sorry to whoever reads this next part, its absolutely janktastic but if it works it works!
             banner_update(game)
             if(button_index == 1):
                 btn1.configure(text=game[0] + ":\n\n" + game[1])
@@ -101,8 +101,8 @@ def page_chng(up):
 
 # ---------- Window Setup ----------
 
-# Create root widndow (and lock size an shit ykyk)
-root.title("GameHub(tm) Game chooser(tm)")
+# Create root widndow
+root.title("GameHub(tm) Game choosinator")
 spawn_posx = int((root.winfo_screenwidth()/2) - 640)
 spawn_posy = int((root.winfo_screenheight()/2) - 360 - 20)
 root.geometry("1280x720+" + str(spawn_posx) + "+" + str(spawn_posy))
@@ -151,7 +151,7 @@ bannerlabel.grid(row=0, column=1, padx=120, pady=35)
 def banner_update(game):
     bannerimg = ImageTk.PhotoImage(Image.open(game[3]))
     bannerlabel.configure(image=bannerimg)
-    bannerlabel.image=bannerimg # this is stupid, i hate tkinter. tk, please, i beg you to kys (keep yourself safe).
+    bannerlabel.image=bannerimg # this is stupid, kys (keep yourself safe).
 
 # ---------- Page mechanism ----------
 
@@ -172,7 +172,7 @@ def page_state_update():
     btn3.configure(text=game_func(3, False)[0])
 
     # Page change logic
-    # Again, i dont care.
+    # Global var again
     global page
     if (page == 1):
         L_pg_btn["state"] = "disabled"
@@ -189,7 +189,7 @@ def page_state_update():
     
     # Update the page indicator
     pageindicatorstring = str(page) + "/" + str(max_page)
-    pg_indicator = tk.Text(selectorfame, width=3, height=1) # FUCK YOU text widget. I hope you die. Your parrents dont love you.
+    pg_indicator = tk.Text(selectorfame, width=3, height=1)
     pg_indicator.configure(bg= bg_color, fg=font_color, relief="flat", font=("Calibri", 12))
     pg_indicator.insert(tk.END, pageindicatorstring)
     pg_indicator.grid(row=0, column=1, padx=0, pady=0)

@@ -16,7 +16,7 @@ pygame.display.set_icon(pygame.image.load("res/GH.png"))
 
 # Load the images
 image = pygame.image.load("res/rps/main_banner.png")
-image = pygame.transform.scale(image, (WIDTH, 360)) 
+image = pygame.transform.scale(image, (1280, 360)) 
 
 rock_img = pygame.image.load("res/rps/rock_orange.png")
 rock_img = pygame.transform.scale(rock_img, (250, 250))
