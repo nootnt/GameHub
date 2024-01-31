@@ -118,11 +118,11 @@ def display_result(player1_choice, player2_choice, result):
     else:
         result_text = font_large.render(result, True, "#FFFFFF")
     
-    screen.blit(player1_choice[0],(155, 30))
-    screen.blit(player2_choice[0],(155, 270))
-    screen.blit(player1_text, (50, 50))
-    screen.blit(player2_text, (50, 300))
-    screen.blit(result_text, (450, 50))
+    screen.blit(player1_choice[0],(155, 60))
+    screen.blit(player1_text, (50, 170))
+    screen.blit(player2_choice[0],(155, 370))
+    screen.blit(player2_text, (50, 480))
+    screen.blit(result_text, (500, 300))
 
     pygame.display.flip()
     pygame.time.delay(3000)
