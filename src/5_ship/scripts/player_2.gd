@@ -17,7 +17,7 @@ func shoot(index):
 		else:
 			return [true, false]
 	else:
-		$HBox/L/L_panel.get_child(index-1).add_stylebox_override("disabled", load("res://theme/bt_stylebox/cyan_styleboxflat.tres"))
+		$HBox/L/L_panel.get_child(index-1).add_stylebox_override("disabled", load("res://theme/bt_stylebox/orange_styleboxflat.tres"))
 		return [false, false]
 
 func _place_ship(index):
@@ -63,7 +63,7 @@ func _place_ship(index):
 			_place_ship(-2)
 		else:
 			ship_to_place = ship_to_place - 1
-			status_label.text = "Select your ship location : "+str(ship_to_place)+"x size 1x1"
+			status_label.text = "Select your ship location : "+str(ship_to_place+4)+"x size 1x1"
 			
 		
 		local_ships.sort()
@@ -71,9 +71,9 @@ func _place_ship(index):
 		for i in local_ships:
 			var node = $HBox/L/L_panel.get_child(i-1)
 			node.disabled = true
-			node.add_stylebox_override("disabled", load("res://theme/bt_stylebox/orange_styleboxflat.tres"))
+			node.add_stylebox_override("disabled", load("res://theme/bt_stylebox/cyan_styleboxflat.tres"))
 		
-		if ship_to_place == 0:
+		if ship_to_place == -4:
 			status_label.text = "Choose where to shoot"
 			placement_mode = false
 			
