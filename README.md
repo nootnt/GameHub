@@ -4,7 +4,8 @@ This is the application for GameHub, a project for the Iliauni CS50 2023-2024 co
 
 This application allows users to play a selection of simple classic games, completely offline and ad-free.
 
-The launcher was written in python using tkinter.
+Tech used:
+- Launcher was written in python using tkinter.
 - pygame: Tic Tac Toe; Sudoku; Connect 4; Rock Paper Scissors and Snake.
 - Godot engine: Hangman; Battleship; minesweeper and Dice simulator.
 
