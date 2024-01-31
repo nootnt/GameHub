@@ -9,8 +9,7 @@ The following games were written in pygame: Tic Tac Toe; Sudoku; Connect 4; Rock
 The following games were made using The Godot engine: Hangman; Battleship; minesweeper and Dice simulator.
 
 Launcher Features:
-- Sorts games into pages
- - 3 games per page
+- Sorts games into pages (3 games per page)
 - Dynamically updating, uniqie Banners and descriptions for each game
 - Ability to load configuration files
 - Hides itself during gameplay
