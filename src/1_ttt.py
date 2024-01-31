@@ -10,8 +10,7 @@ win = pygame.display.set_mode((1280, 720))
 pygame.display.set_caption("GameHub(tm) Tic Tac Toe")
 
 # set window icon
-ico = pygame.image.load("res/GH.png")
-pygame.display.set_icon(ico)
+pygame.display.set_icon(pygame.image.load("res/GH.png"))
 
 # Define font var
 myfont = pygame.font.SysFont("monospace", 130)

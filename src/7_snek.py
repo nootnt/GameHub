@@ -45,8 +45,7 @@ pygame.display.set_caption("GameHub(tm) Snake Game")
 clock = pygame.time.Clock()
 
 # set window icon
-ico = pygame.image.load("res/GH.png")
-pygame.display.set_icon(ico)
+pygame.display.set_icon(pygame.image.load("res/GH.png"))
 
 # Initialize the snake and food
 snake = Snake()

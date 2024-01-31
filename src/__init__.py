@@ -20,7 +20,6 @@ bg_color_active = config.get("color", "bg_color_active")
 font_color = config.get("color", "font_color")
 font_color_active = config.get("color", "font_color_active")
 
-icon_img_path = config.get("img", "icon_img_path")
 logo_img_path = config.get("img", "logo_img_path")
 banner_default_img_path = config.get("img", "banner_default_img_path")
 
@@ -107,7 +106,7 @@ spawn_posx = int((root.winfo_screenwidth()/2) - 640)
 spawn_posy = int((root.winfo_screenheight()/2) - 360 - 20)
 root.geometry("1280x720+" + str(spawn_posx) + "+" + str(spawn_posy))
 root.resizable(width=False, height=False)
-root.iconbitmap(icon_img_path)
+root.iconbitmap(config.get("img", "icon_img_path"))
 root["bg"] = bg_color
 
 # Generate layout frames

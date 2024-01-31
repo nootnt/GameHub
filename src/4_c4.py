@@ -85,8 +85,7 @@ pygame.display.update()
 pygame.display.set_caption("GameHub(tm) Connect 4")
 
 # set window icon
-ico = pygame.image.load("res/GH.png")
-pygame.display.set_icon(ico)
+pygame.display.set_icon(pygame.image.load("res/GH.png"))
 
 myfont = pygame.font.SysFont("calibri monospace", 135)
 
