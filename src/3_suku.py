@@ -36,15 +36,15 @@ font1 = pygame.font.SysFont("comicsans", 40)
 font2 = pygame.font.SysFont("comicsans", 20)
 def get_cord(pos):
 	global x
-	x = pos[0]//dif
+	x = (pos[0]-390)//dif
 	global y
-	y = pos[1]//dif
+	y = (pos[1]-111)//dif
 
 # Highlight the cell selected
 def draw_box():
 	for i in range(2):
-		pygame.draw.line(screen, (line), (x * dif-3, (y + i)*dif), (x * dif + dif + 3, (y + i)*dif), 7)
-		pygame.draw.line(screen, (line), ( (x + i)* dif, y * dif ), ((x + i) * dif, y * dif + dif), 7) 
+		pygame.draw.line(screen, (line), (x * dif-3 + 390, (y + i)*dif + 111), (x * dif + dif + 3 + 390, (y + i)*dif + 111), 7)
+		pygame.draw.line(screen, (line), ( (x + i)* dif + 390, y * dif + 111 ), ((x + i) * dif + 390, y * dif + dif + 111), 7) 
 
 # Function to draw required lines for making Sudoku grid		 
 def draw():
@@ -72,15 +72,15 @@ def draw():
 # Fill value entered in cell	 
 def draw_val(val):
 	text1 = font1.render(str(val), 1, (N_greed))
-	screen.blit(text1, (x * dif  , y * dif + 15)) 
+	screen.blit(text1, (x * dif - 390, y * dif -111 )) 
 
 # Raise error when wrong value entered
 def raise_error1():
 	text1 = font1.render("WRONG !!!", 1, (Deffault))
-	screen.blit(text1, (20, 570)) 
+	screen.blit(text1, (20, 330)) 
 def raise_error2():
 	text1 = font1.render("Wrong !!! Not a valid Key", 1, (Deffault))
-	screen.blit(text1, (20, 570)) 
+	screen.blit(text1, (400, 640)) 
 
 # Check if the value entered in board is valid
 def valid(m, i, j, val):
@@ -124,7 +124,7 @@ def solve(grid, i, j):
 				return True
 			else:
 				grid[i][j]= 0
-			# white color background\
+			# Background
 			screen.fill((Mari))
 		
 			draw()
@@ -262,3 +262,4 @@ while run:
 
 # Quit pygame window 
 pygame.quit()	 
+	
