@@ -10,10 +10,8 @@ pygame.font.init()
 
 # Total window and Icon
 screen = pygame.display.set_mode((1280, 720))
-
-ico = pygame.image.load("res/GH.png")
-pygame.display.set_icon(ico)
-
+pygame.display.set_caption("GameHub(tm) Rock Paper Scissors")
+pygame.display.set_icon(pygame.image.load("res/GH.png"))
 
 x = 333
 y = 111
