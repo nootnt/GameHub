@@ -97,12 +97,11 @@ def determine_winner(player1_choice, player2_choice):
 
 # Function to display the result
 def display_result(player1_choice, player2_choice, result):
-    screen.fill(GREY)
+    screen.fill("#0D0D0D")
 
     player1_text = font.render(f"Player 1: {player1_choice}", True, ORANGE)
     player2_text = font.render(f"Player 2: {player2_choice}", True, ORANGE)
     result_text = font.render(result, True, ORANGE)
-
     
     screen.blit(player1_text, (50, 50))
     screen.blit(player2_text, (50, 100))
