@@ -12,11 +12,13 @@ FPS = 60
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("GameHub(tm) Rock Paper Scissors")
 
+pygame.display.set_icon(pygame.image.load("res/GH.png"))
+
 # Load the images
 image = pygame.image.load("res/banners/rps.png")
 image = pygame.transform.scale(image, (WIDTH, 360)) 
 
-rock_img = pygame.image.load("res/rps/rock_image.png")
+rock_img = pygame.image.load("res/rps/rock_orange.png")
 rock_img = pygame.transform.scale(rock_img, (250, 250))
 
 font = pygame.font.SysFont("calibri monospace", 36)
