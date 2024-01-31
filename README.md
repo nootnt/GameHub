@@ -7,7 +7,7 @@ This application allows users to play a selection of simple classic games, compl
 Tech used:
 - Launcher was written in python using tkinter.
 - pygame: Tic Tac Toe; Sudoku; Connect 4; Rock Paper Scissors and Snake.
-- Godot engine: Hangman; Battleship; minesweeper and Dice simulator.
+- Godot engine (version 3.5.3): Hangman; Battleship; minesweeper and Dice simulator.
 
 Launcher Features:
 - Sorts games into pages (3 games per page)
