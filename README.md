@@ -1,5 +1,7 @@
 # py_gamehub
 
+![logo_fullsize](https://github.com/nootnt/GameHub/blob/main/res/logo_fullsize.png)
+
 This is the application for GameHub, a project for the Iliauni CS50 2023-2024 course.
 
 This application allows users to play a selection of simple classic games, completely offline and ad-free.
